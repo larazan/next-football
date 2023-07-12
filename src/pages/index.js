@@ -3,6 +3,7 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import HomeAwards from '@/components/HomeAwards'
 import HomeMatch from '@/components/HomeMatch'
+import SubsribeForm from '@/components/SubscribeForm'
 import Head from 'next/head'
 import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <HomeMatch />
       <Banner />
+      <SubsribeForm />
       <HomeAwards />
       <Footer />
     </div>
