@@ -1,8 +1,12 @@
 import Banner from '@/components/Banner'
 import Footer from '@/components/Footer'
+import GoTop from '@/components/GoTop'
 import Header from '@/components/Header'
 import HomeAwards from '@/components/HomeAwards'
+import HomeClub from '@/components/HomeClub'
 import HomeMatch from '@/components/HomeMatch'
+import HomeMedia from '@/components/HomeMedia'
+import HomeNews from '@/components/HomeNews'
 import SubsribeForm from '@/components/SubscribeForm'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -17,9 +21,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <GoTop />
       <HomeMatch />
       <Banner />
+      <HomeNews />
       <SubsribeForm />
+      <HomeMedia />
+      <HomeClub />
       <HomeAwards />
       <Footer />
     </div>

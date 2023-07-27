@@ -42,10 +42,55 @@ export default function HomeAwards() {
       setscrolEnd(false);
     }
   };
+
+  const awardData = [
+    {
+      title: "Champion League",
+      amount: 6,
+      img: cl_pokale,
+    },
+    {
+      title: "UEFA Cup",
+      amount: 1,
+      img: uefa_cup,
+    },
+    {
+      title: "UEFA Cup Winners Cup",
+      amount: 1,
+      img: ec_pokalsieger,
+    },
+    {
+      title: "FIFA Club World Cup",
+      amount: 2,
+      img: klubweltmeisterschaft_,
+    },
+    {
+      title: "UEFA Supercup",
+      amount: 2,
+      img: eu_supercup,
+    },
+    {
+      title: "DFB Pokale",
+      amount: 20,
+      img: dfb_pokale,
+    },
+    {
+      title: "DFL Pokale",
+      amount: 18,
+      img: dfl_pokale,
+    },
+    {
+      title: "Champion League",
+      amount: 6,
+      img: cl_pokale,
+    },    
+  ]
+
   return (
+    
     <>
-      <div className="h-max flex flex-col space-y-3 px-2 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
-        <div className="flex flex-row justify-between mx-auto w-11/12 md:w-12/12 space-x-6 items-center">
+      <div className="h-max flex flex-col space-y-3 px-6 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
+        <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
             <Link href={"/"} className="flex space-x-1 items-center hover:opacity-80">
             <span className="text-2xl font-bold text-[#002f6c]">Honours</span>
             
@@ -96,7 +141,7 @@ export default function HomeAwards() {
           </div> */}
         </div>
 
-        <div className="relative flex flex-row mx-auto w-11/12 md:w-12/12 justify-between items-center">
+        <div className="relative flex flex-row mx-auto w-full md:w-12/12 justify-between items-center">
           {scrollX !== 0 && (
             <div className="top-[40%] left-0">
               <button
@@ -149,7 +194,10 @@ export default function HomeAwards() {
             ref={scrl}
             onScroll={scrollCheck}
           >
-            <div className="transition-all duration-150 flex mr-[.5em] ">
+            {awardData.map((data, index) => {
+              return (
+                <>
+                <div className="transition-all duration-150 flex mr-[.5em] ">
               <div className="flex w-[180px] p-5 justify-center bg-white shadow hover:shadow-lg">
                 <div className=" bg-white  flex ">
                   <Link
@@ -157,188 +205,28 @@ export default function HomeAwards() {
                     className="flex flex-col space-y-3 justify-center items-center"
                   >
                     <div className="flex space-x-3">
-                      <Image src={cl_pokale} alt="" className="w-26 " />
+                      <Image src={data.img} alt="" className="w-26 " />
                     </div>
                     <div className="flex flex-col justify-center items-center">
                       <div className="flex text-center">
-                        <span className="font-bold text-sm text-[#002f6c]">Champions League</span>
+                        <span className="font-bold text-sm text-[#002f6c]">{data.title}</span>
                       </div>
                       <div>
-                        <span className="font-bold text- text-[#002f6c]">6</span>
+                        <span className="font-bold text- text-[#002f6c]">{data.amount}</span>
                       </div>
                     </div>
                   </Link>{" "}
                 </div>
               </div>
             </div>
-            {/*  */}
-            <div className="transition-all duration-150 flex mr-[.5em] ">
-              <div className="flex w-[180px] p-5 justify-center bg-white shadow hover:shadow-lg">
-                <div className=" bg-white  flex ">
-                  <Link
-                    href="/"
-                    className="flex flex-col space-y-3 justify-center items-center"
-                  >
-                    <div className="flex space-x-3">
-                      <Image src={cl_pokale} alt="" className="w-26 " />
-                    </div>
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="flex text-center">
-                        <span className="font-bold text-sm text-[#002f6c]">Champions League</span>
-                      </div>
-                      <div>
-                        <span className="font-bold text- text-[#002f6c]">6</span>
-                      </div>
-                    </div>
-                  </Link>{" "}
-                </div>
-              </div>
-            </div>
-            {/*  */}
-            <div className="transition-all duration-150 flex mr-[.5em] ">
-              <div className="flex w-[180px] p-5 justify-center bg-white shadow hover:shadow-lg">
-                <div className=" bg-white  flex ">
-                  <Link
-                    href="/"
-                    className="flex flex-col space-y-3 justify-center items-center"
-                  >
-                    <div className="flex space-x-3">
-                      <Image src={cl_pokale} alt="" className="w-26 " />
-                    </div>
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="flex text-center">
-                        <span className="font-bold text-sm text-[#002f6c]">Champions League</span>
-                      </div>
-                      <div>
-                        <span className="font-bold text- text-[#002f6c]">6</span>
-                      </div>
-                    </div>
-                  </Link>{" "}
-                </div>
-              </div>
-            </div>
-            {/*  */}
-            <div className="transition-all duration-150 flex mr-[.5em] ">
-              <div className="flex w-[180px] p-5 justify-center bg-white shadow hover:shadow-lg">
-                <div className=" bg-white  flex ">
-                  <Link
-                    href="/"
-                    className="flex flex-col space-y-3 justify-center items-center"
-                  >
-                    <div className="flex space-x-3">
-                      <Image src={cl_pokale} alt="" className="w-26 " />
-                    </div>
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="flex text-center">
-                        <span className="font-bold text-sm text-[#002f6c]">Champions League</span>
-                      </div>
-                      <div>
-                        <span className="font-bold text- text-[#002f6c]">6</span>
-                      </div>
-                    </div>
-                  </Link>{" "}
-                </div>
-              </div>
-            </div>
-            {/*  */}
-            <div className="transition-all duration-150 flex mr-[.5em] ">
-              <div className="flex w-[180px] p-5 justify-center bg-white shadow hover:shadow-lg">
-                <div className=" bg-white  flex ">
-                  <Link
-                    href="/"
-                    className="flex flex-col space-y-3 justify-center items-center"
-                  >
-                    <div className="flex space-x-3">
-                      <Image src={cl_pokale} alt="" className="w-26 " />
-                    </div>
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="flex text-center">
-                        <span className="font-bold text-sm text-[#002f6c]">Champions League</span>
-                      </div>
-                      <div>
-                        <span className="font-bold text- text-[#002f6c]">6</span>
-                      </div>
-                    </div>
-                  </Link>{" "}
-                </div>
-              </div>
-            </div>
-            {/*  */}
-            <div className="transition-all duration-150 flex mr-[.5em] ">
-              <div className="flex w-[180px] p-5 justify-center bg-white shadow hover:shadow-lg">
-                <div className=" bg-white  flex ">
-                  <Link
-                    href="/"
-                    className="flex flex-col space-y-3 justify-center items-center"
-                  >
-                    <div className="flex space-x-3">
-                      <Image src={cl_pokale} alt="" className="w-26 " />
-                    </div>
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="flex text-center">
-                        <span className="font-bold text-sm text-[#002f6c]">Champions League</span>
-                      </div>
-                      <div>
-                        <span className="font-bold text- text-[#002f6c]">6</span>
-                      </div>
-                    </div>
-                  </Link>{" "}
-                </div>
-              </div>
-            </div>
-            {/*  */}
-            <div className="transition-all duration-150 flex mr-[.5em] ">
-              <div className="flex w-[180px] p-5 justify-center bg-white shadow hover:shadow-lg">
-                <div className=" bg-white  flex ">
-                  <Link
-                    href="/"
-                    className="flex flex-col space-y-3 justify-center items-center"
-                  >
-                    <div className="flex space-x-3">
-                      <Image src={cl_pokale} alt="" className="w-26 " />
-                    </div>
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="flex text-center">
-                        <span className="font-bold text-sm text-[#002f6c]">Champions League</span>
-                      </div>
-                      <div>
-                        <span className="font-bold text- text-[#002f6c]">6</span>
-                      </div>
-                    </div>
-                  </Link>{" "}
-                </div>
-              </div>
-            </div>
-            {/*  */}
-            <div className="transition-all duration-150 flex mr-[.5em] ">
-              <div className="flex w-[180px] p-5 justify-center bg-white shadow hover:shadow-lg">
-                <div className=" bg-white  flex ">
-                  <Link
-                    href="/"
-                    className="flex flex-col space-y-3 justify-center items-center"
-                  >
-                    <div className="flex space-x-3">
-                      <Image src={cl_pokale} alt="" className="w-26 " />
-                    </div>
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="flex text-center">
-                        <span className="font-bold text-sm text-[#002f6c]">Champions League</span>
-                      </div>
-                      <div>
-                        <span className="font-bold text- text-[#002f6c]">6</span>
-                      </div>
-                    </div>
-                  </Link>{" "}
-                </div>
-              </div>
-            </div>
-            {/*  */}
-           
-           
+                </>
+              )
+            })}
+            
           </div>
         </div>
 
-        <div className="flex flex-row justify-between mx-auto w-11/12 md:w-12/12 space-x-6 items-center">
+        <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
             <Link href={"/"} className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
             <span className=" font-semibold text-[#002f6c]">All achievements</span>
             
