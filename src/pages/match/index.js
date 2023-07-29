@@ -56,7 +56,7 @@ export default function News() {
             <div className="h-max flex flex-col ">
               <div className="flex justify-between py-4 px-6 border-b items-start">
                 <div className="flex space-x-2">
-                  <button className="flex rounded px-2 py-1 items-center bg-[#dc052d] hover:bg-blue-200">
+                  <button className="flex rounded px-2 py-1 items-center bg-[#dc052d] ">
                     <span className=" font-semibold text-white text-sm">
                       Matchplan
                     </span>

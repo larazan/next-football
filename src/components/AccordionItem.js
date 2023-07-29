@@ -12,7 +12,7 @@ const AccordionItem = ({ open, toggle, title, desc }) => {
             aria-controls="headlessui-disclosure-panel-12"
             onClick={toggle}
           >
-            <span className="font-medium text-gray-900">{title}</span>
+            <span className="font-medium text-[#002f6c]">{title}</span>
             <span className="flex items-center ml-6 h-7">
               <span className="text-primary font-normal text-2xl">{open ? '-' : '+'}</span>
             </span>

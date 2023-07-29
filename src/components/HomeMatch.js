@@ -54,6 +54,19 @@ export default function HomeMatch() {
       setscrolEnd(false);
     }
   };
+
+  const matchData = [
+    {
+      competition: "Audi Football Summit, Friendly",
+      home_team: "FC Bayern Munich",
+      away_team: "Manchester City",
+      home_logo: bayern,
+      away_logo: city,
+      stadium: "New Japan National Stadium",
+      time: "Wed, 26/07/23, 17:30 GMT+7"
+    }
+  ]
+
   return (
     <>
       <div className="h-max flex px-2 py-0 md:py-2 justify-center2 items-center2 bg-white">

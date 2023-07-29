@@ -28,7 +28,9 @@ export default function Header() {
                   <Image src={logo} className="h-12 w-12" alt="" />
                 </Link>
               </div>
+              <Link href={"/"}>
               <span className="text-2xl text-white font-bold">FC Bayern Munchen</span>
+              </Link>
             </div>
             
           </div>
@@ -67,22 +69,22 @@ export default function Header() {
         </div>
         <div className="py-0.5 px-5 bg-[#c60428]">
           <div className="flex space-x-4 items-center">
-            <Link href={"/"} className="py-1.5 border-b border-[#c60428] hover:border-white ">
+            <Link href={"/news"} className="py-1.5 border-b border-[#c60428] hover:border-white ">
                 <span className="font-semibold text-white">News</span>
             </Link>
-            <Link href={"/"} className="py-1.5 border-b border-[#c60428] hover:border-white ">
+            <Link href={"/media"} className="py-1.5 border-b border-[#c60428] hover:border-white ">
                 <span className="font-semibold text-white">FC Bayern TV</span>
             </Link>
-            <Link href={"/"} className="py-1.5 border-b border-[#c60428] hover:border-white ">
+            <Link href={"/match"} className="py-1.5 border-b border-[#c60428] hover:border-white ">
                 <span className="font-semibold text-white">Matches</span>
             </Link>
-            <Link href={"/"} className="py-1.5 border-b border-[#c60428] hover:border-white ">
+            <Link href={"/teams"} className="py-1.5 border-b border-[#c60428] hover:border-white ">
                 <span className="font-semibold text-white">Teams</span>
             </Link>
-            <Link href={"/"} className="py-1.5 border-b border-[#c60428] hover:border-white ">
+            <Link href={"/club"} className="py-1.5 border-b border-[#c60428] hover:border-white ">
                 <span className="font-semibold text-white">Club</span>
             </Link>
-            <Link href={"/"} className="py-1.5 border-b border-[#c60428] hover:border-white ">
+            <Link href={"/fans"} className="py-1.5 border-b border-[#c60428] hover:border-white ">
                 <span className="font-semibold text-white">Fans</span>
             </Link>
             <Link href={"/"} className="py-1.5 border-b border-[#c60428] hover:border-white ">

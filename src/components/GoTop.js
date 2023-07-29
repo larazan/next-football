@@ -26,11 +26,11 @@ const GoTop = () => {
 
   return (
     <>
-      <div className="fixed flex justify-center mx-auto w-full bg-pink bottom-3  z-40 cursor-pointer">
+      <div className="fixed flex justify-center mx-auto w-full bg-pink bottom-3  z-40 cursor-pointer ">
         {isVisible && (
           <div
             onClick={scrollToTop}
-            className="fixed flex space-x-2 px-3 py-1 items-center text-white rounded-full bg-red-600 bottom-3 hover:bg-red-500 lg:bottom-5 lg:right-5 cursor-pointer"
+            className="fixed flex space-x-2 px-3 py-1 items-center text-white rounded-full bg-red-600 bottom-3 hover:bg-red-500 lg:bottom-5 lg:right-5 cursor-pointer border border-white"
           >
             <div className="font-semibold text-sm">Scroll to top</div>
             <svg

@@ -82,12 +82,13 @@ export default function Faqs() {
                 
 
                 <section className="w-full mx-auto pb-10 mt-10 md:mt-10 px-5 ">
-                  <h5 className="font-semibold md:font-bold text-2xl md:text-3xl text-center ">
-                    Frequently asked questions
+                  <h5 className="font-semibold md:font-bold text-2xl md:text-3xl text-[#002f6c]">
+                    FAQs
                   </h5>
-                  <p className="mt-3 font-normal text-lg text-gray-700 text-center ">
-                    Browse through the most frequently asked questions.
+                  <p className="mt-3 font-normal text-lg text-gray-700">
+                    We at Bayern receive hundreds of enails every day. To help you find the information you want quickly and easily, the Bayern online team has compiled this list of the most frequently asked questions and answers.
                   </p>
+                  <div className="w-full">
                   <dl className="w-full mt-6 space-y-6 divide-y divide-gray-200">
                     {accordionData.map((data, index) => {
                       return (
@@ -101,6 +102,7 @@ export default function Faqs() {
                       );
                     })}
                   </dl>
+                  </div>
                 </section>
 
               </div>

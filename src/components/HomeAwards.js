@@ -196,8 +196,8 @@ export default function HomeAwards() {
           >
             {awardData.map((data, index) => {
               return (
-                <>
-                <div className="transition-all duration-150 flex mr-[.5em] ">
+                
+                <div className="transition-all duration-150 flex mr-[.5em] " key={index}>
               <div className="flex w-[180px] p-5 justify-center bg-white shadow hover:shadow-lg">
                 <div className=" bg-white  flex ">
                   <Link
@@ -219,7 +219,7 @@ export default function HomeAwards() {
                 </div>
               </div>
             </div>
-                </>
+                
               )
             })}
             

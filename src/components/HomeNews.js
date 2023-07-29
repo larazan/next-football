@@ -11,7 +11,7 @@ export default function HomeNews() {
     <>
       <div className="h-max flex flex-col space-y-4 px-4 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
         <div className="flex space-x-2 px-2">
-          <button className="flex rounded px-2 py-1 items-center bg-[#dc052d] hover:bg-blue-200">
+          <button className="flex rounded px-2 py-1 items-center bg-[#dc052d]">
             <span className=" font-semibold text-white text-sm">All</span>
           </button>
           <button className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">

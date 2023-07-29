@@ -313,7 +313,7 @@ export default function Standing() {
                     {standingData.map((data, index) => {
                         return (
                             <>
-                            <tr className="py-4 h-10" key={index}>
+                            <tr className="py-4 h-11 border-b" key={index}>
                             <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-blue-700">{index+1}</span></td>
                             <td className="w-5/12">
                                 <div className="flex space-x-2 items-center">
