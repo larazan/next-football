@@ -75,6 +75,90 @@ export default function News() {
                 <Image src={news1} alt="" className="w-full object-contain" />
             </div>
           </div>
+          <div className="flex mx-auto  w-12/12 md:w-12/12 py-2 justify-center2 items-center">
+            <div className="grid grid-cols-2 mx-auto gap-x-7 gap-y-8 sm:grid-cols-1 md:grid-cols-2">
+            <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
+            <Link
+              href="https://statamic.com/blog/statamic-4-unleashed"
+              className="relative"
+            >
+              <Image src={news2} alt="" className="w-full object-cover" />{" "}
+              <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
+            </Link>{" "}
+            <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
+              <div className="font-semibold text-sm uppercase text-red-500">
+                Membership
+              </div>
+              <h3 className="font-semibold text-lg text-[#002f6c]">
+                <Link href="https://statamic.com/blog/statamic-4-unleashed">
+                  Become part of the FC Bayern family!
+                </Link>
+              </h3>{" "}
+            </div>
+          </div>
+
+          <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
+            <Link
+              href="https://statamic.com/blog/statamic-4-unleashed"
+              className="relative"
+            >
+              <Image src={news3} alt="" className="w-full" />{" "}
+              <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
+            </Link>{" "}
+            <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
+              <div className="font-semibold text-sm uppercase text-red-500">
+                Membership
+              </div>
+              <h3 className="font-semibold text-lg text-[#002f6c]">
+                <Link href="https://statamic.com/blog/statamic-4-unleashed">
+                  Become part of the FC Bayern family!
+                </Link>
+              </h3>{" "}
+            </div>
+          </div>
+
+          <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
+            <Link
+              href="https://statamic.com/blog/statamic-4-unleashed"
+              className="relative"
+            >
+              <Image src={news4} alt="" className="w-full" />{" "}
+              <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
+            </Link>{" "}
+            <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
+              <div className="font-semibold text-sm uppercase text-red-500">
+                Membership
+              </div>
+              <h3 className="font-semibold text-lg text-[#002f6c]">
+                <Link href="https://statamic.com/blog/statamic-4-unleashed">
+                  Become part of the FC Bayern family!
+                </Link>
+              </h3>{" "}
+            </div>
+          </div>
+
+          <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
+            <Link
+              href="https://statamic.com/blog/statamic-4-unleashed"
+              className="relative"
+            >
+              <Image src={news5} alt="" className="w-full" />{" "}
+              <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
+            </Link>{" "}
+            <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
+              <div className="font-semibold text-sm uppercase text-red-500">
+                Membership
+              </div>
+              <h3 className="font-semibold text-lg text-[#002f6c]">
+                <Link href="https://statamic.com/blog/statamic-4-unleashed">
+                  Become part of the FC Bayern family!
+                </Link>
+              </h3>{" "}
+            </div>
+          </div>
+
+            </div>
+          </div>
         </div>
       </div>
 

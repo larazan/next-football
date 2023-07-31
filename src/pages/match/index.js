@@ -36,10 +36,110 @@ export default function News() {
       away_team: "Manchester City",
       home_logo: bayern,
       away_logo: city,
+      fthg: 1,
+      ftag: 1,
+      ftr: "D",
       stadium: "New Japan National Stadium",
-      time: "Wed, 26/07/23, 17:30 GMT+7"
-    }
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 1",
+      home_team: "SV Werder Bremen",
+      away_team: "FC Bayern Munich",
+      home_logo: bremen,
+      away_logo: bayern,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 2",
+      home_team: "FC Bayern Munich",
+      away_team: "FC Augsburg",
+      home_logo: bayern,
+      away_logo: augsburg,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "Stadium Alianz Arena, Munich",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 3",
+      home_team: "Borussia Monchengladbach",
+      away_team: "FC Bayern Munich",
+      home_logo: gladbach,
+      away_logo: bayern,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 4",
+      home_team: "FC Bayern Munich",
+      away_team: "Bayer 04 Leverkusen",
+      home_logo: bayern,
+      away_logo: leverkusen,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "Stadium Alianz Arena, Munich",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 5",
+      home_team: "RB Leipzig",
+      away_team: "FC Bayern Munich",
+      home_logo: rbleipzig,
+      away_logo: bayern,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 6",
+      home_team: "FC Bayern Munich",
+      away_team: "SC Freiburg",
+      home_logo: bayern,
+      away_logo: scfreiburg,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "Stadium Alianz Arena, Munich",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 7",
+      home_team: "FSV Mainz 05",
+      away_team: "FC Bayern Munich",
+      home_logo: mainz,
+      away_logo: bayern,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 8",
+      home_team: "FC Bayern Munich",
+      away_team: "SV Darmstadt",
+      home_logo: bayern,
+      away_logo: darmstadt,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "Stadium Alianz Arena, Munich",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
   ]
+  
     return (
       <>
         <Head>
@@ -206,17 +306,17 @@ export default function News() {
                           </span>
                         </div>
                         <div>
-                          <span className="text-sm font-semibold text-[#002f6c]">
+                          <span className="text-sm font-bold text-[#002f6c]">
                           FC Liverpool
                           </span>
                         </div>
                       </div>
                       <div className="flex flex-col mx-auto w-1/3 justify-end items-center">
-                        <div className="flex items-center space-x-8">
+                        <div className="flex items-center space-x-5">
                           <div className="w-8">
                             <Image src={liverpool} alt />
                           </div>
-                          <div>
+                          <div className="w-16 bg-pink-200 flex items-center justify-center">
                             <span className="text-2xl font-bold">-</span>
                           </div>
                           <div className="w-8">
@@ -234,7 +334,63 @@ export default function News() {
                           </span>
                         </div>
                         <div>
-                          <span className="text-sm font-semibold text-[#002f6c]">
+                          <span className="text-sm font-bold text-[#002f6c]">
+                          FC Bayern Munich
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-col">
+                  <div className="flex px-6  w-full md:w-12/12 ">
+                    <span className="text-lg font-bold text-[#002f6c] uppercase">September</span>
+                  </div>
+                  <div className="flex flex-col w-full px-6">
+                    <div className="flex w-full h-24 py-1.5 border-y">
+                      <div className="flex flex-col w-1/3">
+                        <div>
+                          <span className="text-xs text-gray-400">
+                          Wed, 26/07/23, 17:30 GMT+7
+                          </span>
+                        </div>
+                        <div>
+                          <span className="text-sm font-bold text-[#002f6c]">
+                          FC Liverpool
+                          </span>
+                        </div>
+                      </div>
+                      <div className="flex flex-col mx-auto w-1/3 justify-end items-center">
+                        <div className="flex items-center space-x-5">
+                          <div className="w-8">
+                            <Image src={liverpool} alt />
+                          </div>
+                          <div className="bg-pink-200 w-16 flex space-x-2 items-center justify-center">
+                  <div>
+                    <span className="text-lg text-white2 font-bold">32</span>
+                  </div>
+                  <span className="text-lg text-white2 font-bold">:</span>
+                  <div>
+                    <span className="text-lg text-white2 font-bold">22</span>
+                  </div>
+                </div>
+                          <div className="w-8">
+                            <Image src={bayern} alt />
+                          </div>
+                        </div>
+                        <div>
+                          <span className="text-xs text-gray-400">Stadium: Allianz Arena, Munich</span>
+                        </div>
+                      </div>
+                      <div className="flex flex-col w-1/3 items-end">
+                      <div>
+                          <span className="text-xs text-gray-400">
+                          Singapore Trophy, Friendly
+                          </span>
+                        </div>
+                        <div>
+                          <span className="text-sm font-bold text-[#002f6c]">
                           FC Bayern Munich
                           </span>
                         </div>

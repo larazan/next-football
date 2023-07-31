@@ -6,11 +6,12 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GoTop from "@/components/GoTop";
+import MatchResult from "@/components/MatchResult";
 
-import muller from "@/assets/img/muller_training.png";
+import report from "@/assets/img/match_report.png";
 import NewsRelated from "@/components/NewsRelated";
 
-export default function Detail() {
+export default function MatchReport() {
   return (
     <>
       <Head>
@@ -22,36 +23,90 @@ export default function Detail() {
       <Header />
       <GoTop />
 
+      <MatchResult />
+
       <div>
-        <Image src={muller} alt="" />
+        <Image src={report} alt="" />
       </div>
 
-      <div className="h-max flex flex-col py-0 md:py-6  bg-[#f5f7f9]">
-        <div className="flex flex-col space-y-3 mx-auto w-8/12 justify-center">
-          <div className="flex flex-row space-x-3">
+      <div className="h-max flex flex-col py-0   bg-[#f5f7f9]">
+        
+          <div className="flex flex-col py-4 px-6 space-y-1 mx-auto w-full ">
             <div>
-              <span className="text-sm font-semibold text-[#dc052d]">Individual Training</span>
+                <span className="text-[#dc052d] text-xs font-bold capitalize">Audi Football Summit</span>
             </div>
-            <div>
-              <span className="text-sm font-semibold text-gray-400">Fri, 21/07/23, 20:45 GMT+7</span>
-            </div>
-          </div>
-          <div>
-            <h1 className="text-2xl font-bold text-[#002f6c]">Thomas Muller to stay in Munich</h1>
-          </div>
-          <div className="py-6">
-            <p>
-              Thomas Muller will continue to train at Sabaner strabe while FC
-              Bayern head off fot this years Audi Summer Tour in Tokyo and
-              Singapore on Monday. This is because of muscular problems in his
-              left hip. Following consultations with coaches and medical team,
-              the attacker will remain in Munich and use the facilities at the
-              clubs training ground.
-            </p>
-          </div>
+            <h1 className="text-2xl font-bold text-[#002f6c] uppercase2">
+              Reds fall to City 
+            </h1>
+            <div className="text-md font-mabry leading-snug">
+                  <p className="md:py-3">
+                    👋 Welcome fellow{" "}
+                    <a
+                      className="text-green-500 no-underline hover:underline"
+                      href="https://www.tailwindcss.com"
+                    >
+                      Tailwind CSS
+                    </a>{" "}
+                    and miminal monochrome blog fan. This starter template
+                    provides a starting point to create your own minimal
+                    monochrome blog using Tailwind CSS and vanilla Javascript.
+                  </p>
+
+                  <p className="py-3">
+                    The basic blog page layout is available and all using the
+                    default Tailwind CSS classes (although there are a few
+                    hardcoded style tags). If you are going to use this in your
+                    project, you will want to convert the classes into
+                    components.
+                  </p>
+
+                  <p className="py-3">
+                    Sed dignissim lectus ut tincidunt vulputate. Fusce tincidunt
+                    lacus purus, in mattis tortor sollicitudin pretium.
+                    Phasellus at diam posuere, scelerisque nisl sit amet,
+                    tincidunt urna. Cras nisi diam, pulvinar ut molestie eget,
+                    eleifend ac magna. Sed at lorem condimentum, dignissim lorem
+                    eu, blandit massa. Phasellus eleifend turpis vel erat
+                    bibendum scelerisque. Maecenas id risus dictum, rhoncus odio
+                    vitae, maximus purus. Etiam efficitur dolor in dolor
+                    molestie ornare. Aenean pulvinar diam nec neque tincidunt,
+                    vitae molestie quam fermentum. Donec ac pretium diam.
+                    Suspendisse sed odio risus. Nunc nec luctus nisi. Class
+                    aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos. Duis nec nulla eget sem
+                    dictum elementum.
+                  </p>
+
+                  <p className="py-3">
+                    Maecenas accumsan lacus sit amet elementum porta. Aliquam eu
+                    libero lectus. Fusce vehicula dictum mi. In non dolor at sem
+                    ullamcorper venenatis ut sed dui. Ut ut est quam.
+                    Suspendisse quam quam, commodo sit amet placerat in,
+                    interdum a ipsum. Morbi sit amet tellus scelerisque tortor
+                    semper posuere.
+                  </p>
+                  <p className="py-3">
+                    Morbi varius posuere blandit. Praesent gravida bibendum
+                    neque eget commodo. Duis auctor ornare mauris, eu accumsan
+                    odio viverra in. Proin sagittis maximus pharetra. Nullam
+                    lorem mauris, faucibus ut odio tempus, ultrices aliquet ex.
+                    Nam id quam eget ipsum luctus hendrerit. Ut eros magna,
+                    eleifend ac ornare vulputate, pretium nec felis.
+                  </p>
+                  <p className="py-3">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices posuere cubilia Curae; Nunc vitae pretium elit.
+                    Cras leo mauris, tristique in risus ac, tristique rutrum
+                    velit. Mauris accumsan tempor felis vitae gravida. Cras
+                    egestas convallis malesuada. Etiam ac ante id tortor
+                    vulputate pretium. Maecenas vel sapien suscipit, elementum
+                    odio et, consequat tellus.
+                  </p>
+                </div>
+          
         </div>
         <div className="flex flex-row py-6 border-t">
-          <div className="flex flex-row mx-auto w-8/12">
+          <div className="flex flex-row mx-auto w-11/12">
             <div className="flex flex-col w-1/2 ">
               <div>
                 <span className="text-sm font-semibold text-gray-400">Topics of this article</span>
@@ -116,7 +171,8 @@ export default function Detail() {
           </div>
         </div>
       </div>
-      <NewsRelated />
+
+<NewsRelated />
       <Footer />
     </>
   );

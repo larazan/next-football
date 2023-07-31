@@ -10,6 +10,7 @@ import GoTop from "@/components/GoTop";
 import lineup from "@/assets/img/lineup.png";
 import bayern from "@/assets/img/clubs/bayern.png";
 import city from "@/assets/img/clubs/manchester-city.png";
+import MatchResult from "@/components/MatchResult";
 
 export default function Lineup() {
   const bayernFirstData = [
@@ -362,179 +363,7 @@ export default function Lineup() {
       <Header />
       <GoTop />
 
-      <div>
-        <Image src={lineup} alt="" />
-      </div>
-
-      <div className="flex flex-col px-4 py-2 space-y-2 bg-blue-900 ">
-        <div className="flex mx-auto w-10/12 items-center space-x-6">
-          <div className="flex w-1/2 justify-end">
-            <span className="text-xs font-semibold text-gray-400">
-              Wed, 26/07/23, 17:30 GMT+7
-            </span>
-          </div>
-          <div className="flex w-1/2 justify-start">
-            <span className="text-xs font-semibold text-gray-400">
-              Singapore Trophy, Friendly
-            </span>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div className="flex w-full h-full py-1.5">
-            <div className="flex flex-col mx-auto w-10/12  items-center">
-              <div className="flex w-full items-center space-x-1">
-                <div className="w-5/12 flex items-center space-x-2 justify-end">
-                  <div>
-                    <span className="text-sm font-bold text-white">
-                      FC Bayern Munich
-                    </span>
-                  </div>
-                  <div className="w-8">
-                    <Image src={bayern} alt />
-                  </div>
-                </div>
-                <div className="w-2/12 flex space-x-2 items-center justify-center">
-                  <div>
-                    <span className="text-lg text-white font-bold">1</span>
-                  </div>
-                  <span className="text-lg text-white font-bold">:</span>
-                  <div>
-                    <span className="text-lg text-white font-bold">2</span>
-                  </div>
-                </div>
-                <div className="w-5/12 flex items-center space-x-2 justify-start">
-                  <div className="w-8">
-                    <Image src={city} alt />
-                  </div>
-                  <div>
-                    <span className="text-sm font-bold text-white">
-                      Manchester City
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <span className="text-xs text-gray-400 font-semibold">
-                  (0:1)
-                </span>
-              </div>
-              <div className="flex w-full items-center2 space-x-8">
-                <div className="w-1/2 flex justify-end">
-                  <ul>
-                    <li>
-                      <div className="flex space-x-2 items-center">
-                        <div>
-                          <span className="text-white text-xs">Mathys Tel</span>
-                        </div>
-                        <div>
-                          <span className="text-white text-xs font-semibold">
-                            82'
-                          </span>
-                        </div>
-                        <div className="text-white">
-                          <svg
-                            height="16"
-                            width="16"
-                            viewBox="0 0 24 24"
-                            preserveAspectRatio="xMidYMid meet"
-                            role="img"
-                            aria-hidden="true"
-                            focusable="false"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
-                          >
-                            <title>icon</title>
-                            <path
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                              d="M11.25 2.77997C7.60694 3.07228 4.5594 5.47541 3.33127 8.76549L7.89199 10.1812L11.25 7.48923V2.77997ZM2.75 12C2.75 11.3874 2.80955 10.7887 2.92318 10.2094L7.38099 11.5932L8.69652 15.8532L6.37133 19.3409C4.16941 17.6501 2.75 14.9908 2.75 12ZM7.63118 20.1553C8.9323 20.8538 10.4199 21.25 12 21.25C13.5801 21.25 15.0677 20.8538 16.3688 20.1553L14.0986 16.75H9.9014L7.63118 20.1553ZM15.3035 15.8531L17.6287 19.3409C19.8306 17.6501 21.25 14.9908 21.25 12C21.25 11.3874 21.1904 10.7887 21.0768 10.2094L16.619 11.5932L15.3035 15.8531ZM12.75 2.77997C16.3931 3.07228 19.4406 5.47541 20.6687 8.76549L16.108 10.1812L12.75 7.48924V2.77997ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM8.86713 11.3219L10.0802 15.25H13.9198L15.1329 11.3219L12 8.81048L8.86713 11.3219Z"
-                              fill="currentColor"
-                            ></path>
-                          </svg>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div className="w-1/2 flex justify-start">
-                  <ul>
-                    <li>
-                      <div className="flex space-x-2 items-center">
-                        <div className="text-white">
-                          <svg
-                            height="16"
-                            width="16"
-                            viewBox="0 0 24 24"
-                            preserveAspectRatio="xMidYMid meet"
-                            role="img"
-                            aria-hidden="true"
-                            focusable="false"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
-                          >
-                            <title>icon</title>
-                            <path
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                              d="M11.25 2.77997C7.60694 3.07228 4.5594 5.47541 3.33127 8.76549L7.89199 10.1812L11.25 7.48923V2.77997ZM2.75 12C2.75 11.3874 2.80955 10.7887 2.92318 10.2094L7.38099 11.5932L8.69652 15.8532L6.37133 19.3409C4.16941 17.6501 2.75 14.9908 2.75 12ZM7.63118 20.1553C8.9323 20.8538 10.4199 21.25 12 21.25C13.5801 21.25 15.0677 20.8538 16.3688 20.1553L14.0986 16.75H9.9014L7.63118 20.1553ZM15.3035 15.8531L17.6287 19.3409C19.8306 17.6501 21.25 14.9908 21.25 12C21.25 11.3874 21.1904 10.7887 21.0768 10.2094L16.619 11.5932L15.3035 15.8531ZM12.75 2.77997C16.3931 3.07228 19.4406 5.47541 20.6687 8.76549L16.108 10.1812L12.75 7.48924V2.77997ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM8.86713 11.3219L10.0802 15.25H13.9198L15.1329 11.3219L12 8.81048L8.86713 11.3219Z"
-                              fill="currentColor"
-                            ></path>
-                          </svg>
-                        </div>
-                        <div>
-                          <span className="text-white text-xs font-semibold">
-                            22'
-                          </span>
-                        </div>
-                        <div>
-                          <span className="text-white text-xs ">
-                            James McAtee
-                          </span>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="flex space-x-2 items-center">
-                        <div className="text-white">
-                          <svg
-                            height="16"
-                            width="16"
-                            viewBox="0 0 24 24"
-                            preserveAspectRatio="xMidYMid meet"
-                            role="img"
-                            aria-hidden="true"
-                            focusable="false"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
-                          >
-                            <title>icon</title>
-                            <path
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                              d="M11.25 2.77997C7.60694 3.07228 4.5594 5.47541 3.33127 8.76549L7.89199 10.1812L11.25 7.48923V2.77997ZM2.75 12C2.75 11.3874 2.80955 10.7887 2.92318 10.2094L7.38099 11.5932L8.69652 15.8532L6.37133 19.3409C4.16941 17.6501 2.75 14.9908 2.75 12ZM7.63118 20.1553C8.9323 20.8538 10.4199 21.25 12 21.25C13.5801 21.25 15.0677 20.8538 16.3688 20.1553L14.0986 16.75H9.9014L7.63118 20.1553ZM15.3035 15.8531L17.6287 19.3409C19.8306 17.6501 21.25 14.9908 21.25 12C21.25 11.3874 21.1904 10.7887 21.0768 10.2094L16.619 11.5932L15.3035 15.8531ZM12.75 2.77997C16.3931 3.07228 19.4406 5.47541 20.6687 8.76549L16.108 10.1812L12.75 7.48924V2.77997ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM8.86713 11.3219L10.0802 15.25H13.9198L15.1329 11.3219L12 8.81048L8.86713 11.3219Z"
-                              fill="currentColor"
-                            ></path>
-                          </svg>
-                        </div>
-                        <div>
-                          <span className="text-white text-xs font-semibold">
-                            87'
-                          </span>
-                        </div>
-                        <div>
-                          <span className="text-white text-xs ">
-                            aymeric Laporte
-                          </span>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <MatchResult />
 
       <div className="h-max flex flex-col py-0 md:py-6 px-6 bg-[#f5f7f9]">
         <div>
@@ -563,8 +392,8 @@ export default function Lineup() {
                               fill="none"
                             >
                               <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
+                                fillRule="evenodd"
+                                clipRule="evenodd"
                                 d="M9.00398 0H5.74805C5.48283 0 5.22848 0.105357 5.04094 0.292893L1.04094 4.29289C0.650416 4.68342 0.650415 5.31658 1.04094 5.70711L2.96006 7.62623C3.35058 8.01675 3.98375 8.01675 4.37427 7.62623L5.33383 6.66667V19C5.33383 19.5523 5.78155 20 6.33383 20H17.6672C18.2195 20 18.6672 19.5523 18.6672 19V6.66667L19.6267 7.62623C20.0173 8.01675 20.6504 8.01675 21.0409 7.62623L22.9601 5.70711C23.3506 5.31658 23.3506 4.68342 22.9601 4.29289L18.9601 0.292893C18.7725 0.105357 18.5182 0 18.253 0H15.3303C14.7686 1.18247 13.5634 1.99999 12.1672 1.99999C10.771 1.99999 9.56572 1.18247 9.00398 0Z"
                                 fill="currentColor"
                               ></path>
@@ -622,8 +451,8 @@ export default function Lineup() {
                               fill="none"
                             >
                               <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
+                                fillRule="evenodd"
+                                clipRule="evenodd"
                                 d="M9.00398 0H5.74805C5.48283 0 5.22848 0.105357 5.04094 0.292893L1.04094 4.29289C0.650416 4.68342 0.650415 5.31658 1.04094 5.70711L2.96006 7.62623C3.35058 8.01675 3.98375 8.01675 4.37427 7.62623L5.33383 6.66667V19C5.33383 19.5523 5.78155 20 6.33383 20H17.6672C18.2195 20 18.6672 19.5523 18.6672 19V6.66667L19.6267 7.62623C20.0173 8.01675 20.6504 8.01675 21.0409 7.62623L22.9601 5.70711C23.3506 5.31658 23.3506 4.68342 22.9601 4.29289L18.9601 0.292893C18.7725 0.105357 18.5182 0 18.253 0H15.3303C14.7686 1.18247 13.5634 1.99999 12.1672 1.99999C10.771 1.99999 9.56572 1.18247 9.00398 0Z"
                                 fill="currentColor"
                               ></path>
@@ -691,8 +520,8 @@ export default function Lineup() {
                               fill="none"
                             >
                               <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
+                                fillRule="evenodd"
+                                clipRule="evenodd"
                                 d="M9.00398 0H5.74805C5.48283 0 5.22848 0.105357 5.04094 0.292893L1.04094 4.29289C0.650416 4.68342 0.650415 5.31658 1.04094 5.70711L2.96006 7.62623C3.35058 8.01675 3.98375 8.01675 4.37427 7.62623L5.33383 6.66667V19C5.33383 19.5523 5.78155 20 6.33383 20H17.6672C18.2195 20 18.6672 19.5523 18.6672 19V6.66667L19.6267 7.62623C20.0173 8.01675 20.6504 8.01675 21.0409 7.62623L22.9601 5.70711C23.3506 5.31658 23.3506 4.68342 22.9601 4.29289L18.9601 0.292893C18.7725 0.105357 18.5182 0 18.253 0H15.3303C14.7686 1.18247 13.5634 1.99999 12.1672 1.99999C10.771 1.99999 9.56572 1.18247 9.00398 0Z"
                                 fill="currentColor"
                               ></path>
@@ -750,8 +579,8 @@ export default function Lineup() {
                               fill="none"
                             >
                               <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
+                                fillRule="evenodd"
+                                clipRule="evenodd"
                                 d="M9.00398 0H5.74805C5.48283 0 5.22848 0.105357 5.04094 0.292893L1.04094 4.29289C0.650416 4.68342 0.650415 5.31658 1.04094 5.70711L2.96006 7.62623C3.35058 8.01675 3.98375 8.01675 4.37427 7.62623L5.33383 6.66667V19C5.33383 19.5523 5.78155 20 6.33383 20H17.6672C18.2195 20 18.6672 19.5523 18.6672 19V6.66667L19.6267 7.62623C20.0173 8.01675 20.6504 8.01675 21.0409 7.62623L22.9601 5.70711C23.3506 5.31658 23.3506 4.68342 22.9601 4.29289L18.9601 0.292893C18.7725 0.105357 18.5182 0 18.253 0H15.3303C14.7686 1.18247 13.5634 1.99999 12.1672 1.99999C10.771 1.99999 9.56572 1.18247 9.00398 0Z"
                                 fill="currentColor"
                               ></path>
