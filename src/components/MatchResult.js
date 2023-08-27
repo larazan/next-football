@@ -185,26 +185,32 @@ export default function MatchResult() {
 
       <div className="flex w-full px-6 py-4">
         <div className="flex space-x-2">
+          <Link href={'/match-report'} >
           <button className="flex rounded px-2 py-1 items-center bg-[#dc052d] ">
             <span className=" font-semibold text-white text-sm">
                 Report
             </span>
           </button>
+          </Link>
           <button className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
             <span className=" font-semibold text-[#002f6c] text-sm">
                 Gallery
             </span>
           </button>
+          <Link href={'/lineup'} >
           <button className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
             <span className=" font-semibold text-[#002f6c] text-sm">
               Lineup
             </span>
           </button>
+          </Link>
+          <Link href={'/statistic'} >
           <button className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
             <span className=" font-semibold text-[#002f6c] text-sm">
                 Statistics
             </span>
           </button>
+          </Link>
         </div>
       </div>
     </>

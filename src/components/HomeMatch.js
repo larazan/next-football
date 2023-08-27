@@ -16,8 +16,8 @@ import leverkusen from "@/assets/img/clubs/leverkusen.png";
 import liverpool from "@/assets/img/clubs/liverpool.png";
 import mainz from "@/assets/img/clubs/mainz.png";
 import city from "@/assets/img/clubs/manchester-city.png";
-import leipzig from "@/assets/img/clubs/rbleipzig.png";
-import freiburg from "@/assets/img/clubs/scfreiburg.png";
+import rbleipzig from "@/assets/img/clubs/rbleipzig.png";
+import scfreiburg from "@/assets/img/clubs/scfreiburg.png";
 import union from "@/assets/img/clubs/union_berlin.png";
 import vfb from "@/assets/img/clubs/vfb.png";
 import bremen from "@/assets/img/clubs/werderbremen.png";
@@ -62,10 +62,109 @@ export default function HomeMatch() {
       away_team: "Manchester City",
       home_logo: bayern,
       away_logo: city,
+      fthg: 1,
+      ftag: 1,
+      ftr: "D",
       stadium: "New Japan National Stadium",
-      time: "Wed, 26/07/23, 17:30 GMT+7"
-    }
-  ]
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 1",
+      home_team: "SV Werder Bremen",
+      away_team: "FC Bayern Munich",
+      home_logo: bremen,
+      away_logo: bayern,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 2",
+      home_team: "FC Bayern Munich",
+      away_team: "FC Augsburg",
+      home_logo: bayern,
+      away_logo: augsburg,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "Stadium Alianz Arena, Munich",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 3",
+      home_team: "Borussia Monchengladbach",
+      away_team: "FC Bayern Munich",
+      home_logo: gladbach,
+      away_logo: bayern,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 4",
+      home_team: "FC Bayern Munich",
+      away_team: "Bayer 04 Leverkusen",
+      home_logo: bayern,
+      away_logo: leverkusen,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "Stadium Alianz Arena, Munich",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 5",
+      home_team: "RB Leipzig",
+      away_team: "FC Bayern Munich",
+      home_logo: rbleipzig,
+      away_logo: bayern,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 6",
+      home_team: "FC Bayern Munich",
+      away_team: "SC Freiburg",
+      home_logo: bayern,
+      away_logo: scfreiburg,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "Stadium Alianz Arena, Munich",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 7",
+      home_team: "FSV Mainz 05",
+      away_team: "FC Bayern Munich",
+      home_logo: mainz,
+      away_logo: bayern,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+    {
+      competition: "Bundesliga, Matchday 8",
+      home_team: "FC Bayern Munich",
+      away_team: "SV Darmstadt",
+      home_logo: bayern,
+      away_logo: darmstadt,
+      fthg: null,
+      ftag: null,
+      ftr: null,
+      stadium: "Stadium Alianz Arena, Munich",
+      time: "Wed, 26/07/23, 17:30 GMT+7",
+    },
+  ];
 
   return (
     <>
@@ -170,31 +269,68 @@ export default function HomeMatch() {
             ref={scrl}
             onScroll={scrollCheck}
           >
-            <div className="transition-all duration-150 flex mr-[.5em] ">
-              <div className="flex w-[180px] h-[150px] justify-center bg-white">
-                <div className=" bg-white  flex ">
-                  <Link
-                    href="/"
-                    className="flex flex-col space-y-3 justify-center items-center"
+            {matchData.map((data, index) => {
+              return (
+                <>
+                  <div
+                    className="transition-all duration-150 flex mr-[.5em] "
+                    key={index}
                   >
-                    <div className="flex space-x-3">
-                      <Image src={bayern} alt="" className="w-13 h-13" />
-                      <Image src={bayern} alt="" className="w-13 h-13" />
-                    </div>
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="flex space-x-1">
-                        <div className="font-bold text-2xl">1</div>
-                        <div className="font-bold text-2xl">:</div>
-                        <div className="font-bold text-2xl">3</div>
+                    <div className="flex w-[180px] h-[150px] justify-center bg-white">
+                      <div className=" bg-white  flex ">
+                        <Link
+                          href="/"
+                          className="flex flex-col space-y-3 justify-center items-center"
+                        >
+                          <div className="flex space-x-3">
+                            <Image
+                              src={data.home_logo}
+                              alt=""
+                              className="w-13 h-13"
+                            />
+                            <Image
+                              src={data.away_logo}
+                              alt=""
+                              className="w-13 h-13"
+                            />
+                          </div>
+                          <div className="flex flex-col justify-center items-center">
+                            {data.ftr == null ? (
+                              <>
+                                <div className="">
+                                  <span className="font-bold text-2xl text-[#002f6c]">
+                                    Sat, 29/08
+                                  </span>
+                                </div>
+                              </>
+                            ) : (
+                              <>
+                                <div className="flex space-x-1 text-[#002f6c]">
+                                  <div className="font-bold text-2xl">
+                                    {data.fthg}
+                                  </div>
+                                  <div className="font-bold text-2xl">:</div>
+                                  <div className="font-bold text-2xl">
+                                    {data.ftag}
+                                  </div>
+                                </div>
+                              </>
+                            )}
+
+                            <div>
+                              <span className="text-sm text-gray-500">
+                                17:00 GMT+7
+                              </span>
+                            </div>
+                          </div>
+                        </Link>{" "}
                       </div>
-                      <div>
-                        <span className="text-sm text-gray-500">17:00 GMT+7</span>
-                      </div>
                     </div>
-                  </Link>{" "}
-                </div>
-              </div>
-            </div>
+                  </div>
+                </>
+              );
+            })}
+
             {/*  */}
             <div className="transition-all duration-150 flex mr-[.5em] ">
               <div className="flex w-[180px] h-[150px] justify-center bg-white">
@@ -214,7 +350,9 @@ export default function HomeMatch() {
                         <div className="font-bold text-2xl">3</div>
                       </div>
                       <div>
-                        <span className="text-sm text-gray-500">17:00 GMT+7</span>
+                        <span className="text-sm text-gray-500">
+                          17:00 GMT+7
+                        </span>
                       </div>
                     </div>
                   </Link>{" "}
@@ -222,7 +360,6 @@ export default function HomeMatch() {
               </div>
             </div>
             {/*  */}
-           
           </div>
         </div>
       </div>

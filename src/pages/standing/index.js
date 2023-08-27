@@ -297,16 +297,16 @@ export default function Standing() {
             </div>
             <div className="flex px-6 py-5">
                 <table className="w-full">
-                    <thead className="py-4">
-                        <tr className="border-y w-full">
-                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-blue-700">Rank</span></td>
-                            <td className="w-5/12"><span className="text-xs uppercase font-bold justify-start text-blue-700">Team</span></td>
-                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-blue-700">GP</span></td>
-                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-blue-700">W</span></td>
-                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-blue-700">D</span></td>
-                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-blue-700">L</span></td>
-                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-blue-700">Score</span></td>
-                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-blue-700">SD</span></td>
+                    <thead className="py-6">
+                        <tr className="border-y w-full h-10 ">
+                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">Rank</span></td>
+                            <td className="w-5/12"><span className="text-xs uppercase font-bold justify-start text-[#002f6c]">Team</span></td>
+                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">GP</span></td>
+                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">W</span></td>
+                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">D</span></td>
+                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">L</span></td>
+                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">Score</span></td>
+                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">SD</span></td>
                         </tr>
                     </thead>
                     <tbody>
@@ -314,19 +314,19 @@ export default function Standing() {
                         return (
                             <>
                             <tr className="py-4 h-11 border-b" key={index}>
-                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-blue-700">{index+1}</span></td>
+                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">{index+1}</span></td>
                             <td className="w-5/12">
                                 <div className="flex space-x-2 items-center">
                                     <Image src={data.logo} alt="" className="w-7" />
-                                <span className="text-sm uppercase font-bold justify-start text-blue-700">{data.club}</span>
+                                <span className="text-xs uppercase font-bold justify-start text-[#002f6c]">{data.club}</span>
                                 </div>
                             </td>
-                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-blue-700">{data.gameplay}</span></td>
-                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-blue-700">{data.win}</span></td>
-                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-blue-700">{data.draw}</span></td>
-                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-blue-700">{data.lose}</span></td>
-                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-blue-700">{data.score}</span></td>
-                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-blue-700">{data.sd}</span></td>
+                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">{data.gameplay}</span></td>
+                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">{data.win}</span></td>
+                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">{data.draw}</span></td>
+                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">{data.lose}</span></td>
+                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">{data.score}</span></td>
+                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">{data.sd}</span></td>
                         </tr>
                             </>
                         );

@@ -79,7 +79,7 @@ export default function News() {
             <div className="grid grid-cols-2 mx-auto gap-x-7 gap-y-8 sm:grid-cols-1 md:grid-cols-2">
             <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
             <Link
-              href="https://statamic.com/blog/statamic-4-unleashed"
+              href={'/news/1'}
               className="relative"
             >
               <Image src={news2} alt="" className="w-full object-cover" />{" "}
@@ -90,7 +90,7 @@ export default function News() {
                 Membership
               </div>
               <h3 className="font-semibold text-lg text-[#002f6c]">
-                <Link href="https://statamic.com/blog/statamic-4-unleashed">
+                <Link href={'/news/1'}>
                   Become part of the FC Bayern family!
                 </Link>
               </h3>{" "}
@@ -99,7 +99,7 @@ export default function News() {
 
           <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
             <Link
-              href="https://statamic.com/blog/statamic-4-unleashed"
+              href={'/news/1'}
               className="relative"
             >
               <Image src={news3} alt="" className="w-full" />{" "}
@@ -110,7 +110,7 @@ export default function News() {
                 Membership
               </div>
               <h3 className="font-semibold text-lg text-[#002f6c]">
-                <Link href="https://statamic.com/blog/statamic-4-unleashed">
+                <Link href={'/news/1'}>
                   Become part of the FC Bayern family!
                 </Link>
               </h3>{" "}
@@ -119,7 +119,7 @@ export default function News() {
 
           <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
             <Link
-              href="https://statamic.com/blog/statamic-4-unleashed"
+              href={'/news/1'}
               className="relative"
             >
               <Image src={news4} alt="" className="w-full" />{" "}
@@ -130,7 +130,7 @@ export default function News() {
                 Membership
               </div>
               <h3 className="font-semibold text-lg text-[#002f6c]">
-                <Link href="https://statamic.com/blog/statamic-4-unleashed">
+                <Link href={'/news/1'}>
                   Become part of the FC Bayern family!
                 </Link>
               </h3>{" "}
@@ -139,7 +139,7 @@ export default function News() {
 
           <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
             <Link
-              href="https://statamic.com/blog/statamic-4-unleashed"
+              href={'/news/1'}
               className="relative"
             >
               <Image src={news5} alt="" className="w-full" />{" "}
@@ -150,7 +150,7 @@ export default function News() {
                 Membership
               </div>
               <h3 className="font-semibold text-lg text-[#002f6c]">
-                <Link href="https://statamic.com/blog/statamic-4-unleashed">
+                <Link href={'/news/1'}>
                   Become part of the FC Bayern family!
                 </Link>
               </h3>{" "}
