@@ -22,12 +22,14 @@ export default function Detail() {
       <Header />
       <GoTop />
 
-      <div>
+    <div className="h-max flex flex-col py-0 md:py-6  bg-[#f5f7f9]">
+      <div className="mx-auto w-full lg:w-1/2">
         <Image src={muller} alt="" />
+      </div>
       </div>
 
       <div className="h-max flex flex-col py-0 md:py-6  bg-[#f5f7f9]">
-        <div className="flex flex-col space-y-3 mx-auto w-8/12 justify-center">
+        <div className="flex flex-col space-y-3 mx-auto w-8/12 lg:w-1/2 justify-center">
           <div className="flex flex-row space-x-3">
             <div>
               <span className="text-sm font-semibold text-[#dc052d]">Individual Training</span>
@@ -51,7 +53,7 @@ export default function Detail() {
           </div>
         </div>
         <div className="flex flex-row py-6 border-t">
-          <div className="flex flex-row mx-auto w-8/12">
+          <div className="flex flex-row mx-auto w-8/12 lg:w-1/2">
             <div className="flex flex-col w-1/2 ">
               <div>
                 <span className="text-sm font-semibold text-gray-400">Topics of this article</span>

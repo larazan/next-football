@@ -27,8 +27,8 @@ export default function News() {
       <Header />
       <GoTop />
 
-      <div className="h-max flex flex-row space-x-6 px-6 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
-        <div className="flex flex-col space-y-4 w-full">
+      <div className="h-max  flex flex-row space-x-6 px-6 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
+        <div className="flex flex-col space-y-4 mx-auto w-full lg:w-1/2">
           <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
             <span className="text-2xl font-bold text-[#002f6c] uppercase">
               News

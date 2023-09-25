@@ -205,14 +205,21 @@ export default function Teams() {
       <GoTop />
 
       <div className="h-max w-full flex flex-col space-y-4 px-2 md:px-6 py-0 md:py-6 justify-center2 items-center2 bg-[#f5f7f9]">
+        <div className="mx-auto w-full lg:w-1/2">
         <Image src={audi} alt="" />
+        </div>
       </div>
-      <div>
+      <div className="h-max w-full flex flex-col space-y-4 px-2 md:px-6 py-0  justify-center2 items-center2 bg-[#f5f7f9]">
+      <div className="mx-auto w-full lg:w-1/2">
         <Image src={team} alt="" />
+        </div>
       </div>
 
       <div className="h-max w-full flex flex-col space-y-4 px-2 md:px-6 py-0 md:py-6 justify-center2 items-center2 bg-[#f5f7f9]">
-        <section className="flex flex-col">
+        <div className="mx-auto w-full lg:w-1/2">
+
+        
+        <section className="flex flex-col ">
           <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
             <span className="text-2xl font-bold text-[#002f6c]">
               GoalKeepers
@@ -344,6 +351,7 @@ export default function Teams() {
             })}
           </div>
         </section>
+        </div>
       </div>
 
       <Footer />

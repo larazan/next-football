@@ -153,7 +153,7 @@ export default function News() {
 
       <div className="relative  block min-h-80 lg:col-span-2 lg:h-full">
         <div className="py-0 flex flex-col space-y-2">
-          <div className="h-max flex flex-col ">
+          <div className="h-max flex flex-col mx-auto w-full lg:w-1/2">
             <div className="flex justify-between py-4 px-6 border-b items-start">
               <div className="flex space-x-2">
                 <button className="flex rounded px-2 py-1 items-center bg-[#dc052d] ">

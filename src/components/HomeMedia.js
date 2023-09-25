@@ -9,7 +9,7 @@ import media4 from "@/assets/img/230708-bayerischer-sportpreis-ehrung-musiala-St
 export default function HomeMedia() {
     return (
       <>
-<div className="h-max flex  px-6 py-0 md:py-4 justify-center2 items-center2 bg-[#000e29]">
+<div className="h-max flex mx-auto w-full lg:w-1/2 px-6 py-0 md:py-4 justify-center2 items-center2 bg-[#000e29]">
     <div className="flex flex-col space-y-3  py-6 mx-auto w-full md:w-12/12 ">
         <span className="text-white text-2xl uppercase font-semibold">FC Bayern TV</span>
         <div className="flex space-x-3">

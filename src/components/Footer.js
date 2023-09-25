@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <>
       <footer className="flex flex-col space-y-1 bg-[#dc052d] max-h-screen">
-        <div className="flex flex-col space-y-6 mx-auto py-6 w-11/12 md:w-7/12 justify-center items-center">
+        <div className="flex flex-col space-y-6 mx-auto py-6 w-11/12 md:w-7/12 lg:w-1/2 justify-center items-center">
             <div>
                 <span className="uppercase text-lg text-white font-bold">partner</span>
             </div>
@@ -161,7 +161,7 @@ export default function Footer() {
                 </Link>
             </div>
         </div>
-        <div className="flex justify-between mx-auto text-white py-6 w-11/12 md:w-11/12  items-center">
+        <div className="flex justify-between mx-auto text-white py-6 w-11/12 md:w-11/12 lg:w-1/2 items-center">
             <div className="flex flex-col">
                 <div className="flex space-x-2">
                     <Link href={"/"}>

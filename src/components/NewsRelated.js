@@ -9,7 +9,7 @@ export default function NewsRelated() {
   return (
     <>
       <div className="h-max flex flex-col space-y-3 px-6 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
-        <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
+        <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 lg:w-1/2 space-x-6 items-center">
             <Link href={"/"} className="flex space-x-1 items-center hover:opacity-80">
             <span className="text-2xl font-bold text-[#002f6c] uppercase">Related News</span>
             
@@ -59,7 +59,7 @@ export default function NewsRelated() {
             </div>
           </div> */}
         </div>
-        <div className="flex space-x-3  mx-auto w-full md:w-12/12 ">
+        <div className="flex space-x-3  mx-auto w-full md:w-12/12 lg:w-1/2">
           <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 ">
             <Link
               href="https://statamic.com/blog/statamic-4-unleashed"

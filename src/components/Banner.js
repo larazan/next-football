@@ -9,7 +9,7 @@ import newsletter from "@/assets/img/newsletter.jpg";
 export default function Banner() {
   return (
     <>
-      <div className="h-max w-full flex flex-col space-y-4 px-2 md:px-6 py-0 md:py-6 justify-center2 items-center2 bg-[#f5f7f9]">
+      <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-4 px-2 md:px-6 lg:px-0 py-0 md:py-6 justify-center2 items-center2 bg-[#f5f7f9]">
         <Image src={banne} alt="" />
         <div className="flex space-x-4 w-full">
           <div className="w-1/3">

@@ -9,7 +9,7 @@ import city from "@/assets/img/clubs/manchester-city.png";
 export default function MatchResult() {
   return (
     <>
-      <div>
+      <div className="mx-auto w-full lg:w-1/2">
         <Image src={lineup} alt="" />
       </div>
 
@@ -183,7 +183,7 @@ export default function MatchResult() {
         </div>
       </div>
 
-      <div className="flex w-full px-6 py-4">
+      <div className="flex px-6 py-4 mx-auto w-full lg:w-1/2">
         <div className="flex space-x-2">
           <Link href={'/match-report'} >
           <button className="flex rounded px-2 py-1 items-center bg-[#dc052d] ">

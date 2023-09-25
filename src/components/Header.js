@@ -19,7 +19,8 @@ export default function Header() {
   return (
     <>
       <header className=" z-20 flex flex-col  w-full">
-        <div className="flex  w-full top-0 md:m-0 px-4 md:px-5 py-6 md:py-3  items-center justify-between bg-[#dc052d]">
+        <div className="flex w-full top-0 md:m-0 px-4 md:px-5 py-6 md:py-3  items-center justify-between bg-[#dc052d]">
+          <div className="flex items-center justify-between mx-auto w-full lg:w-1/2">
           <div className="flex w-full md:w-3/5 justify-between space-x-4">
             <div className="flex space-x-4 w-full items-center">
               
@@ -66,9 +67,10 @@ export default function Header() {
                 </button>
             </div>
           </div>
+          </div>
         </div>
         <div className="py-0.5 px-5 bg-[#c60428]">
-          <div className="flex space-x-4 items-center">
+          <div className="flex space-x-4 items-center mx-auto w-full lg:w-1/2">
             <Link href={"/news"} className="py-1.5 border-b border-[#c60428] hover:border-white ">
                 <span className="font-semibold text-white">News</span>
             </Link>

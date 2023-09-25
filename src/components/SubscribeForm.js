@@ -1,7 +1,7 @@
 export default function SubsribeForm() {
   return (
     <>
-      <div className="h-max flex flex-col space-y-3 px-6 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
+      <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-6 lg:px-0 py-0 md:py-4  justify-center2 items-center2 bg-[#f5f7f9]">
         <div className="flex flex-col px-4 py-6 mx-auto  md:w-12/12 space-y-4  bg-[#000e29]">
           <span className="uppercase text-2xl font-semibold text-white">
             Newsletter

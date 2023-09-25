@@ -25,12 +25,12 @@ export default function Detail() {
       <GoTop />
 
       <div className="relative w-full">
-        <Image src={bg} alt="" className="w-full h-80" />
-        <div className="absolute bottom-0 flex space-x-6 z-20">
-          <div className="w-1/3 ">
+        <Image src={bg} alt="" className="w-full sm:h-20 md:h-80 h-80 lg:h-[470px]" />
+        <div className="absolute lg:mx-auto mt-2 lg:w-1/2 bottom-0 flex lg:left-[25%] space-x-6 z-20">
+          <div className="w-1/3 lg:w-1/2">
             <Image src={benjamin_pavard} alt="" className="w-[900px]" />
           </div>
-          <div className="flex flex-col space-y-0 w-2/3 justify-center">
+          <div className="flex flex-col space-y-0 w-2/3 lg:w-1/2 justify-center">
             <div className="flex flex-col text-white w-24 leading-tight">
               <span className="text-4xl font-semibold">5</span>
               <div>
@@ -110,8 +110,9 @@ export default function Detail() {
         </div>
       </div>
 
-      <div className="h-max flex flex-row space-x-6 px-4 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
-        <div className="w-1/2 flex flex-col space-y-4">
+      <div className="h-max flex flex-row space-x-6 px-4 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
+        <div className="flex flex-row space-x-3 mx-auto w-full lg:w-1/2">
+        <div className=" w-1/2 flex flex-col space-y-4">
           <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
             <span className="text-2xl font-bold text-[#002f6c]">Personal</span>
           </div>
@@ -352,7 +353,7 @@ export default function Detail() {
          
          
         </div>
-        
+        </div>
       </div>
       <NewsRelated />
       <Footer />

@@ -168,7 +168,7 @@ export default function HomeMatch() {
 
   return (
     <>
-      <div className="h-max flex px-2 py-0 md:py-2 justify-center2 items-center2 bg-white">
+      <div className="h-max flex px-2 py-0 md:py-2 w-full justify-center2 items-center2 bg-white">
         {/* <div className="flex flex-row justify-between mx-auto w-11/12 md:w-12/12 space-x-6 items-center">
           <div className="flex space-x-1">
             <div
@@ -216,7 +216,7 @@ export default function HomeMatch() {
           </div>
         </div> */}
 
-        <div className="relative flex flex-row mx-auto w-11/12 md:w-12/12 justify-between items-center">
+        <div className="relative flex flex-row mx-auto w-11/12 lg:w-1/2 justify-between items-center">
           {scrollX !== 0 && (
             <div className="top-[40%] left-0">
               <button
@@ -271,7 +271,7 @@ export default function HomeMatch() {
           >
             {matchData.map((data, index) => {
               return (
-                <>
+                
                   <div
                     className="transition-all duration-150 flex mr-[.5em] "
                     key={index}
@@ -327,7 +327,7 @@ export default function HomeMatch() {
                       </div>
                     </div>
                   </div>
-                </>
+                
               );
             })}
 

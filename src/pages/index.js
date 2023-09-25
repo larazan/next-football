@@ -7,6 +7,7 @@ import HomeClub from '@/components/HomeClub'
 import HomeMatch from '@/components/HomeMatch'
 import HomeMedia from '@/components/HomeMedia'
 import HomeNews from '@/components/HomeNews'
+import Slideshow from '@/components/SlideShow'
 import SubsribeForm from '@/components/SubscribeForm'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -22,6 +23,7 @@ export default function Home() {
       </Head>
       <Header />
       <GoTop />
+      <Slideshow />
       <HomeMatch />
       <Banner />
       <HomeNews />

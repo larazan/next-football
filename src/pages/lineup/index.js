@@ -366,7 +366,7 @@ export default function Lineup() {
       <MatchResult />
 
       <div className="h-max flex flex-col py-0 md:py-6 px-6 bg-[#f5f7f9]">
-        <div>
+        <div className="mx-auto w-full lg:w-1/2">
           <div className="flex flex-row justify-between mx-auto w-full ">
             <span className="text-2xl font-bold text-[#002f6c] uppercase">
               Lineup
@@ -494,7 +494,7 @@ export default function Lineup() {
           </div>
         </div>
 
-        <div>
+        <div className="mx-auto w-full lg:w-1/2">
           <div className="flex flex-row justify-between mx-auto w-full ">
             <span className="text-2xl font-bold text-[#002f6c] uppercase">
               Substitutes
@@ -622,7 +622,7 @@ export default function Lineup() {
           </div>
         </div>
 
-        <div>
+        <div className="mx-auto w-full lg:w-1/2">
           <div className="flex flex-row justify-between mx-auto w-full ">
             <span className="text-2xl font-bold text-[#002f6c] uppercase">
               Reserves / Coaches
@@ -679,7 +679,7 @@ export default function Lineup() {
           </div>
         </div>
 
-        <div>
+        <div className="mx-auto w-full lg:w-1/2">
           <div className="flex flex-row justify-between mx-auto w-full ">
             <span className="text-2xl font-bold text-[#002f6c] uppercase">
               Match official
