@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import club1 from "@/assets/img/fans_ima_280312.png";
-import club2 from "@/assets/img/fanclub_fcb.png";
-import club3 from "@/assets/img/meister_1932_fcb.png";
+import club1 from "@/assets/img/fans/fans1.png";
+import club2 from "@/assets/img/fans/fans2.png";
+import club3 from "@/assets/img/fans/digital1.png";
 
 export default function NewsRelated() {
   return (

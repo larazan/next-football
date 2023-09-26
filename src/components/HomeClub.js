@@ -1,14 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import club1 from "@/assets/img/fans_ima_280312.png";
-import club2 from "@/assets/img/fanclub_fcb.png";
-import club3 from "@/assets/img/meister_1932_fcb.png";
+import club1 from "@/assets/img/fans/fans1.png";
+import club2 from "@/assets/img/fans/fans2.png";
+import club3 from "@/assets/img/fans/digital1.png";
 
 export default function HomeClub() {
   return (
     <>
-      <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-6 md:px-0 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
+      <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-6 md:px-6 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
         <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
             <Link href={"/"} className="flex space-x-1 items-center hover:opacity-80">
             <span className="text-2xl font-bold text-[#002f6c]">Club</span>
