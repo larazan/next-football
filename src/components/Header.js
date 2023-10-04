@@ -8,6 +8,7 @@ import tlogo from "@/assets/img/partners/telekom_logo_header_neu.svg";
 export default function Header() {
   const [adsModalOpen, setAdsModalOpen] = useState(false);
   const [searchModalOpen, setSearchModalOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -16,27 +17,35 @@ export default function Header() {
     return () => clearTimeout(timer);
   }, []);
 
+  const clickMenu = () => {
+    setOpenMenu(!openMenu);
+  };
+
   return (
     <>
       <header className=" z-20 flex flex-col  w-full">
-        <div className="flex w-full top-0 md:m-0 px-4 md:px-5 py-6 md:py-3  items-center justify-between bg-[#dc052d]">
+        <div className="flex w-full top-0 md:m-0 px-4 md:px-5 py-4 md:py-3  items-center justify-between bg-[#dc052d]">
           <div className="flex items-center justify-between mx-auto w-full lg:w-1/2">
             <div className="flex w-full md:w-3/5 justify-between space-x-4">
               <div className="flex space-x-4 w-full items-center">
                 <div className="flex justify-center items-center">
                   <Link href={"/"}>
-                    <Image src={logo} className="h-12 w-12" alt="" />
+                    <Image
+                      src={logo}
+                      className="h-10 w-10 md:h-12 md:w-12"
+                      alt=""
+                    />
                   </Link>
                 </div>
                 <Link href={"/"}>
-                  <span className="text-2xl text-white font-bold">
+                  <span className="text-lg md:text-2xl text-white font-bold">
                     FC Bayern Munchen
                   </span>
                 </Link>
               </div>
             </div>
             <div className="flex flex-col space-y-2">
-              <div className="flex space-x-4 items-center justify-end">
+              <div className="hidden md:flex space-x-4 items-center justify-end ">
                 <Link href={"/contact"}>
                   <div className="text-white font-semibold text-sm">
                     Contact
@@ -48,7 +57,7 @@ export default function Header() {
                   </div>
                 </Link>
                 <div>
-                <select
+                  <select
                     name="version"
                     className="input-select flex rounded px-2 py-1 items-center bg-[#dc052d]  font-semibold text-white text-sm"
                   >
@@ -77,7 +86,7 @@ export default function Header() {
                   </div>
                 </Link>
               </div>
-              <div className="flex space-x-2 items-center justify-end">
+              <div className="hidden md:flex space-x-2 items-center justify-end">
                 <div className="text-xs text-white">presented by</div>
                 <button className="flex justify-center items-center rounded bg-white">
                   <Image src={tlogo} className="" alt="" />
@@ -105,9 +114,117 @@ export default function Header() {
                 </button>
               </div>
             </div>
+            <section className="MOBILE-MENU flex md:hidden justify-start items-between z-50">
+              <div
+                className="HAMBURGER-ICON space-y-2 w-fit md:justify-start cursor-pointer text-white"
+                onClick={clickMenu}
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M3.25011 7C3.25011 6.58579 3.5859 6.25 4.00011 6.25H20.0001C20.4143 6.25 20.7501 6.58579 20.7501 7C20.7501 7.41421 20.4143 7.75 20.0001 7.75H4.00011C3.5859 7.75 3.25011 7.41421 3.25011 7ZM3.25011 12C3.25011 11.5858 3.5859 11.25 4.00011 11.25L20.0001 11.25C20.4143 11.25 20.7501 11.5858 20.7501 12C20.7501 12.4142 20.4143 12.75 20.0001 12.75L4.00011 12.75C3.5859 12.75 3.25011 12.4142 3.25011 12ZM4.00011 16.25C3.5859 16.25 3.25011 16.5858 3.25011 17C3.25011 17.4142 3.5859 17.75 4.00011 17.75H20.0001C20.4143 17.75 20.7501 17.4142 20.7501 17C20.7501 16.5858 20.4143 16.25 20.0001 16.25H4.00011Z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                className={` ${
+                  openMenu === false ? "hidden" : "flex flex-col"
+                } bg-[#dc052d] w-full h-[100vh] z-10 fixed top-0 left-0 text-white text-4xl font-bold  flex-1 flex-col justify-between`}
+              >
+                <div className="flex flex-col">
+                  <div className="flex flex-row justify-between items-center px-4 py-4">
+                    <div className="flex flex-row space-x-4 w-full items-center">
+                      <div className="flex justify-center items-center">
+                        <Link href={"/"}>
+                          <Image
+                            src={logo}
+                            className="h-10 w-10 md:h-12 md:w-12"
+                            alt=""
+                          />
+                        </Link>
+                      </div>
+                      <div className="">
+                      <Link href={"/"}>
+                        <div className="text-lg md:text-2xl text-white font-bold">
+                          FC Bayern Munchen
+                        </div>
+                      </Link>
+                      </div>
+                    </div>
+                    <div
+                      className="cursor-pointer"
+                      onClick={clickMenu}
+                    >
+                      <svg
+                        className="h-6 w-8 text-white"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="w-full py-5">
+                    <ul className="flex flex-col min-h-[250px]">
+                      <li className="flex w-full text-lg border-b">
+                        <Link className="px-6 py-3 w-full" href="/news">
+                          News
+                        </Link>
+                      </li>
+                      <li className="flex w-full text-lg border-b">
+                        <Link className="px-6 py-3 w-full" href="/media">
+                          Bayern TV
+                        </Link>
+                      </li>
+                      <li className="flex w-full text-lg border-b">
+                        <Link className="px-6 py-3 w-full" href="/match">
+                          Matches
+                        </Link>
+                      </li>
+                      <li className="flex w-full text-lg border-b">
+                        <Link className="px-6 py-3 w-full" href="/teams">
+                          Teams
+                        </Link>
+                      </li>
+                      <li className="flex w-full text-lg border-b">
+                        <Link className="px-6 py-3 w-full" href="/club">
+                          Club
+                        </Link>
+                      </li>
+                      <li className="flex w-full text-lg border-b">
+                        <Link className="px-6 py-3 w-full" href="/blog">
+                          Fans
+                        </Link>
+                      </li>
+                      <li className="flex w-full text-lg border-b">
+                        <Link
+                          className="px-6 py-3 w-full"
+                          href="/"
+                          target="_blank"
+                        >
+                          Shop
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
-        <div className="py-0.5 px-5 bg-[#c60428]">
+
+        <div className="hidden md:block py-0.5 px-5 bg-[#c60428]">
           <div className="flex space-x-4 items-center mx-auto w-full lg:w-1/2">
             <Link
               href={"/news"}

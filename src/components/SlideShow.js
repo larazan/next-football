@@ -41,12 +41,12 @@ const Slideshow = () => {
 		transitionDuration: 300,
 		infinite: true,
 		prevArrow: (
-			<div className="ml-3 top-[30%] md:top-[40%] px-2 py-5 border rounded ">
+			<div className="hidden md:block ml-3 top-[30%] md:top-[40%] px-2 py-5 border rounded ">
 				<ArrowLeftIcon className="h-8 w-8 text-white cursor-pointer" />
 			</div>
 		),
 		nextArrow: (
-				<div className="mr-3 top-[30%] md:top-[40%] px-2 py-5 border rounded">
+				<div className="hidden md:block mr-3 top-[30%] md:top-[40%] px-2 py-5 border rounded">
 				   <ArrowRightIcon className="h-8 w-8 text-white cursor-pointer" />
 			    </div>
 		),

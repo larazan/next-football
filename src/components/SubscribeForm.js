@@ -1,20 +1,20 @@
 export default function SubsribeForm() {
   return (
     <>
-      <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-6 lg:px-0 py-0 md:py-4  justify-center2 items-center2 bg-[#f5f7f9]">
-        <div className="flex flex-col px-4 py-6 mx-auto  md:w-12/12 space-y-4  bg-[#000e29]">
-          <span className="uppercase text-2xl font-semibold text-white">
+      <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-6 lg:px-0 py-4 md:py-4  justify-center2 items-center2 bg-[#f5f7f9]">
+        <div className="flex flex-col px-4 py-6 mx-auto rounded  md:w-12/12 space-y-4  bg-[#000e29]">
+          <span className="uppercase text-base md:text-2xl font-semibold text-white">
             Newsletter
           </span>
-          <div>
-            <div className="flex ">
+          <div className="w-full">
+            <div className="flex flex-col md:flex-row space-y-2 md:space-x-2 items-center">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="px-4 w-80 rounded bg-[#1a273f] shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                className="w-full px-4 py-3 md:w-80 rounded bg-[#1a273f] shadow-sm text-white focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               />
 
-              <button className="bg-[#dc052d] hover:opacity-80 text-white py-2 px-4 rounded font-semibold ml-4 ">
+              <button className="bg-[#dc052d] hover:opacity-80 text-white py-2 px-4 rounded font-semibold w-full md:w-40 ">
                 Subscribe
               </button>
             </div>

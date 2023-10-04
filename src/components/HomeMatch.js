@@ -168,7 +168,7 @@ export default function HomeMatch() {
 
   return (
     <>
-      <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-6 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-white">
+      <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 md:px-6 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-white">
         {/* <div className="flex flex-row justify-between mx-auto w-11/12 md:w-12/12 space-x-6 items-center">
           <div className="flex space-x-1">
             <div
@@ -221,7 +221,7 @@ export default function HomeMatch() {
             <div className="top-[40%] left-0">
               <button
                 onClick={() => slide(-shiftN)}
-                className="none absolute top-[35%] -left-5 z-10 cursor-pointer rounded-full px-2 py-2 bg-[#002f6c] border-2 border-gray-800 shadow text-white"
+                className="none absolute top-[35%] -left-0 md:-left-5 z-10 cursor-pointer rounded-full px-2 py-2 bg-[#002f6c] border-2 border-gray-800 shadow text-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -244,7 +244,7 @@ export default function HomeMatch() {
             <div className="top-[40%] right-0">
               <button
                 onClick={() => slide(+shiftN)}
-                className="none absolute top-[35%] -right-5 z-10 cursor-pointer rounded-full px-2 py-2 bg-[#002f6c] border-2 border-gray-800 shadow text-white"
+                className="none absolute top-[35%] -right-0 md:-right-5 z-10 cursor-pointer rounded-full px-2 py-2 bg-[#002f6c] border-2 border-gray-800 shadow text-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -276,7 +276,7 @@ export default function HomeMatch() {
                     className="transition-all duration-150 flex mr-[.5em] "
                     key={index}
                   >
-                    <div className="flex w-[180px] h-[150px] justify-center bg-white">
+                    <div className="flex w-[150px] h-[150px] md:w-[180px] md:h-[150px] justify-center bg-white">
                       <div className=" bg-white  flex ">
                         <Link
                           href="/"
@@ -286,19 +286,19 @@ export default function HomeMatch() {
                             <Image
                               src={data.home_logo}
                               alt=""
-                              className="w-13 h-13"
+                              className="w-11 h-11 md:w-13 md:h-13"
                             />
                             <Image
                               src={data.away_logo}
                               alt=""
-                              className="w-13 h-13"
+                              className="w-11 h-11 md:w-13 md:h-13"
                             />
                           </div>
                           <div className="flex flex-col justify-center items-center">
                             {data.ftr == null ? (
                               <>
                                 <div className="">
-                                  <span className="font-bold text-2xl text-[#002f6c]">
+                                  <span className="font-bold text-base md:text-2xl text-[#002f6c]">
                                     Sat, 29/08
                                   </span>
                                 </div>
@@ -306,11 +306,11 @@ export default function HomeMatch() {
                             ) : (
                               <>
                                 <div className="flex space-x-1 text-[#002f6c]">
-                                  <div className="font-bold text-2xl">
+                                  <div className="font-bold text-lg md:text-2xl">
                                     {data.fthg}
                                   </div>
-                                  <div className="font-bold text-2xl">:</div>
-                                  <div className="font-bold text-2xl">
+                                  <div className="font-bold text-lg md:text-2xl">:</div>
+                                  <div className="font-bold text-lg md:text-2xl">
                                     {data.ftag}
                                   </div>
                                 </div>
@@ -318,7 +318,7 @@ export default function HomeMatch() {
                             )}
 
                             <div>
-                              <span className="text-sm text-gray-500">
+                              <span className="text-xs md:text-sm text-gray-500">
                                 17:00 GMT+7
                               </span>
                             </div>
