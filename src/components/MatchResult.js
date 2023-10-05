@@ -37,7 +37,7 @@ export default function MatchResult() {
                     </span>
                   </div>
                   <div className="w-8">
-                    <Image src={bayern} alt />
+                    <Image src={bayern} alt="" />
                   </div>
                 </div>
                 <div className="w-2/12 flex space-x-2 items-center justify-center">
@@ -51,7 +51,7 @@ export default function MatchResult() {
                 </div>
                 <div className="w-5/12  flex items-center space-x-2 justify-start">
                   <div className="w-8">
-                    <Image src={city} alt />
+                    <Image src={city} alt="" />
                   </div>
                   <div className="flex items-end text-right md:text-right">
                     <span className="text-sm font-bold text-white">
@@ -75,7 +75,7 @@ export default function MatchResult() {
                         </div>
                         <div>
                           <span className="text-white text-xs font-semibold">
-                            82'
+                            82&lsquo;
                           </span>
                         </div>
                         <div className="text-white">
@@ -130,7 +130,7 @@ export default function MatchResult() {
                         </div>
                         <div>
                           <span className="text-white text-xs font-semibold">
-                            22'
+                            22&lsquo;
                           </span>
                         </div>
                         <div>
@@ -165,7 +165,7 @@ export default function MatchResult() {
                         </div>
                         <div>
                           <span className="text-white text-xs font-semibold">
-                            87'
+                            87&lsquo;
                           </span>
                         </div>
                         <div>

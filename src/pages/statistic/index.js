@@ -86,7 +86,7 @@ export default function Statistic() {
           <div className="flex w-full justify-between items-center h-14 py-1.5 border-y">
             <div className="flex w-1/6">
               <div className="w-8">
-                <Image src={bayern} alt />
+                <Image src={bayern} alt="" />
               </div>
             </div>
             <div className=" w-4/6">
@@ -105,7 +105,7 @@ export default function Statistic() {
             </div>
             <div className="flex w-1/6 justify-end">
               <div className="w-8">
-                <Image src={city} alt />
+                <Image src={city} alt="" />
               </div>
             </div>
           </div>

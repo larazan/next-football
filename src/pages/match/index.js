@@ -437,13 +437,13 @@ export default function News() {
                             <div className="flex flex-col mx-auto2 w-2/12 md:w-1/3 items-center">
                               <div className="flex items-center md:space-x-5">
                                 <div className="w-8">
-                                  <Image src={data.home_logo} alt />
+                                  <Image src={data.home_logo} alt="" />
                                 </div>
                                 <div className="w-6 md:w-16 flex items-center justify-center">
                                   <span className="text-2xl font-bold">-</span>
                                 </div>
                                 <div className="w-8">
-                                  <Image src={data.away_logo} alt />
+                                  <Image src={data.away_logo} alt="" />
                                 </div>
                               </div>
                             </div>

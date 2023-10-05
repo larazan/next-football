@@ -379,7 +379,7 @@ export default function Footer() {
           </div>
           <div>
             <Link href={"/"}>
-              <Image src={bundesliga} />
+              <Image src={bundesliga} alt="" />
             </Link>
           </div>
         </div>
