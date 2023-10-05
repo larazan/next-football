@@ -25,16 +25,16 @@ export default function Detail() {
       <GoTop />
 
       <div className="relative w-full">
-        <Image src={bg} alt="" className="w-full sm:h-20 md:h-80 h-80 lg:h-[470px]" />
+        <Image src={bg} alt="" className="w-full  sm:h-20 md:h-80 h-60 lg:h-[470px]" />
         <div className="absolute lg:mx-auto mt-2 lg:w-1/2 bottom-0 flex lg:left-[25%] space-x-6 z-20">
-          <div className="w-1/3 lg:w-1/2">
+          <div className="w-1/2 md:w-1/3 lg:w-1/2">
             <Image src={benjamin_pavard} alt="" className="w-[900px]" />
           </div>
-          <div className="flex flex-col space-y-0 w-2/3 lg:w-1/2 justify-center">
+          <div className="flex flex-col space-y-0 w-1/2 md:w-2/3 lg:w-1/2 justify-center">
             <div className="flex flex-col text-white w-24 leading-tight">
               <span className="text-4xl font-semibold">5</span>
               <div>
-                <span className="text-4xl uppercase font-semibold">
+                <span className="text-2xl md:text-4xl uppercase leading-tight font-semibold">
                   Benjamin Pavard
                 </span>
               </div>
@@ -110,9 +110,9 @@ export default function Detail() {
         </div>
       </div>
 
-      <div className="h-max flex flex-row space-x-6 px-4 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
-        <div className="flex flex-row space-x-3 mx-auto w-full lg:w-1/2">
-        <div className=" w-1/2 flex flex-col space-y-4">
+      <div className="h-max flex flex-row space-x-6 px-4 lg:px-0 py-3 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
+        <div className="flex flex-col md:flex-row space-y-3 md:space-x-3 mx-auto w-full lg:w-1/2">
+        <div className="w-full md:w-1/2 flex flex-col space-y-4">
           <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
             <span className="text-2xl font-bold text-[#002f6c]">Personal</span>
           </div>
@@ -187,12 +187,12 @@ export default function Detail() {
             </div>
           </div>
         </div>
-        <div className="w-1/2 flex flex-col space-y-4">
+        <div className="w-full md:w-1/2 flex flex-col space-y-4">
           <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
-            <span className="text-2xl font-bold text-[#002f6c]">Personal</span>
+            <span className="text-lg md:text-2xl font-bold text-[#002f6c]">Statistic</span>
           </div>
-          <div className="flex space-x-2 ">
-            <div className="flex flex-wrap md:flex-nowrap justify-end space-x-2">
+          <div className="flex flex-col md:flex-row space-y-2 md:space-x-2 ">
+            <div className="flex flex-wrap md:flex-nowrap md:justify-end space-x-2">
               <select
                 name="version"
                 className="input-select flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200 font-semibold text-[#002f6c] text-sm"

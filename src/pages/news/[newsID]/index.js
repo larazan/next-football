@@ -29,19 +29,19 @@ export default function Detail() {
       </div>
 
       <div className="h-max flex flex-col py-0 md:py-6  bg-[#f5f7f9]">
-        <div className="flex flex-col space-y-3 mx-auto w-8/12 lg:w-1/2 justify-center">
-          <div className="flex flex-row space-x-3">
+        <div className="flex flex-col space-y-3 mx-auto w-11/12 md:w-8/12 lg:w-1/2 justify-center">
+          <div className="flex pt-3 flex-row justify-between md:justify-normal space-x-3">
             <div>
               <span className="text-sm font-semibold text-[#dc052d]">Individual Training</span>
             </div>
             <div>
-              <span className="text-sm font-semibold text-gray-400">Fri, 21/07/23, 20:45 GMT+7</span>
+              <span className="text-xs md:text-sm font-semibold text-gray-400">Fri, 21/07/23, 20:45 GMT+7</span>
             </div>
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-[#002f6c]">Thomas Muller to stay in Munich</h1>
+            <h1 className="text-2xl leading-tight font-bold text-[#002f6c]">Thomas Muller to stay in Munich</h1>
           </div>
-          <div className="py-6">
+          <div className="md:py-6 pb-6">
             <p>
               Thomas Muller will continue to train at Sabaner strabe while FC
               Bayern head off fot this years Audi Summer Tour in Tokyo and
@@ -52,9 +52,9 @@ export default function Detail() {
             </p>
           </div>
         </div>
-        <div className="flex flex-row py-6 border-t">
-          <div className="flex flex-row mx-auto w-8/12 lg:w-1/2">
-            <div className="flex flex-col w-1/2 ">
+        <div className="flex flex-row py-4 md:py-6 border-y">
+          <div className="flex flex-col space-y-3 md:flex-row mx-auto w-11/12 md:w-8/12 lg:w-1/2">
+            <div className="flex flex-col w-full md:w-1/2 ">
               <div>
                 <span className="text-sm font-semibold text-gray-400">Topics of this article</span>
               </div>

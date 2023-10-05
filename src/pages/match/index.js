@@ -154,8 +154,8 @@ export default function News() {
       <div className="relative  block min-h-80 lg:col-span-2 lg:h-full">
         <div className="py-0 flex flex-col space-y-2">
           <div className="h-max flex flex-col mx-auto w-full lg:w-1/2">
-            <div className="flex justify-between py-4 px-6 border-b items-start">
-              <div className="flex space-x-2">
+            <div className="flex flex-col md:flex-row md:justify-between space-y-5 py-4 px-2 md:px-6 border-b items-start">
+              <div className="flex flex-wrap space-x-2">
                 <button className="flex rounded px-2 py-1 items-center bg-[#dc052d] ">
                   <span className=" font-semibold text-white text-sm">
                     Matchplan
@@ -179,7 +179,7 @@ export default function News() {
                   </span>
                 </button>
               </div>
-              <div className="flex flex-col space-y-2 justify-end">
+              <div className="flex w-full flex-col space-y-2 md:justify-end ">
                 <div className="flex flex-wrap md:flex-nowrap justify-end space-x-2">
                   <select
                     name="version"
@@ -191,7 +191,7 @@ export default function News() {
                     <option value="boilerplate">Season 2023/2024</option>
                   </select>
                 </div>
-                <div className="flex space-x-2">
+                <div className="flex space-x-2 justify-end">
                   <div className="flex flex-wrap md:flex-nowrap items-center space-x-2">
                     <select
                       name="version"
@@ -204,7 +204,7 @@ export default function News() {
                         International Champion Cup
                       </option>
                     </select>
-                    <button className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
+                    <button className="hidden md:flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
                       <span className=" font-semibold text-[#002f6c] text-sm">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -226,7 +226,7 @@ export default function News() {
                 </div>
               </div>
             </div>
-            <div class="absolute2 bottom-0 pb-[1px] px-2 py-1.5 md:px-3 overflow-x-auto overflow-hidden">
+            <div class="w-full bottom-0 pb-[1px] px-3 py-1.5 md:px-3 overflow-x-auto overflow-hidden">
               <ul class="flex items-center md:justify-center space-x-2 md:space-x-4  md:tracking-widest font-semibold text-xs  ">
                 <li class=" border-b-2 border-[#0066b2] md:-mt-px  ">
                   <a
@@ -326,13 +326,13 @@ export default function News() {
                 </li>
               </ul>
             </div>
-            <div className="flex px-6 py-10  w-full md:w-12/12 ">
-              <span className="text-2xl font-bold text-[#002f6c] uppercase">
+            <div className="flex px-3 py-4 md:px-6 md:py-10  w-full md:w-12/12 ">
+              <span className="text-lg md:text-2xl font-bold text-[#002f6c] uppercase">
                 Matchplan season 2023/2024
               </span>
             </div>
             <div className="flex flex-col space-y-6 py-4">
-              <div className="flex flex-col">
+              {/* <div className="flex flex-col">
                 <div className="flex px-6  w-full md:w-12/12 ">
                   <span className="text-lg font-bold text-[#002f6c] uppercase">
                     Agustus
@@ -395,10 +395,10 @@ export default function News() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex flex-col">
-                <div className="flex px-6  w-full md:w-12/12 ">
+                <div className="flex px-3 md:px-6  w-full md:w-12/12 ">
                   <span className="text-lg font-bold text-[#002f6c] uppercase">
                     September
                   </span>
@@ -407,7 +407,7 @@ export default function News() {
                   return (
                     <>
                     <Link href={'/match/2'}>
-                      <div className="flex flex-col w-full px-6 hover:bg-gray-100" key={index}>
+                      <div className="flex flex-col w-full px-3 md:px-6 hover:bg-gray-100" key={index}>
                         <div className="flex flex-col w-full h-24 py-1.5 border-y">
                           <div className="flex justify-between">
                             <div className="flex flex-col ">
@@ -427,19 +427,19 @@ export default function News() {
                             </div>
                           </div>
                           <div className="flex w-full justify-between items-center">
-                            <div className="flex w-1/3 ">
+                            <div className="flex w-5/12 md:w-1/3 ">
                               <div>
                                 <span className="text-sm font-bold text-[#002f6c]">
                                   {data.home_team}
                                 </span>
                               </div>
                             </div>
-                            <div className="flex flex-col mx-auto2 w-1/3  items-center">
-                              <div className="flex items-center space-x-5">
+                            <div className="flex flex-col mx-auto2 w-2/12 md:w-1/3 items-center">
+                              <div className="flex items-center md:space-x-5">
                                 <div className="w-8">
                                   <Image src={data.home_logo} alt />
                                 </div>
-                                <div className="w-16 flex items-center justify-center">
+                                <div className="w-6 md:w-16 flex items-center justify-center">
                                   <span className="text-2xl font-bold">-</span>
                                 </div>
                                 <div className="w-8">
@@ -447,7 +447,7 @@ export default function News() {
                                 </div>
                               </div>
                             </div>
-                            <div className="flex w-1/3 justify-end items-end2">
+                            <div className="flex w-5/12 md:w-1/3 justify-end items-end2">
                               <div>
                                 <span className="text-sm font-bold text-[#002f6c]">
                                   {data.away_team}
@@ -455,7 +455,7 @@ export default function News() {
                               </div>
                             </div>
                           </div>
-                          <div className="flex flex-col mx-auto w-1/3 justify-end items-center">
+                          <div className="flex flex-col mx-auto w-full md:w-1/3 justify-end items-center">
                             <div>
                               <span className="text-xs text-gray-400">
                                 {data.stadium}

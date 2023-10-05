@@ -24,7 +24,7 @@ export default function Club() {
         <Header />
         <GoTop />
 
-        <div className="h-max  flex flex-row space-x-6 px-6 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
+        <div className="h-max  flex flex-row space-x-6 md:px-6 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
       <div className="mx-auto w-full lg:w-1/2">
         <Image src={hero} alt="" />
       </div>

@@ -13,22 +13,22 @@ export default function MatchResult() {
         <Image src={lineup} alt="" />
       </div>
 
-      <div className="flex flex-col px-4 py-2 space-y-2 bg-blue-900 ">
-        <div className="flex mx-auto w-10/12 items-center space-x-6">
+      <div className="flex flex-col md:px-4 py-2 space-y-2 bg-blue-900 ">
+        <div className="flex mx-auto w-11/12 md:w-10/12 items-center space-x-6">
           <div className="flex w-1/2 justify-end">
-            <span className="text-xs font-semibold text-gray-400">
+            <span className="text-xs font-semibold text-gray-300">
               Wed, 26/07/23, 17:30 GMT+7
             </span>
           </div>
           <div className="flex w-1/2 justify-start">
-            <span className="text-xs font-semibold text-gray-400">
+            <span className="text-xs font-semibold text-gray-300">
               Singapore Trophy, Friendly
             </span>
           </div>
         </div>
         <div className="flex flex-col">
           <div className="flex w-full h-full py-1.5">
-            <div className="flex flex-col mx-auto w-10/12  items-center">
+            <div className="flex flex-col mx-auto w-11/12 md:w-10/12  items-center">
               <div className="flex w-full items-center space-x-1">
                 <div className="w-5/12 flex items-center space-x-2 justify-end">
                   <div>
@@ -49,11 +49,11 @@ export default function MatchResult() {
                     <span className="text-lg text-white font-bold">2</span>
                   </div>
                 </div>
-                <div className="w-5/12 flex items-center space-x-2 justify-start">
+                <div className="w-5/12  flex items-center space-x-2 justify-start">
                   <div className="w-8">
                     <Image src={city} alt />
                   </div>
-                  <div>
+                  <div className="flex items-end text-right md:text-right">
                     <span className="text-sm font-bold text-white">
                       Manchester City
                     </span>
@@ -183,8 +183,8 @@ export default function MatchResult() {
         </div>
       </div>
 
-      <div className="flex px-6 py-4 mx-auto w-full lg:w-1/2">
-        <div className="flex space-x-2">
+      <div className="flex px-3 md:px-6 py-4 mx-auto w-full lg:w-1/2">
+        <div className="flex flex-wrap space-x-2">
           <Link href={'/match-report'} >
           <button className="flex rounded px-2 py-1 items-center bg-[#dc052d] ">
             <span className=" font-semibold text-white text-sm">

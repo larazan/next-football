@@ -15,10 +15,14 @@ export default function HomeNews() {
             <span className=" font-semibold text-white text-sm">All</span>
           </button>
           <button className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
-            <span className=" font-semibold text-[#002f6c] leading-tight text-sm">News</span>
+            <span className=" font-semibold text-[#002f6c] leading-tight text-sm">
+              News
+            </span>
           </button>
           <button className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
-            <span className=" font-semibold text-[#002f6c] leading-tight text-sm">Club</span>
+            <span className=" font-semibold text-[#002f6c] leading-tight text-sm">
+              Club
+            </span>
           </button>
           <button className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
             <span className=" font-semibold text-[#002f6c] leading-tight text-sm">
@@ -33,141 +37,145 @@ export default function HomeNews() {
         </div>
         <div className="flex flex-row flex-wrap  mx-auto w-full md:w-12/12 ">
           <div className="px-3 py-3 w-1/2 md:w-1/3 lg:w-1/3">
-          <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
-            <Link
-              href="https://statamic.com/blog/statamic-4-unleashed"
-              className="relative"
-            >
-              <Image src={club1} alt="" className="w-80" />{" "}
-              <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
-            </Link>{" "}
-            <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
-              <div className="font-semibold text-xs md:text-xs uppercase text-red-500">
-                Membership
+            <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
+              <Link
+                href="https://statamic.com/blog/statamic-4-unleashed"
+                className="relative"
+              >
+                <Image src={club1} alt="" className="w-80" />{" "}
+                <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
+              </Link>{" "}
+              <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
+                <div className="font-semibold text-xs md:text-xs uppercase text-red-500">
+                  Membership
+                </div>
+                <h3 className="font-semibold text-base md:text-lg text-[#002f6c]  leading-tight">
+                  <Link href="https://statamic.com/blog/statamic-4-unleashed">
+                    Become part of the FC Bayern family!
+                  </Link>
+                </h3>{" "}
               </div>
-              <h3 className="font-semibold text-base md:text-lg text-[#002f6c]  leading-tight">
-                <Link href="https://statamic.com/blog/statamic-4-unleashed">
-                  Become part of the FC Bayern family!
-                </Link>
-              </h3>{" "}
             </div>
-          </div>
           </div>
 
           <div className="px-3 py-3 w-1/2 md:w-1/3 lg:w-1/3">
-          <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
-            <Link
-              href="https://statamic.com/blog/statamic-4-unleashed"
-              className="relative"
-            >
-              <Image src={club2} alt="" className="w-80" />{" "}
-              <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
-            </Link>{" "}
-            <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
-              <div className="font-semibold text-xs md:text-sm uppercase text-red-500">
-                Membership
+            <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
+              <Link
+                href="https://statamic.com/blog/statamic-4-unleashed"
+                className="relative"
+              >
+                <Image src={club2} alt="" className="w-80" />{" "}
+                <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
+              </Link>{" "}
+              <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
+                <div className="font-semibold text-xs md:text-sm uppercase text-red-500">
+                  Membership
+                </div>
+                <h3 className="font-semibold text-base md:text-lg text-[#002f6c] leading-tight">
+                  <Link href="https://statamic.com/blog/statamic-4-unleashed">
+                    Become part of the FC Bayern family!
+                  </Link>
+                </h3>{" "}
               </div>
-              <h3 className="font-semibold text-base md:text-lg text-[#002f6c] leading-tight">
-                <Link href="https://statamic.com/blog/statamic-4-unleashed">
-                  Become part of the FC Bayern family!
-                </Link>
-              </h3>{" "}
             </div>
-          </div>
-          </div>
-          
-          <div className="px-3 py-3 w-1/2 md:w-1/3 lg:w-1/3">
-          <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
-            <Link
-              href="https://statamic.com/blog/statamic-4-unleashed"
-              className="relative"
-            >
-              <Image src={club3} alt="" className="w-80" />{" "}
-              <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
-            </Link>{" "}
-            <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
-              <div className="font-semibold text-xs md:text-sm uppercase text-red-500">
-                Membership
-              </div>
-              <h3 className="font-semibold text-base md:text-lg text-[#002f6c] leading-tight">
-                <Link href="https://statamic.com/blog/statamic-4-unleashed">
-                  Become part of the FC Bayern family!
-                </Link>
-              </h3>{" "}
-            </div>
-          </div>
           </div>
 
           <div className="px-3 py-3 w-1/2 md:w-1/3 lg:w-1/3">
-          <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
-            <Link
-              href="https://statamic.com/blog/statamic-4-unleashed"
-              className="relative"
-            >
-              <Image src={club1} alt="" className="w-80" />{" "}
-              <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
-            </Link>{" "}
-            <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
-              <div className="font-semibold text-xs md:text-sm uppercase text-red-500">
-                Membership
+            <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
+              <Link
+                href="https://statamic.com/blog/statamic-4-unleashed"
+                className="relative"
+              >
+                <Image src={club3} alt="" className="w-80" />{" "}
+                <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
+              </Link>{" "}
+              <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
+                <div className="font-semibold text-xs md:text-sm uppercase text-red-500">
+                  Membership
+                </div>
+                <h3 className="font-semibold text-base md:text-lg text-[#002f6c] leading-tight">
+                  <Link href="https://statamic.com/blog/statamic-4-unleashed">
+                    Become part of the FC Bayern family!
+                  </Link>
+                </h3>{" "}
               </div>
-              <h3 className="font-semibold text-base md:text-lg text-[#002f6c] leading-tight">
-                <Link href="https://statamic.com/blog/statamic-4-unleashed">
-                  Become part of the FC Bayern family!
-                </Link>
-              </h3>{" "}
             </div>
-          </div>
           </div>
 
           <div className="px-3 py-3 w-1/2 md:w-1/3 lg:w-1/3">
-          <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
-            <Link
-              href="https://statamic.com/blog/statamic-4-unleashed"
-              className="relative"
-            >
-              <Image src={club2} alt="" className="w-80" />{" "}
-              <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
-            </Link>{" "}
-            <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
-              <div className="font-semibold text-xs md:text-sm uppercase text-red-500">
-                Membership
+            <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
+              <Link
+                href="https://statamic.com/blog/statamic-4-unleashed"
+                className="relative"
+              >
+                <Image src={club1} alt="" className="w-80" />{" "}
+                <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
+              </Link>{" "}
+              <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
+                <div className="font-semibold text-xs md:text-sm uppercase text-red-500">
+                  Membership
+                </div>
+                <h3 className="font-semibold text-base md:text-lg text-[#002f6c] leading-tight">
+                  <Link href="https://statamic.com/blog/statamic-4-unleashed">
+                    Become part of the FC Bayern family!
+                  </Link>
+                </h3>{" "}
               </div>
-              <h3 className="font-semibold text-base md:text-lg text-[#002f6c] leading-tight">
-                <Link href="https://statamic.com/blog/statamic-4-unleashed">
-                  Become part of the FC Bayern family!
-                </Link>
-              </h3>{" "}
             </div>
-          </div>
           </div>
 
           <div className="px-3 py-3 w-1/2 md:w-1/3 lg:w-1/3">
-          <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
-            <Link
-              href="https://statamic.com/blog/statamic-4-unleashed"
-              className="relative"
-            >
-              <Image src={club3} alt="" className="w-80" />{" "}
-              <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
-            </Link>{" "}
-            <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
-              <div className="font-semibold text-xs md:text-sm uppercase text-red-500">
-                Membership
+            <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
+              <Link
+                href="https://statamic.com/blog/statamic-4-unleashed"
+                className="relative"
+              >
+                <Image src={club2} alt="" className="w-80" />{" "}
+                <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
+              </Link>{" "}
+              <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
+                <div className="font-semibold text-xs md:text-sm uppercase text-red-500">
+                  Membership
+                </div>
+                <h3 className="font-semibold text-base md:text-lg text-[#002f6c] leading-tight">
+                  <Link href="https://statamic.com/blog/statamic-4-unleashed">
+                    Become part of the FC Bayern family!
+                  </Link>
+                </h3>{" "}
               </div>
-              <h3 className="font-semibold text-base md:text-lg text-[#002f6c] leading-tight">
-                <Link href="https://statamic.com/blog/statamic-4-unleashed">
-                  Become part of the FC Bayern family!
-                </Link>
-              </h3>{" "}
             </div>
           </div>
-          </div>
 
+          <div className="px-3 py-3 w-1/2 md:w-1/3 lg:w-1/3">
+            <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow ">
+              <Link
+                href="https://statamic.com/blog/statamic-4-unleashed"
+                className="relative"
+              >
+                <Image src={club3} alt="" className="w-80" />{" "}
+                <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
+              </Link>{" "}
+              <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
+                <div className="font-semibold text-xs md:text-sm uppercase text-red-500">
+                  Membership
+                </div>
+                <h3 className="font-semibold text-base md:text-lg text-[#002f6c] leading-tight">
+                  <Link href="https://statamic.com/blog/statamic-4-unleashed">
+                    Become part of the FC Bayern family!
+                  </Link>
+                </h3>{" "}
+              </div>
+            </div>
+          </div>
         </div>
         <div className="flex flex-row justify-between px-2 mx-auto w-full md:w-12/12 space-x-6 items-center">
-            <Link href={"/"} className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
-            <span className=" font-semibold text-[#002f6c] leading-tight">All News</span>
+          <Link
+            href={"/"}
+            className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200"
+          >
+            <span className=" font-semibold text-[#002f6c] leading-tight">
+              All News
+            </span>
           </Link>
         </div>
       </div>

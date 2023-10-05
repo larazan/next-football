@@ -204,7 +204,7 @@ export default function Teams() {
       <Header />
       <GoTop />
 
-      <div className="h-max w-full flex flex-col space-y-4 px-2 md:px-6 py-0 md:py-6 justify-center2 items-center2 bg-[#f5f7f9]">
+      <div className="h-max w-full flex flex-col space-y-4 px-2 md:px-6 py-2 md:py-6 justify-center2 items-center2 bg-[#f5f7f9]">
         <div className="mx-auto w-full lg:w-1/2">
         <Image src={audi} alt="" />
         </div>
@@ -219,9 +219,9 @@ export default function Teams() {
         <div className="mx-auto w-full lg:w-1/2">
 
         
-        <section className="flex flex-col ">
+        <section className="flex flex-col py-2">
           <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
-            <span className="text-2xl font-bold text-[#002f6c]">
+            <span className="text-lg md:text-2xl font-bold text-[#002f6c]">
               GoalKeepers
             </span>
           </div>
@@ -233,8 +233,8 @@ export default function Teams() {
                     <div className=" relative group flex flex-col overflow-hidden hover:scale-105 shadow ">
                       <Link href={`/teams/${data.name}`} className="relative">
                         <Image src={bg} alt="" className=" h-72" />{" "}
-                        <div className="absolute bottom-0 z-20 w-full">
-                          <Image src={data.img} alt="" />
+                        <div className="absolute flex justify-center bottom-0 z-20 w-full">
+                          <Image src={data.img} alt="" className="w-72" />
                         </div>
                         <div className="absolute top-1 left-2">
                           <span className="text-white text-lg font-bold">
@@ -254,9 +254,9 @@ export default function Teams() {
             })}
           </div>
         </section>
-        <section className="flex flex-col">
+        <section className="flex flex-col py-2">
           <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
-            <span className="text-2xl font-bold text-[#002f6c]">Defenders</span>
+            <span className="text-lg md:text-2xl font-bold text-[#002f6c]">Defenders</span>
           </div>
           <div className="flex flex-row flex-wrap  mx-auto w-full md:w-12/12 ">
             {defenderData.map((data, index) => {
@@ -266,8 +266,8 @@ export default function Teams() {
                     <div className=" relative group flex flex-col overflow-hidden hover:scale-105 shadow ">
                       <Link href={`/teams/${data.name}`} className="relative">
                         <Image src={bg} alt="" className=" h-72" />{" "}
-                        <div className="absolute bottom-0 z-20 w-full">
-                          <Image src={data.img} alt="" />
+                        <div className="absolute flex justify-center bottom-0 z-20 w-full">
+                          <Image src={data.img} alt="" className="w-72" />
                         </div>
                         <div className="absolute top-1 left-2">
                           <span className="text-white text-lg font-bold">
@@ -287,9 +287,43 @@ export default function Teams() {
             })}
           </div>
         </section>
-        <section className="flex flex-col">
+        <section className="flex flex-col py-2">
           <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
-            <span className="text-2xl font-bold text-[#002f6c]">Forwards</span>
+            <span className="text-lg md:text-2xl font-bold text-[#002f6c]">MidFielder</span>
+          </div>
+          <div className="flex flex-row flex-wrap  mx-auto w-full md:w-12/12 ">
+            {midfielderData.map((data, index) => {
+              return (
+                <>
+                  <div className="px-3 py-3 md:w-1/3 lg:w-1/3" key={index}>
+                    <div className=" relative group flex flex-col overflow-hidden hover:scale-105 shadow ">
+                      <Link href={`/teams/${data.name}`} className="relative">
+                        <Image src={bg} alt="" className=" h-72" />{" "}
+                        <div className="absolute flex justify-center bottom-0 z-20 w-full">
+                          <Image src={data.img} alt="" className="w-72" />
+                        </div>
+                        <div className="absolute top-1 left-2">
+                          <span className="text-white text-lg font-bold">
+                            {data.number}
+                          </span>
+                        </div>
+                        <div className="absolute bottom-2 left-2 z-30 w-10 leading-tight">
+                          <span className="text-white text-md font-semibold">
+                            {data.name}
+                          </span>
+                        </div>
+                      </Link>{" "}
+                    </div>
+                  </div>
+                </>
+              );
+            })}
+          </div>
+        </section>
+
+        <section className="flex flex-col py-2">
+          <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
+            <span className="text-lg md:text-2xl font-bold text-[#002f6c]">Forwards</span>
           </div>
           <div className="flex flex-row flex-wrap  mx-auto w-full md:w-12/12 ">
             {forwardData.map((data, index) => {
@@ -299,8 +333,8 @@ export default function Teams() {
                     <div className=" relative group flex flex-col overflow-hidden hover:scale-105 shadow ">
                       <Link href={`/teams/${data.name}`} className="relative">
                         <Image src={bg} alt="" className=" h-72" />{" "}
-                        <div className="absolute bottom-0 z-20 w-full">
-                          <Image src={data.img} alt="" />
+                        <div className="absolute flex justify-center bottom-0 z-20 w-full">
+                          <Image src={data.img} alt="" className="w-72" />
                         </div>
                         <div className="absolute top-1 left-2">
                           <span className="text-white text-lg font-bold">
@@ -320,9 +354,11 @@ export default function Teams() {
             })}
           </div>
         </section>
-        <section className="flex flex-col">
+
+
+        <section className="flex flex-col py-2">
           <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
-            <span className="text-2xl font-bold text-[#002f6c]">Coaches</span>
+            <span className="text-lg md:text-2xl font-bold text-[#002f6c]">Coaches</span>
           </div>
           <div className="flex flex-row flex-wrap  mx-auto w-full md:w-12/12 ">
             {staffData.map((data, index) => {
@@ -332,8 +368,8 @@ export default function Teams() {
                     <div className=" relative group flex flex-col overflow-hidden hover:scale-105 shadow ">
                       <Link href={`/teams/${data.name}`} className="relative">
                         <Image src={bg} alt="" className=" h-72" />{" "}
-                        <div className="absolute bottom-0 z-20 w-full">
-                          <Image src={data.img} alt="" />
+                        <div className="absolute flex justify-center bottom-0 z-20 w-full">
+                          <Image src={data.img} alt="" className="w-72" />
                         </div>
                         {/* <div className="absolute top-1 left-2">
                     <span className="text-white text-lg font-bold">{data.number}</span>

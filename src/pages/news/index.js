@@ -27,15 +27,15 @@ export default function News() {
       <Header />
       <GoTop />
 
-      <div className="h-max  flex flex-row space-x-6 px-6 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
+      <div className="h-max  flex flex-row space-x-6 px-2 md:px-6 py-4 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
         <div className="flex flex-col space-y-4 mx-auto w-full lg:w-1/2">
           <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
-            <span className="text-2xl font-bold text-[#002f6c] uppercase">
+            <span className="text-lg md:text-2xl font-bold text-[#002f6c] uppercase">
               News
             </span>
           </div>
-          <div className="flex flex-row w-full space-x-4">
-            <div className="w-2/3 flex space-x-2">
+          <div className="flex flex-col md:flex-row w-full space-y-3 md:space-x-4">
+            <div className="w-full md:w-2/3 flex flex-wrap space-x-2">
               <button className="flex rounded px-2 py-1 items-center bg-[#dc052d] ">
                 <span className=" font-semibold text-white text-sm">All</span>
               </button>
@@ -55,11 +55,11 @@ export default function News() {
                 </span>
               </button>
             </div>
-            <div className="w-1/3 flex justify-end">
-            <form className="w-2/3">
+            <div className="w-full md:w-1/3 flex md:justify-end">
+            <form className="w-full md:w-2/3">
             <div className="relative">
               <label className="sr-only">Search</label>
-              <input  className="w-full h-7 border-0 focus:ring-transparent placeholder-[#002f6c] placeholder-semibold appearance-none py-1 pl-7 pr-4 rounded outline-none bg-blue-100 text-sm text-[#002f6c]" type="search" placeholder="Search Anything…"  />
+              <input  className="w-full h-9 border-0 focus:ring-transparent placeholder-[#002f6c] placeholder-semibold appearance-none py-2 pl-7 pr-4 rounded outline-none bg-blue-100 text-sm text-[#002f6c]" type="search" placeholder="Search Anything…"  />
               <button className="absolute inset-0 right-auto group" type="submit" aria-label="Search">
                 <svg className="w-3 h-3 shrink-0 fill-current text-[#002f6c] group-hover:text-slate-500 ml-2 mr-2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7 14c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM7 2C4.243 2 2 4.243 2 7s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z" />
@@ -86,10 +86,10 @@ export default function News() {
               <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
             </Link>{" "}
             <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
-              <div className="font-semibold text-sm uppercase text-red-500">
+              <div className="font-semibold text-xs md:text-sm uppercase text-red-500">
                 Membership
               </div>
-              <h3 className="font-semibold text-lg text-[#002f6c]">
+              <h3 className="font-semibold text-base md:text-lg leading-tight text-[#002f6c]">
                 <Link href={'/news/1'}>
                   Become part of the FC Bayern family!
                 </Link>
@@ -106,10 +106,10 @@ export default function News() {
               <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
             </Link>{" "}
             <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
-              <div className="font-semibold text-sm uppercase text-red-500">
+              <div className="font-semibold text-xs md:text-sm uppercase text-red-500">
                 Membership
               </div>
-              <h3 className="font-semibold text-lg text-[#002f6c]">
+              <h3 className="font-semibold text-base md:text-lg leading-tight text-[#002f6c]">
                 <Link href={'/news/1'}>
                   Become part of the FC Bayern family!
                 </Link>
@@ -126,10 +126,10 @@ export default function News() {
               <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
             </Link>{" "}
             <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
-              <div className="font-semibold text-sm uppercase text-red-500">
+              <div className="font-semibold text-xs md:text-sm uppercase text-red-500">
                 Membership
               </div>
-              <h3 className="font-semibold text-lg text-[#002f6c]">
+              <h3 className="font-semibold text-base md:text-lg leading-tight text-[#002f6c]">
                 <Link href={'/news/1'}>
                   Become part of the FC Bayern family!
                 </Link>
@@ -146,10 +146,10 @@ export default function News() {
               <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
             </Link>{" "}
             <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
-              <div className="font-semibold text-sm uppercase text-red-500">
+              <div className="font-semibold text-xs md:text-sm uppercase text-red-500">
                 Membership
               </div>
-              <h3 className="font-semibold text-lg text-[#002f6c]">
+              <h3 className="font-semibold text-base md:text-lg leading-tight text-[#002f6c]">
                 <Link href={'/news/1'}>
                   Become part of the FC Bayern family!
                 </Link>
