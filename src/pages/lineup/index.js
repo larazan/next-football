@@ -365,15 +365,31 @@ export default function Lineup() {
 
       <MatchResult />
 
-      <div className="h-max flex flex-col py-0 md:py-6 px-6 bg-[#f5f7f9]">
+      <div className="h-max flex flex-col py-0 md:py-6 px-2 md:px-6 bg-[#f5f7f9]">
         <div className="mx-auto w-full lg:w-1/2">
           <div className="flex flex-row justify-between mx-auto w-full ">
-            <span className="text-2xl font-bold text-[#002f6c] uppercase">
+            <span className="text-lg md:text-2xl font-bold text-[#002f6c] uppercase">
               Lineup
             </span>
           </div>
-          <div className="w-full py-5 flex space-x-5">
-            <div className="w-1/2">
+          <div className="w-full py-5 flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-2 md:space-x-5">
+            <div className=" w-full md:w-1/2 ">
+              <div className="flex w-full justify-between items-center h-14 py-1.5 border-y">
+                <div className="flex w-2/6 justify-center">
+                  <div className="w-8">
+                    <Image src={bayern} alt="" />
+                  </div>
+                </div>
+                <div className=" w-4/6">
+                  <div className="flex w-full mx-auto justify-center space-x-6">
+                    <div className="flex ">
+                      <span className="text-sm font-bold leading-tight text-[#002f6c]">
+                        FC Bayern Munich
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className="flex flex-col w-full  ">
                 {bayernFirstData.map((data, index) => {
                   return (
@@ -432,7 +448,23 @@ export default function Lineup() {
                 })}
               </div>
             </div>
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2 ">
+              <div className="flex w-full justify-between items-center h-14 py-1.5 border-y">
+                <div className=" w-4/6">
+                  <div className="flex w-full mx-auto justify-center space-x-6">
+                    <div className="flex text-end">
+                      <span className="text-sm font-bold leading-tight text-[#002f6c]">
+                        Manchester City
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex w-2/6  md:justify-center">
+                  <div className="w-8">
+                    <Image src={city} alt="" />
+                  </div>
+                </div>
+              </div>
               <div className="flex flex-col w-full  ">
                 {cityFirstData.map((data, index) => {
                   return (
@@ -624,7 +656,7 @@ export default function Lineup() {
 
         <div className="mx-auto w-full lg:w-1/2">
           <div className="flex flex-row justify-between mx-auto w-full ">
-            <span className="text-2xl font-bold text-[#002f6c] uppercase">
+            <span className="text-lg md:text-2xl font-bold text-[#002f6c] uppercase">
               Reserves / Coaches
             </span>
           </div>
@@ -635,7 +667,10 @@ export default function Lineup() {
                 <div className="flex flex-wrap ">
                   {bayernReserveData.map((data, index) => {
                     return (
-                      <div className="flex space-x-1 mr-1 mt-.5 text-xs" key={index}>
+                      <div
+                        className="flex space-x-1 mr-1 mt-.5 text-xs"
+                        key={index}
+                      >
                         <span>{data.number}</span>
                         <div>
                           <span className="capitalize">{data.name},</span>
@@ -659,7 +694,10 @@ export default function Lineup() {
                 <div className="flex flex-wrap ">
                   {cityReserveData.map((data, index) => {
                     return (
-                      <div className="flex space-x-1 mr-1 mt-.5 text-xs" key={index}>
+                      <div
+                        className="flex space-x-1 mr-1 mt-.5 text-xs"
+                        key={index}
+                      >
                         <span>{data.number}</span>
                         <div>
                           <span className="capitalize">{data.name},</span>
@@ -681,26 +719,28 @@ export default function Lineup() {
 
         <div className="mx-auto w-full lg:w-1/2">
           <div className="flex flex-row justify-between mx-auto w-full ">
-            <span className="text-2xl font-bold text-[#002f6c] uppercase">
+            <span className="text-lg md:text-2xl font-bold text-[#002f6c] uppercase">
               Match official
             </span>
           </div>
           <div className="w-full py-5 grid grid-cols-3 gap-4">
             {officialData.map((data, index) => {
-                return (
-                    <div className="flex flex-col py-2 px-4 bg-gray-200" key={index}>
-                <span className="text-xs font-semibold capitalize">{data.pos}</span>
-                <div>
-                  <span className="text-xs capitalize">{data.name}</span>
+              return (
+                <div
+                  className="flex flex-col py-2 px-4 bg-gray-200"
+                  key={index}
+                >
+                  <span className="text-xs font-semibold capitalize">
+                    {data.pos}
+                  </span>
+                  <div className="leading-tight">
+                    <span className="text-xs  capitalize">{data.name}</span>
+                  </div>
                 </div>
-            </div>
-                )
+              );
             })}
-            
-            
           </div>
         </div>
-
       </div>
 
       <Footer />

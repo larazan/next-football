@@ -42,7 +42,7 @@ export default function Detail() {
           <div>
             <h1 className="text-2xl font-bold text-[#002f6c]">Reds fall to City</h1>
           </div>
-          <div className="md:py-6">
+          <div className="md:py-6 text-gray-800">
             <p>
               Thomas Muller will continue to train at Sabaner strabe while FC
               Bayern head off fot this years Audi Summer Tour in Tokyo and

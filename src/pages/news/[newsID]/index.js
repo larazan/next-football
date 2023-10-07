@@ -41,7 +41,7 @@ export default function Detail() {
           <div>
             <h1 className="text-2xl leading-tight font-bold text-[#002f6c]">Thomas Muller to stay in Munich</h1>
           </div>
-          <div className="md:py-6 pb-6">
+          <div className="md:py-6 pb-6 text-gray-800">
             <p>
               Thomas Muller will continue to train at Sabaner strabe while FC
               Bayern head off fot this years Audi Summer Tour in Tokyo and

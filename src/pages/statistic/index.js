@@ -79,8 +79,8 @@ export default function Statistic() {
       <MatchResult />
 
       <div className="h-max flex flex-col py-0 bg-white">
-        <div className="flex flex-col py-4 px-6 space-y-1 mx-auto w-full lg:w-1/2">
-          <h1 className="text-2xl font-bold text-[#002f6c] uppercase">
+        <div className="flex flex-col py-4 px-3 md:px-6 space-y-1 mx-auto w-full lg:w-1/2">
+          <h1 className="text-lg md:text-2xl font-bold text-[#002f6c] uppercase">
             Team Comparison
           </h1>
           <div className="flex w-full justify-between items-center h-14 py-1.5 border-y">
@@ -91,13 +91,13 @@ export default function Statistic() {
             </div>
             <div className=" w-4/6">
               <div className="flex w-full mx-auto justify-center space-x-6">
-                <div>
-                  <span className="text-sm font-bold text-[#002f6c]">
+                <div className="flex ">
+                  <span className="text-sm font-bold leading-tight text-[#002f6c]">
                     FC Bayern Munich
                   </span>
                 </div>
-                <div>
-                  <span className="text-sm font-bold text-[#002f6c]">
+                <div className="flex text-end">
+                  <span className="text-sm font-bold leading-tight text-[#002f6c]">
                     Manchester City
                   </span>
                 </div>
@@ -132,8 +132,8 @@ export default function Statistic() {
                         ></div>
                       </div>
                     </div>
-                    <div className="w-2/12 text-center">
-                      <span className=" text-sm  font-bold text-[#002f6c]">
+                    <div className="w-2/12 text-center leading-tight">
+                      <span className="text-xs md:text-sm font-bold text-[#002f6c]">
                         {data.title}
                       </span>
                     </div>
@@ -158,12 +158,7 @@ export default function Statistic() {
             );
           })}
         </div>
-        <div className="overflow-hidden h-3 mb-4 text-xs flex rounded bg-gray-300">
-          <div
-            style={{ width: "30%" }}
-            className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"
-          ></div>
-        </div>
+        
       </div>
 
       <Footer />

@@ -131,7 +131,7 @@ export default function Detail() {
           </div>
 
           <div className="flex justify-center border-y border-gray-300 ">
-            <div className="flex flex-col w-full ">
+            <div className="flex flex-col w-full text-gray-800">
               <div className="flex items-center border-b border-gray-300 py-3 px-3">
                 <div className="w-5/12 text-sm font-semibold">
                   Contract Ends

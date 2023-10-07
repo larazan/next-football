@@ -20,7 +20,7 @@ export default function MatchResult() {
               Wed, 26/07/23, 17:30 GMT+7
             </span>
           </div>
-          <div className="flex w-1/2 justify-start">
+          <div className="flex w-1/2 justify-end md:justify-start">
             <span className="text-xs font-semibold text-gray-300">
               Singapore Trophy, Friendly
             </span>
@@ -183,7 +183,7 @@ export default function MatchResult() {
         </div>
       </div>
 
-      <div className="flex px-3 md:px-6 py-4 mx-auto w-full lg:w-1/2">
+      <div className="flex px-3 md:px-6 py-4 mx-auto w-full lg:w-1/2 bg-white">
         <div className="flex flex-wrap space-x-2">
           <Link href={'/match-report'} >
           <button className="flex rounded px-2 py-1 items-center bg-[#dc052d] ">

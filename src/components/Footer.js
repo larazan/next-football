@@ -21,68 +21,68 @@ export default function Footer() {
       <footer className="flex flex-col space-y-1 bg-[#dc052d] min-h-screen">
         <div className="flex flex-col space-y-6 mx-auto py-6 md:py-6 w-11/12 md:w-7/12 lg:w-1/2 justify-center items-center">
           <div>
-            <span className="uppercase text-lg text-white font-bold">
+            <span className="uppercase text-base md:text-lg text-white font-bold">
               partner
             </span>
           </div>
-          <div className="flex flex-wrap  items-center">
+          <div className="flex flex-wrap justify-center gap-2 items-center">
             <Link
               href={"/"}
-              className="flex w-[100px] h-[80px]  justify-center py-2 px-2"
+              className="flex w-[70px] h-[40px]  md:w-[100px] md:h-[80px]  justify-center py-2 px-2"
             >
               <Image src={telekom} className="" alt="" />
             </Link>
             <Link
               href={"/"}
-              className="flex w-[100px] h-[80px]  justify-center py-2 px-2"
+              className="flex w-[70px] h-[40px]  md:w-[100px] md:h-[80px]  justify-center py-2 px-2"
             >
               <Image src={adidas} className="" alt="" />
             </Link>
             <Link
               href={"/"}
-              className="flex w-[100px] h-[80px]  justify-center py-2 px-2"
+              className="flex w-[70px] h-[40px]  md:w-[100px] md:h-[80px]  justify-center py-2 px-2"
             >
               <Image src={audi} className="" alt="" />
             </Link>
             <Link
               href={"/"}
-              className="flex w-[100px] h-[80px]  justify-center py-2 px-2"
+              className="flex w-[70px] h-[40px]  md:w-[100px] md:h-[80px]  justify-center py-2 px-2"
             >
               <Image src={allianz} className="" alt="" />
             </Link>
             <Link
               href={"/"}
-              className="flex w-[100px] h-[80px]  justify-center py-2 px-2"
+              className="flex w-[70px] h-[40px]  md:w-[100px] md:h-[80px]  justify-center py-2 px-2"
             >
               <Image src={adobe} className="" alt="" />
             </Link>
             <Link
               href={"/"}
-              className="flex w-[100px] h-[80px]  justify-center py-2 px-2"
+              className="flex w-[70px] h-[40px]  md:w-[100px] md:h-[80px]  justify-center py-2 px-2"
             >
               <Image src={konami} className="" alt="" />
             </Link>
             <Link
               href={"/"}
-              className="flex w-[100px] h-[80px]  justify-center py-2 px-2"
+              className="flex w-[70px] h-[40px]  md:w-[100px] md:h-[80px]  justify-center py-2 px-2"
             >
               <Image src={libertex} className="" alt="" />
             </Link>
             <Link
               href={"/"}
-              className="flex w-[100px] h-[80px]  justify-center py-2 px-2"
+              className="flex w-[70px] h-[40px]  md:w-[100px] md:h-[80px]  justify-center py-2 px-2"
             >
               <Image src={sap} className="" alt="" />
             </Link>
             <Link
               href={"/"}
-              className="flex w-[100px] h-[80px]  justify-center py-2 px-2"
+              className="flex w-[70px] h-[40px]  md:w-[100px] md:h-[80px]  justify-center py-2 px-2"
             >
               <Image src={tipico} className="" alt="" />
             </Link>
             <Link
               href={"/"}
-              className="flex w-[100px] h-[80px]  justify-center py-2 px-2"
+              className="flex w-[70px] h-[40px]  md:w-[100px] md:h-[80px]  justify-center py-2 px-2"
             >
               <Image src={viesmann} className="" alt="" />
             </Link>
@@ -92,7 +92,7 @@ export default function Footer() {
           <div className="container2 grid grid-cols-2 mx-auto gap-x-20 md:gap-x-7 gap-y-8 sm:grid-cols-3 md:grid-cols-4 text-white">
             <div className="flex flex-col space-y-1">
               <h2 className="font-semibold text-sm">News</h2>
-              <div className="flex flex-col font-thin space-y-1 text-sm dark:text-gray-400">
+              <div className="flex flex-col font-thin space-y-1 text-sm dark:text-white">
                 <a rel="noopener noreferrer" href="#">
                   Installation
                 </a>
@@ -118,7 +118,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col space-y-1">
               <h2 className="font-semibold text-sm">Core Concepts</h2>
-              <div className="flex flex-col font-thin space-y-1 text-sm dark:text-gray-400">
+              <div className="flex flex-col font-thin space-y-1 text-sm dark:text-white">
                 <a rel="noopener noreferrer" href="#">
                   Utility-First
                 </a>
@@ -144,7 +144,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col space-y-1">
               <h2 className="font-semibold text-sm">Customization</h2>
-              <div className="flex flex-col font-thin space-y-1 text-sm dark:text-gray-400">
+              <div className="flex flex-col font-thin space-y-1 text-sm dark:text-white">
                 <a rel="noopener noreferrer" href="#">
                   Configuration
                 </a>
@@ -170,7 +170,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col space-y-1 ">
               <h2 className="font-semibold text-sm">Community</h2>
-              <div className="flex flex-col font-thin space-y-1 text-sm dark:text-gray-400">
+              <div className="flex flex-col font-thin space-y-1 text-sm dark:text-white">
                 <a rel="noopener noreferrer" href="#">
                   GitHub
                 </a>
@@ -191,20 +191,20 @@ export default function Footer() {
           <div>
             <Image src={logo} alt="" />
           </div>
-          <div className="flex justify-around space-x-4">
+          <div className="flex flex-wrap justify-center gap-2 md:justify-around  md:space-x-4">
             <Link href={"/"}>
-              <span className="font-bold text-sm text-white">fcbayern.com</span>
+              <span className="font-bold text-xs md:text-sm text-white">fcbayern.com</span>
             </Link>
             <Link href={"/"}>
-              <span className="font-bold text-sm text-white">Basketball</span>
+              <span className="font-bold text-xs md:text-sm text-white">Basketball</span>
             </Link>
             <Link href={"/"}>
-              <span className="font-bold text-sm text-white">
+              <span className="font-bold text-xs md:text-sm text-white">
                 Allianz Arena
               </span>
             </Link>
             <Link href={"/"}>
-              <span className="font-bold text-sm text-white">Media Center</span>
+              <span className="font-bold text-xs md:text-sm text-white">Media Center</span>
             </Link>
           </div>
           <div className="flex justify-around space-x-4 OuQGd">

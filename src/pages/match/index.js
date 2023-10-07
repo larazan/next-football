@@ -151,7 +151,7 @@ export default function News() {
       <Header />
       <GoTop />
 
-      <div className="relative  block min-h-80 lg:col-span-2 lg:h-full">
+      <div className="relative  block min-h-80 lg:col-span-2 lg:h-full bg-white">
         <div className="py-0 flex flex-col space-y-2">
           <div className="h-max flex flex-col mx-auto w-full lg:w-1/2">
             <div className="flex flex-col md:flex-row md:justify-between space-y-5 py-4 px-2 md:px-6 border-b items-start">
