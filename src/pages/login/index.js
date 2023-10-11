@@ -98,7 +98,7 @@ export default function Login() {
               <div></div>
               <div className="flex flex-row">
                 <span className="font-semibold">
-                  We've changed how you sign in to Man City. If you've
+                  We&lsquo;ve changed how you sign in to Man City. If you&lsquo;ve
                   previously signed in via any social networks,{" "}
                   <a href="#" className="underline">
                     create a new password here to sign into your account.

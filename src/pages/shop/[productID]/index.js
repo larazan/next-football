@@ -13,7 +13,7 @@ import Suggest from '@/components/Suggest';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export default function index() {
+export default function Detail() {
   const [selectedSize, setSelectedSize] = useState();
   const [showError, setShowError] = useState(false);
 
