@@ -10,7 +10,7 @@ export default function HomeNews() {
   return (
     <>
       <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-4 md:px-4 py-5 md:py-4 lg:px-0 justify-center2 items-center2 bg-[#f5f7f9]">
-        <div className="flex space-x-2 px-2 lg:px-0">
+        <div className="flex flex-wrap gap-2 md:space-x-2 px-2 lg:px-0">
           <button className="flex rounded px-2 py-1 items-center bg-[#dc052d]">
             <span className=" font-semibold text-white text-sm">All</span>
           </button>

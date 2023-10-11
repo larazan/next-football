@@ -27,22 +27,33 @@ export default function Header() {
         <div className="flex w-full top-0 md:m-0 px-4 md:px-5 py-4 md:py-3  items-center justify-between bg-[#dc052d]">
           <div className="flex items-center justify-between mx-auto w-full lg:w-1/2">
             <div className="flex w-full md:w-3/5 justify-between space-x-4">
-              <div className="flex space-x-4 w-full items-center">
+              <div className="flex space-x-2 md:space-x-4 w-full items-center">
                 <div className="flex justify-center items-center">
                   <Link href={"/"}>
                     <Image
                       src={logo}
-                      className="h-10 w-10 md:h-12 md:w-12"
+                      className="h-9 w-9 md:h-12 md:w-12"
                       alt=""
                     />
                   </Link>
                 </div>
                 <Link href={"/"}>
-                  <span className="text-lg md:text-2xl text-white font-bold">
+                  <span className="text-base md:text-2xl text-white font-bold">
                     FC Bayern Munchen
                   </span>
                 </Link>
               </div>
+            </div>
+            <div className="md:hidden mr-2">
+              <Link href={"/"} className="flex flex-row space-x-1 items-center">
+                <div className="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+</svg>
+
+                </div>
+                <span className="text-base text-white font-semibold">Login</span>
+              </Link>
             </div>
             <div className="flex flex-col space-y-2">
               <div className="hidden md:flex space-x-4 items-center justify-end ">
@@ -67,7 +78,7 @@ export default function Header() {
                     <option value="boilerplate">Spainish</option>
                   </select>
                 </div>
-                <Link href={"/"}>
+                <Link href={"/login"}>
                   <div className="text-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +102,7 @@ export default function Header() {
                 <button className="flex justify-center items-center rounded bg-white">
                   <Image src={tlogo} className="" alt="" />
                 </button>
-                <button className="flex justify-center py-1 px-1 space-x-1 items-center rounded bg-white">
+                <Link href={"/shop"} className="flex justify-center py-1 px-1 space-x-1 items-center rounded bg-white">
                   <span className="text-[#dc052d]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +122,7 @@ export default function Header() {
                   <div className="text-[#dc052d] font-semibold text-sm">
                     Online store
                   </div>
-                </button>
+                </Link>
               </div>
             </div>
             <section className="MOBILE-MENU flex md:hidden justify-start items-between z-50">
@@ -158,15 +169,15 @@ export default function Header() {
                       </div>
                     </div>
                     <div
-                      className="cursor-pointer"
+                      className="cursor-pointer rounded-full px-.5 py-1 bg-white"
                       onClick={clickMenu}
                     >
                       <svg
-                        className="h-6 w-8 text-white"
+                        className="h-6 w-8 text-red-500"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        strokeWidth="1"
+                        strokeWidth="3"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                       >
@@ -210,7 +221,7 @@ export default function Header() {
                       <li className="flex w-full text-lg border-b">
                         <Link
                           className="px-6 py-3 w-full"
-                          href="/"
+                          href="/shop"
                           target="_blank"
                         >
                           Shop
