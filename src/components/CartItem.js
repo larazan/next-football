@@ -38,7 +38,7 @@ const CartItem = () => {
   return (
     <div className="flex py-5 gap-3 md:gap-5 border-b">
       {/* IMAGE START */}
-      <div className="shrink-0 aspect-square w-[50px] md:w-[120px]">
+      <div className="shrink-0 aspect-square w-[70px] md:w-[120px] md:bg-[#f3f6f9] p-1">
         <Image src={product1} alt="" width={120} height={120} />
       </div>
       {/* IMAGE END */}
@@ -48,7 +48,7 @@ const CartItem = () => {
           {/* PRODUCT TITLE */}
           <Link
             href=""
-            className="text-lg leading-tight hover:underline font-semibold text-black/[0.8]"
+            className="text-base leading-tight hover:underline font-semibold text-black/[0.8]"
           >
             Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing
           </Link>
@@ -59,11 +59,11 @@ const CartItem = () => {
           </div>
 
           {/* PRODUCT PRICE */}
-          <div className="text-sm md:text-md font-bold text-black/[0.5] mt-2">
+          
+        </div>
+        <div className="text-sm md:text-md font-bold text-black/[0.5] mt-2">
             MRP : &#8377;91,00
           </div>
-        </div>
-
         {/* PRODUCT SUBTITLE */}
         <div className="text-md font-medium text-black/[0.5] hidden md:block">
           lorem ipsum dolor sit amet
@@ -123,7 +123,7 @@ const CartItem = () => {
             </div>
           </div>
 
-          <span className="cursor-pointer text-black/[0.5] hover:text-black text-[16px] md:text-[20px]">
+          <span className="cursor-pointer text-black/[0.5] hover:text-red-600 text-[16px] md:text-[18px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

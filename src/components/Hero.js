@@ -13,11 +13,11 @@ const Hero = () => {
       <section>
         <Image src={bg} alt="" />
       </section>
-      <div className="text-center max-w-[800px] mx-auto my-[50px] md:my-[80px]">
-          <div className="text-[28px] md:text-[34px] mb-5 font-semibold leading-tight">
+      <div className="px-2 text-center max-w-[800px] mx-auto my-[20px] md:my-[80px]">
+          <div className="text-[20px] md:text-[34px] mb-5 font-semibold leading-tight">
               Cushioning for Your Miles
           </div>
-          <div className="text-md md:text-xl">
+          <div className="text-md md:text-xl leading-tight">
               A lightweight Nike ZoomX midsole is combined with
               increased stack heights to help provide cushioning
               during extended stretches of running.

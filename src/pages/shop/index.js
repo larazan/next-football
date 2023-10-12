@@ -23,8 +23,7 @@ function Shop() {
       <Header />
       <Hero />
       
-
-                <ProductCard />
+      <ProductCard />
       
       <Footer />
     </>

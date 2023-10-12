@@ -29,7 +29,7 @@ export default function Cart() {
       </Head>
       <Header />
 
-      <div className="w-full md:py-20">
+      <div className="w-full md:py-10">
         <div className={`w-full max-w-[1280px] px-5 md:px-10 mx-auto`}>
           {/* HEADING AND PARAGRAPH START */}
           <div className="text-center max-w-[800px] mx-auto mt-8 md:mt-0">
@@ -40,7 +40,7 @@ export default function Cart() {
           {/* HEADING AND PARAGRAPH END */}
 
           {/* CART CONTENT START */}
-          <div className="flex flex-col lg:flex-row gap-12 py-10">
+          <div className="flex flex-col md:flex-row gap-12 mb-10 md:py-10">
             {/* CART ITEMS START */}
             <div className="flex-[2]">
               <div className="text-lg font-bold">Cart Items</div>
@@ -70,7 +70,7 @@ export default function Cart() {
               </div>
 
               {/* BUTTON START */}
-              <button className="w-full py-4 rounded-full bg-black text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75 flex items-center gap-2 justify-center">
+              <button className="w-full py-2 md:py-3 rounded-full bg-black text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75 flex items-center gap-2 justify-center">
                 Checkout
                 {loading && <Image src={spinner} alt="" />}
               </button>
@@ -97,7 +97,7 @@ export default function Cart() {
                 Go ahead and explore top categories.
               </span>
               <Link
-                href="/"
+                href="/shop"
                 className="py-4 px-8 rounded-full bg-black text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75 mt-8"
               >
                 Continue Shopping

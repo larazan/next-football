@@ -9,30 +9,30 @@ export default function FooterShop() {
     <>
       <section class="mx-auto w-full padding-x padding-t">
         <footer class="bg-[#98c5e9] w-full">
-          <div class="mx-auto w-11/12 py-8 flex flex-row  justify-between items-center flex-wrap2 ">
-            <div class="w-1/2 flex flex-row items-start2">
-              <div className="flex space-x-2">
+          <div class="mx-auto w-11/12 py-4 md:py-8 flex flex-col md:flex-row space-y-3 md:justify-between items-center flex-wrap2 ">
+            <div class="w-full md:w-8/12 flex flex-row items-center justify-center md:justify-start">
+              <div className="flex space-x-4">
                 <Link href={"/"}>
-                  <span className="text-lg font-bold text-slate-800">
+                  <span className="text-sm md:text-lg font-bold text-slate-800">
                     Delivery & Shipping
                   </span>
                 </Link>
                 <Link href={"/"}>
-                  <span className="text-lg font-bold text-slate-800">
+                  <span className="text-sm md:text-lg font-bold text-slate-800">
                     Track My Order
                   </span>
                 </Link>
                 <Link href={"/"}>
-                  <span className="text-lg font-bold text-slate-800">FAQ</span>
+                  <span className="text-sm md:text-lg font-bold text-slate-800">FAQ</span>
                 </Link>
                 <Link href={"/"}>
-                  <span className="text-lg font-bold text-slate-800">
+                  <span className="text-sm md:text-lg font-bold text-slate-800">
                     Contact
                   </span>
                 </Link>
               </div>
             </div>
-            <div class="w-1/2 flex flex-row justify-end">
+            <div class="w-full md:w-6/12 flex flex-row justify-center md:justify-end">
               <div className="flex space-x-4">
                 <Link href={"/"} className="text-slate-800">
                   <span className="text-slate-800">
@@ -123,8 +123,8 @@ export default function FooterShop() {
             </div>
           </div>
           <div class="bg-white py-4">
-            <div className="mx-auto w-11/12 flex justify-between text-slate-800-400  max-sm:flex-col max-sm:items-center">
-              <div class="w-1/2 flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
+            <div className="mx-auto w-11/12 flex flex-col md:flex-row space-y-2 justify-between text-slate-800-400  max-sm:flex-col max-sm:items-center">
+              <div class="w-full md:w-1/2 flex flex-1 justify-center md:justify-start items-center gap-2 font-montserrat cursor-pointer">
                 <div className="flex space-x-3">
                   <Link href={"/"}>
                     <span className="text-sm font-semibold text-slate-800">
@@ -142,7 +142,7 @@ export default function FooterShop() {
                   
                 </div>
               </div>
-              <div className="w-1/2">
+              <div className="w-11/12 md:w-1/2">
                 <div className="flex space-x-3">
                   <Link href={"/"}>
                     <Image src={payment1} alt="" />
