@@ -195,7 +195,7 @@ export default function Detail() {
                                 Product Details
                             </div>
                             <div className="markdown text-md mb-5">
-                            With the Manchester City 2023/24 Home Kit, we celebrate the 20th anniversary of City at the Etihad Stadium and all those who call it home. Inspired by the stadium walkways and the jersey worn during the inaugural season. Featuring the club crest and PUMA Cat logo on the chest. Designed with a modern V-neck and executed in a sophisticated classic short sleevefor kids'. Details include the words CITY embroided in the back of the neck and the Etihad stadium print inside the neckline. Be at home with the 2023/24 season's Man City Home jersey.
+                            With the Manchester City 2023/24 Home Kit, we celebrate the 20th anniversary of City at the Etihad Stadium and all those who call it home. Inspired by the stadium walkways and the jersey worn during the inaugural season. Featuring the club crest and PUMA Cat logo on the chest. Designed with a modern V-neck and executed in a sophisticated classic short sleevefor kids&lsquo;. Details include the words CITY embroided in the back of the neck and the Etihad stadium print inside the neckline. Be at home with the 2023/24 season&lsquo;s Man City Home jersey.
                             </div>
                         </div>
                     </div>
