@@ -20,21 +20,27 @@ export default function Login() {
       </Head>
 
       <HeaderRegistration />
-      
+
       <section className=" bg-white min-h-[800px]">
-      <div className="relative">
-        <Image src={bg} alt="" />
-      </div>
+        <div className="relative">
+          <Image src={bg} alt="" />
+        </div>
         <div className="absolute top-64 flex justify-center items-center">
           <div className="relative mx-auto w-11/12 md:w-8/12 border-2 rounded-lg shadow-lg space-y-4 py-5  bg-white">
             <div className="absolute m-auto left-0 right-0 -top-7 w-9/12 md:w-1/2 rounded border-2 border-gray-800  ">
               <div className="flex flex-row w-full items-center">
-                <Link href={"/login"} className="w-1/2 flex py-2 bg-[#001838] justify-center items-center text-center">
+                <Link
+                  href={"/login"}
+                  className="w-1/2 flex py-2 bg-[#001838] justify-center items-center text-center"
+                >
                   <p className="text-lg md:text-2xl text-white font-bold uppercase">
                     Sign In
                   </p>
                 </Link>
-                <Link href={"/register"} className="w-1/2 flex py-2 bg-white justify-center items-center">
+                <Link
+                  href={"/register"}
+                  className="w-1/2 flex py-2 bg-white justify-center items-center"
+                >
                   <p className="text-lg md:text-2xl text-gray-800 font-bold uppercase">
                     Register
                   </p>
@@ -42,7 +48,9 @@ export default function Login() {
               </div>
             </div>
             <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 pt-2">
-              <label class="text-sm md:text-base block text-gray-800">Email Address</label>
+              <label class="text-sm md:text-base block text-gray-800">
+                Email Address
+              </label>
               <input
                 className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
                 type="email"
@@ -50,7 +58,9 @@ export default function Login() {
               />
             </div>
             <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12">
-              <label class="text-sm md:text-base block text-gray-800">Password</label>
+              <label class="text-sm md:text-base block text-gray-800">
+                Password
+              </label>
               <div className="relative items-center">
                 <input
                   className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
@@ -97,8 +107,8 @@ export default function Login() {
               <div></div>
               <div className="flex flex-row">
                 <span className="text-sm md:text-md font-semibold text-slate-900">
-                  We&lsquo;ve changed how you sign in to Man City. If you&lsquo;ve
-                  previously signed in via any social networks,{" "}
+                  We&lsquo;ve changed how you sign in to Man City. If
+                  you&lsquo;ve previously signed in via any social networks,{" "}
                   <a href="#" className="underline">
                     create a new password here to sign into your account.
                   </a>

@@ -167,7 +167,7 @@ const Navbar = () => {
                       >
                         <svg
                           focusable="false"
-                          class="a-icon icon--bag sub-menu__cart stroke-white fill-obsidian-blue mr-1"
+                          className="a-icon icon--bag sub-menu__cart stroke-white fill-obsidian-blue mr-1"
                           viewBox="0 0 30 30"
                           width="40px"
                           height="40px"

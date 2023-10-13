@@ -10,7 +10,7 @@ import support from "@/assets/img/icons/support.svg";
 const Hero = () => {
   return (
     <>
-      <section>
+      <section className="">
         <Image src={bg} alt="" />
       </section>
       <div className="px-2 bg-white text-slate-900 text-center max-w-[800px] mx-auto my-[20px] md:my-[80px]">

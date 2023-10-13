@@ -16,7 +16,7 @@ const Sidebar = ({ isOpen, handleClose }) => {
       } flex flex-col w-full bg-white fixed top-0 h-full shadow-2xl md:w-[35vw] transition-all duration-300 z-20 px-4 lg:px-[35px]`}
     >
       <div className="flex items-center justify-between py-6 border-b">
-        <div className="uppercase text-sm font-semibold">Shopping Bag (0)</div>
+        <div className="uppercase text-sm font-semibold text-slate-900">Shopping Bag (0)</div>
         <div
           onClick={handleClose}
           className="cursor-pointer w-8 h-8 flex justify-center items-center"
@@ -27,7 +27,7 @@ const Sidebar = ({ isOpen, handleClose }) => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-6 h-6 text-slate-900"
           >
             <path
               strokeLinecap="round"
@@ -43,7 +43,7 @@ const Sidebar = ({ isOpen, handleClose }) => {
         </div>
         <div className="flex flex-col gap-y-3 py-4 mt-4">
             <div className="flex w-full justify-between items-center">
-                <div className="uppercase font-semibold">
+                <div className="uppercase font-semibold text-slate-900">
                     <span className="mr-2">Total:</span> $ 200.00
                 </div>
                 <div className="cursor-pointer py-4 bg-red-500 text-white w-8 h-8 flex justify-center items-center text-xl">
@@ -53,7 +53,7 @@ const Sidebar = ({ isOpen, handleClose }) => {
 
                 </div>
             </div>
-            <Link href={"/cart"} className="bg-gray-200 rounded flex p-3 justify-center items-center w-full font-medium">
+            <Link href={"/cart"} className="bg-gray-200 text-slate-900 rounded flex p-3 justify-center items-center w-full font-medium">
                 View Cart
             </Link>
             <Link href={"/checkout"} className="bg-gray-800 rounded text-white flex p-3 justify-center items-center w-full font-medium">

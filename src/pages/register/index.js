@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
@@ -21,21 +21,26 @@ export default function Register() {
 
       <HeaderRegistration />
 
-      
       <section className=" bg-white min-h-[1280px] md:min-h-[1150px]">
-      <div className="relative">
-        <Image src={bg} alt="" />
-      </div>
+        <div className="relative">
+          <Image src={bg} alt="" />
+        </div>
         <div className="absolute top-64 flex justify-center items-center">
           <div className="relative mx-auto w-11/12 md:w-8/12 border-2 rounded-lg shadow-lg space-y-4 py-5  bg-white">
             <div className="absolute m-auto left-0 right-0 -top-7 w-9/12 md:w-1/2 rounded border-2 border-gray-800  ">
               <div className="flex flex-row w-full items-center">
-                <Link href={"/login"} className="w-1/2 flex py-2 bg-white justify-center items-center">
+                <Link
+                  href={"/login"}
+                  className="w-1/2 flex py-2 bg-white justify-center items-center"
+                >
                   <p className="text-lg md:text-2xl text-gray-800 font-bold uppercase">
                     Sign In
                   </p>
                 </Link>
-                <Link href={"/register"} className="w-1/2 flex py-2 bg-[#001838] justify-center items-center text-center">
+                <Link
+                  href={"/register"}
+                  className="w-1/2 flex py-2 bg-[#001838] justify-center items-center text-center"
+                >
                   <p className="text-lg md:text-2xl text-white font-bold uppercase">
                     Register
                   </p>
@@ -43,15 +48,19 @@ export default function Register() {
               </div>
             </div>
             <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 pt-2">
-              <label class="text-sm md:text-base block text-gray-800">Date of Birth</label>
-              <div className='flex flex-row space-x-2'> 
-                <select placeholder='day' className=" py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry">
+              <label class="text-sm md:text-base block text-gray-800">
+                Date of Birth
+              </label>
+              <div className="flex flex-row space-x-2">
+                <select
+                  placeholder="day"
+                  className=" py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
+                >
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
-                  
                 </select>
                 <select className=" py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry">
                   <option value="1">January</option>
@@ -59,7 +68,6 @@ export default function Register() {
                   <option value="3">Maret</option>
                   <option value="4">April</option>
                   <option value="5">Mei</option>
-        
                 </select>
                 <select className=" py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry">
                   <option value="1">1990</option>
@@ -67,96 +75,107 @@ export default function Register() {
                   <option value="3">1992</option>
                   <option value="4">1993</option>
                   <option value="5">1994</option>
-                  
                 </select>
               </div>
-              <span className='text-sm leading-tight text-slate-900'>You must supply an accurate date of birth, as this will be used for identification and security in the future.</span>
+              <span className="text-sm leading-tight text-slate-900">
+                You must supply an accurate date of birth, as this will be used
+                for identification and security in the future.
+              </span>
             </div>
             <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 pt-2">
-              <label class="text-sm md:text-base block text-gray-800">Email Address</label>
+              <label class="text-sm md:text-base block text-gray-800">
+                Email Address
+              </label>
               <input
                 className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
                 type="email"
                 placeholder="Email"
               />
             </div>
-            <div className='flex flex-col md:flex-row space-y-3 md:space-x-2 mx-auto w-11/12 md:w-10/12'>
-            <div className="w-full md:w-1/2 flex flex-col space-y-1.5 ">
-              <label class="text-sm md:text-base block text-gray-800">Password</label>
-              <div className="relative items-center">
-                <input
-                  className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
-                  type="text"
-                  placeholder="Password"
-                />
-                <button class="absolute inline-block bottom-3 right-4 ">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                </button>
+            <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-2 mx-auto w-11/12 md:w-10/12">
+              <div className="w-full md:w-1/2 flex flex-col space-y-1.5 ">
+                <label class="text-sm md:text-base block text-gray-800">
+                  Password
+                </label>
+                <div className="relative items-center">
+                  <input
+                    className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
+                    type="text"
+                    placeholder="Password"
+                  />
+                  <button class="absolute inline-block bottom-3 right-4 ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div className="w-full md:w-1/2 flex flex-col space-y-1.5 ">
+                <label class="text-sm md:text-base block text-gray-800">
+                  Confirm Password
+                </label>
+                <div className="relative items-center">
+                  <input
+                    className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
+                    type="text"
+                    placeholder="Password"
+                  />
+                  <button class="absolute inline-block bottom-3 right-4 ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2 flex flex-col space-y-1.5 ">
-              <label class="text-sm md:text-base block text-gray-800">Confirm Password</label>
-              <div className="relative items-center">
-                <input
-                  className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
-                  type="text"
-                  placeholder="Password"
-                />
-                <button class="absolute inline-block bottom-3 right-4 ">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            </div>
-            
+
             <div class="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 text-left mt-2 ">
-              <div className='leading-tight'>
-                <span className='font-bold text-sm md:text-[17px] leading-tight text-slate-900'>
-                Do you want to be the first to hear about our competitions, new signings, ticket and club news, and partner offers by receiving our exclusive emails?
+              <div className="leading-tight">
+                <span className="font-bold text-sm md:text-[17px] leading-tight text-slate-900">
+                  Do you want to be the first to hear about our competitions,
+                  new signings, ticket and club news, and partner offers by
+                  receiving our exclusive emails?
                 </span>
               </div>
-              <div className='leading-tight'>
-                <span className='text-xs md:text-sm leading-tight text-slate-900'>
-                We send offers and news on behalf of our partners but do not share your information directly with them.
+              <div className="leading-tight">
+                <span className="text-xs md:text-sm leading-tight text-slate-900">
+                  We send offers and news on behalf of our partners but do not
+                  share your information directly with them.
                 </span>
               </div>
-              <div className='flex flex-row w-full space-x-2'>
+              <div className="flex flex-row w-full space-x-2">
                 <button className="w-full py-2 bg-white hover:bg-slate-200 border border-gray-800 rounded text-base uppercase font-bold text-gray-700 transition duration-200 ">
                   Yes
                 </button>
@@ -164,14 +183,16 @@ export default function Register() {
                   No
                 </button>
               </div>
-              <div className='leading-tight'>
-                <span className='text-xs md:text-sm leading-tight text-slate-900'>
-                You can access our preference centre at any time to opt-out of marketing communications and control how we use your data.
+              <div className="leading-tight">
+                <span className="text-xs md:text-sm leading-tight text-slate-900">
+                  You can access our preference centre at any time to opt-out of
+                  marketing communications and control how we use your data.
                 </span>
               </div>
-              <div className='leading-tight'>
-                <span className='text-sm md:text-base font-semibold leading-tight text-slate-900'>
-                Please note, you will still receive general communications, including ticket sales and important club notifications.
+              <div className="leading-tight">
+                <span className="text-sm md:text-base font-semibold leading-tight text-slate-900">
+                  Please note, you will still receive general communications,
+                  including ticket sales and important club notifications.
                 </span>
               </div>
             </div>
@@ -184,11 +205,14 @@ export default function Register() {
               <div></div>
               <div className="flex flex-row leading-tight">
                 <span className="text-sm md:text-base text-slate-900 font-semibold">
-                  By submitting your details, you agree to the use of your data by City Football Group in accordance with our{" "}
+                  By submitting your details, you agree to the use of your data
+                  by City Football Group in accordance with our{" "}
                   <a href="#" className="underline">
                     Privacy Policy.{" "}
                   </a>
-                  We use your data to personalise and improve your experience on our platforms, provide services you request and learn about your interests.
+                  We use your data to personalise and improve your experience on
+                  our platforms, provide services you request and learn about
+                  your interests.
                 </span>
               </div>
             </div>
@@ -206,5 +230,5 @@ export default function Register() {
 
       <FooterRegistration />
     </>
-  )
+  );
 }
