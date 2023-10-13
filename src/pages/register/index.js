@@ -22,28 +22,28 @@ export default function Register() {
       <HeaderRegistration />
 
       
-      <section className=" bg-white min-h-[1150px]">
+      <section className=" bg-white min-h-[1280px] md:min-h-[1150px]">
       <div className="relative">
         <Image src={bg} alt="" />
       </div>
         <div className="absolute top-64 flex justify-center items-center">
-          <div className="relative mx-auto w-8/12 border-2 rounded-lg shadow-lg space-y-4 py-5  bg-white">
-            <div className="absolute m-auto left-0 right-0 -top-7 w-1/2 rounded border-2 border-gray-800  ">
+          <div className="relative mx-auto w-11/12 md:w-8/12 border-2 rounded-lg shadow-lg space-y-4 py-5  bg-white">
+            <div className="absolute m-auto left-0 right-0 -top-7 w-9/12 md:w-1/2 rounded border-2 border-gray-800  ">
               <div className="flex flex-row w-full items-center">
                 <Link href={"/login"} className="w-1/2 flex py-2 bg-white justify-center items-center">
-                  <p className="text-2xl text-gray-800 font-bold uppercase">
+                  <p className="text-lg md:text-2xl text-gray-800 font-bold uppercase">
                     Sign In
                   </p>
                 </Link>
                 <Link href={"/register"} className="w-1/2 flex py-2 bg-[#001838] justify-center items-center text-center">
-                  <p className="text-2xl text-white font-bold uppercase">
+                  <p className="text-lg md:text-2xl text-white font-bold uppercase">
                     Register
                   </p>
                 </Link>
               </div>
             </div>
-            <div className="flex flex-col space-y-1.5 mx-auto w-10/12 pt-2">
-              <label class="block text-gray-800">Date of Birth</label>
+            <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 pt-2">
+              <label class="text-sm md:text-base block text-gray-800">Date of Birth</label>
               <div className='flex flex-row space-x-2'> 
                 <select placeholder='day' className=" py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry">
                   <option value="1">1</option>
@@ -70,19 +70,19 @@ export default function Register() {
                   
                 </select>
               </div>
-              <span className='text-sm leading-tight'>You must supply an accurate date of birth, as this will be used for identification and security in the future.</span>
+              <span className='text-sm leading-tight text-slate-900'>You must supply an accurate date of birth, as this will be used for identification and security in the future.</span>
             </div>
-            <div className="flex flex-col space-y-1.5 mx-auto w-10/12 pt-2">
-              <label class="block text-gray-800">Email Address</label>
+            <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 pt-2">
+              <label class="text-sm md:text-base block text-gray-800">Email Address</label>
               <input
                 className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
                 type="email"
                 placeholder="Email"
               />
             </div>
-            <div className='flex flex-row space-x-2 mx-auto w-10/12'>
-            <div className="w-1/2 flex flex-col space-y-1.5 ">
-              <label class="block text-gray-800">Password</label>
+            <div className='flex flex-col md:flex-row space-y-3 md:space-x-2 mx-auto w-11/12 md:w-10/12'>
+            <div className="w-full md:w-1/2 flex flex-col space-y-1.5 ">
+              <label class="text-sm md:text-base block text-gray-800">Password</label>
               <div className="relative items-center">
                 <input
                   className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
@@ -112,8 +112,8 @@ export default function Register() {
                 </button>
               </div>
             </div>
-            <div className="w-1/2 flex flex-col space-y-1.5 ">
-              <label class="block text-gray-800">Confirm Password</label>
+            <div className="w-full md:w-1/2 flex flex-col space-y-1.5 ">
+              <label class="text-sm md:text-base block text-gray-800">Confirm Password</label>
               <div className="relative items-center">
                 <input
                   className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
@@ -145,14 +145,14 @@ export default function Register() {
             </div>
             </div>
             
-            <div class="flex flex-col space-y-1.5 mx-auto w-10/12 text-left mt-2 ">
-              <div>
-                <span className='font-bold text-[17px] leading-tight'>
+            <div class="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 text-left mt-2 ">
+              <div className='leading-tight'>
+                <span className='font-bold text-sm md:text-[17px] leading-tight text-slate-900'>
                 Do you want to be the first to hear about our competitions, new signings, ticket and club news, and partner offers by receiving our exclusive emails?
                 </span>
               </div>
-              <div>
-                <span className='text-sm leading-tight'>
+              <div className='leading-tight'>
+                <span className='text-xs md:text-sm leading-tight text-slate-900'>
                 We send offers and news on behalf of our partners but do not share your information directly with them.
                 </span>
               </div>
@@ -164,26 +164,26 @@ export default function Register() {
                   No
                 </button>
               </div>
-              <div>
-                <span className='text-sm leading-tight'>
+              <div className='leading-tight'>
+                <span className='text-xs md:text-sm leading-tight text-slate-900'>
                 You can access our preference centre at any time to opt-out of marketing communications and control how we use your data.
                 </span>
               </div>
-              <div>
-                <span className='font-semibold leading-tight'>
+              <div className='leading-tight'>
+                <span className='text-sm md:text-base font-semibold leading-tight text-slate-900'>
                 Please note, you will still receive general communications, including ticket sales and important club notifications.
                 </span>
               </div>
             </div>
-            <div className="flex flex-col space-y-1.5 mx-auto w-10/12">
+            <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12">
               <button className="w-full py-2 bg-blue-800 hover:bg-blue-700 border border-gray-800 rounded text-lg uppercase font-bold text-gray-50 transition duration-200 ">
                 Register
               </button>
             </div>
-            <div className=" flex flex-row space-x-2  mx-auto w-10/12 bg-green-100 rounded py-2 px-2  border-l-8 border-green-500">
+            <div className=" flex flex-row space-x-2  mx-auto w-11/12 md:w-10/12 bg-green-100 rounded py-2 px-2  border-l-8 border-green-500">
               <div></div>
-              <div className="flex flex-row">
-                <span className="font-semibold">
+              <div className="flex flex-row leading-tight">
+                <span className="text-sm md:text-base text-slate-900 font-semibold">
                   By submitting your details, you agree to the use of your data by City Football Group in accordance with our{" "}
                   <a href="#" className="underline">
                     Privacy Policy.{" "}
@@ -192,8 +192,8 @@ export default function Register() {
                 </span>
               </div>
             </div>
-            <div className="flex flex-col space-y-1.5 mx-auto w-10/12">
-              <div className="flex flex-row space-x-1 font-semibold py-3 border-t border-blue-300 justify-center">
+            <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12">
+              <div className="flex flex-row text-sm md:text-base text-slate-900 space-x-1 font-semibold py-3 border-t border-blue-300 justify-center">
                 <span>Already have an account?</span>
                 <Link href={"/login"} className="underline">
                   Sign In

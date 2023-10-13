@@ -13,7 +13,7 @@ const Hero = () => {
       <section>
         <Image src={bg} alt="" />
       </section>
-      <div className="px-2 text-center max-w-[800px] mx-auto my-[20px] md:my-[80px]">
+      <div className="px-2 bg-white text-slate-900 text-center max-w-[800px] mx-auto my-[20px] md:my-[80px]">
           <div className="text-[20px] md:text-[34px] mb-5 font-semibold leading-tight">
               Cushioning for Your Miles
           </div>

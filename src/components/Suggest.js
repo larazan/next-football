@@ -11,7 +11,7 @@ import product6 from "@/assets/img/product/product6.png";
 import product7 from "@/assets/img/product/product7.png";
 
 export default function Suggest() {
-    let scrl = useRef(null);
+  let scrl = useRef(null);
   const shiftN = 230;
   const [scrollX, setscrollX] = useState(0);
   const [scrolEnd, setscrolEnd] = useState(false);
@@ -49,41 +49,40 @@ export default function Suggest() {
       img: product1,
     },
     {
-        title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
-        price: "91,00",
-        img: product2,
-      },
-      {
-        title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
-        price: "91,00",
-        img: product3,
-      },
-      {
-        title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
-        price: "91,00",
-        img: product4,
-      },
-      {
-        title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
-        price: "91,00",
-        img: product5,
-      },
-      {
-        title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
-        price: "91,00",
-        img: product6,
-      },
-      {
-        title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
-        price: "91,00",
-        img: product7,
-      },
-   
+      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      price: "91,00",
+      img: product2,
+    },
+    {
+      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      price: "91,00",
+      img: product3,
+    },
+    {
+      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      price: "91,00",
+      img: product4,
+    },
+    {
+      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      price: "91,00",
+      img: product5,
+    },
+    {
+      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      price: "91,00",
+      img: product6,
+    },
+    {
+      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      price: "91,00",
+      img: product7,
+    },
   ];
 
   return (
     <>
-<div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-6 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
+      <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-6 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
         <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
           <Link
             href={"/"}
@@ -207,29 +206,27 @@ export default function Suggest() {
                         <div className="flex space-x-3">
                           <Image src={data.img} alt="" className="w-26 " />
                         </div>
-                        
                       </Link>{" "}
                     </div>
                     <div className="flex flex-col justify-center2 items-center2">
-                          <div className="flex text-center2 ">
-                            <span className="font-bold text-[10px] md:text-xs text-[#002f6c]">
-                              {data.title}
-                            </span>
-                          </div>
-                          <div>
-                            <span className="font-bold text-xs md:text-sm text-[#002f6c]">
-                              {data.price}
-                            </span>
-                          </div>
-                        </div>
+                      <div className="flex text-center2 ">
+                        <span className="font-bold text-[10px] md:text-xs text-[#002f6c]">
+                          {data.title}
+                        </span>
+                      </div>
+                      <div>
+                        <span className="font-bold text-xs md:text-sm text-[#002f6c]">
+                          {data.price}
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               );
             })}
           </div>
         </div>
-
-        </div>
+      </div>
     </>
-  )
+  );
 }

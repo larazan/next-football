@@ -40,7 +40,7 @@ const Navbar = () => {
     <>
       <header className=" bg-[#98c5e9] w-full top-0 left-0 right-0 h-[9vh] flex items-center justify-center opacity-100 z-[200] ">
         <nav className="mx-auto w-full px-2 md:w-11/12 flex items-center justify-between">
-          <section className="w-1/3 flex justify-start items-between z-50">
+          <section className="w-1/3 flex justify-start items-between z-20">
             <div
               className="space-y-2 w-fit md:justify-start cursor-pointer text-slate-800"
               onClick={clickMenu}
@@ -149,6 +149,14 @@ const Navbar = () => {
                         href="/category"
                       >
                         Gifts
+                      </Link>
+                    </li>
+                    <li className="flex w-full text-lg md:text-2xl uppercase">
+                      <Link
+                        className="px-6 py-3 w-full hover:underline"
+                        href="/login"
+                      >
+                        Login
                       </Link>
                     </li>
                     <li className="flex w-full text-lg  uppercase">
@@ -266,7 +274,7 @@ const Navbar = () => {
       </header>
       <div className="flex bg-[#e6ff00] w-full  py-2">
         <div className="flex mx-auto w-11/12 justify-center">
-          <span className="font-semibold text-sm md:text-base uppercase leading-tight">
+          <span className="font-semibold text-sm text-slate-900 md:text-base uppercase leading-tight">
             FREE EU SHIPPING WHEN YOU SPEND € 100
           </span>
         </div>

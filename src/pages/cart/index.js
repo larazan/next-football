@@ -29,7 +29,7 @@ export default function Cart() {
       </Head>
       <Header />
 
-      <div className="w-full md:py-10">
+      <div className="w-full md:py-10 bg-[#f5f7f9]">
         <div className={`w-full max-w-[1280px] px-5 md:px-10 mx-auto`}>
           {/* HEADING AND PARAGRAPH START */}
           <div className="text-center max-w-[800px] mx-auto mt-8 md:mt-0">
@@ -43,7 +43,7 @@ export default function Cart() {
           <div className="flex flex-col md:flex-row gap-12 mb-10 md:py-10">
             {/* CART ITEMS START */}
             <div className="flex-[2]">
-              <div className="text-lg font-bold">Cart Items</div>
+              <div className="text-lg font-bold text-slate-900">Cart Items</div>
 
               <CartItem />
             </div>
@@ -51,7 +51,7 @@ export default function Cart() {
 
             {/* SUMMARY START */}
             <div className="flex-[1]">
-              <div className="text-lg font-bold">Summary</div>
+              <div className="text-lg font-bold text-slate-900">Summary</div>
 
               <div className="p-5 my-5 bg-black/[0.05] rounded-xl">
                 <div className="flex justify-between">
@@ -62,7 +62,7 @@ export default function Cart() {
                     &#8377;200
                   </div>
                 </div>
-                <div className="text-sm md:text-md py-5 border-t mt-5">
+                <div className="text-sm md:text-md py-5 border-t mt-5 text-slate-900">
                   The subtotal reflects the total price of your order, including
                   duties and taxes, before any applicable discounts. It does not
                   include delivery costs and international transaction fees.
@@ -90,8 +90,8 @@ export default function Cart() {
                 className="w-[300px] md:w-[400px]"
                 alt=""
               />
-              <span className="text-xl font-bold">Your cart is empty</span>
-              <span className="text-center mt-4">
+              <span className="text-xl font-bold text-slate-900">Your cart is empty</span>
+              <span className="text-center mt-4 text-slate-900">
                 Looks like you have not added anything in your cart.
                 <br />
                 Go ahead and explore top categories.

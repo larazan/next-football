@@ -58,7 +58,7 @@ export default function ProductCard() {
 
   return (
     <>
-      <div className={`w-full max-w-[1280px] px-5 md:px-10 mx-auto`}>
+      <div className={`w-full max-w-[1280px] px-5 md:px-10 mx-auto bg-white`}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-14 px-5 md:px-0">
           {productData.map((data, index) => {
             return (

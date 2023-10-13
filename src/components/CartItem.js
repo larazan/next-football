@@ -65,7 +65,7 @@ const CartItem = () => {
             MRP : &#8377;91,00
           </div>
         {/* PRODUCT SUBTITLE */}
-        <div className="text-md font-medium text-black/[0.5] hidden md:block">
+        <div className="text-sm font-medium text-black/[0.5] hidden md:block">
           lorem ipsum dolor sit amet
         </div>
 
@@ -74,7 +74,7 @@ const CartItem = () => {
             <div className="flex  flex-row h-8 w-full rounded-lg relative bg-transparent ">
               <button
                 data-action="decrement"
-                className="flex items-center bg-gray-100 text-gray-600 hover:text-gray-700 hover:bg-gray-200 h-full w-20 rounded-l cursor-pointer outline-none"
+                className="flex items-center bg-gray-200 text-gray-600 hover:text-gray-700 hover:bg-gray-300 h-full w-20 rounded-l cursor-pointer outline-none"
               >
                 <span className="m-auto text-2xl font-thin">
                   <svg
@@ -95,13 +95,13 @@ const CartItem = () => {
               </button>
               <input
                 type="number"
-                className="outline-none  text-center w-full bg-gray-100 font-semibold text-sm hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none"
+                className="outline-none  text-center w-full bg-gray-200 font-semibold text-sm hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none"
                 name="custom-input-number"
                 value="0"
               />
               <button
                 data-action="increment"
-                className="flex items-center bg-gray-100 text-gray-600 hover:text-gray-700 hover:bg-gray-200 h-full w-20 rounded-r cursor-pointer"
+                className="flex items-center bg-gray-200 text-gray-600 hover:text-gray-700 hover:bg-gray-300 h-full w-20 rounded-r cursor-pointer"
               >
                 <span className="m-auto text-2xl font-thin">
                   <svg

@@ -20,38 +20,37 @@ export default function Login() {
       </Head>
 
       <HeaderRegistration />
-
       
       <section className=" bg-white min-h-[800px]">
       <div className="relative">
         <Image src={bg} alt="" />
       </div>
         <div className="absolute top-64 flex justify-center items-center">
-          <div className="relative mx-auto w-8/12 border-2 rounded-lg shadow-lg space-y-4 py-5  bg-white">
-            <div className="absolute m-auto left-0 right-0 -top-7 w-1/2 rounded border-2 border-gray-800  ">
+          <div className="relative mx-auto w-11/12 md:w-8/12 border-2 rounded-lg shadow-lg space-y-4 py-5  bg-white">
+            <div className="absolute m-auto left-0 right-0 -top-7 w-9/12 md:w-1/2 rounded border-2 border-gray-800  ">
               <div className="flex flex-row w-full items-center">
                 <Link href={"/login"} className="w-1/2 flex py-2 bg-[#001838] justify-center items-center text-center">
-                  <p className="text-2xl text-white font-bold uppercase">
+                  <p className="text-lg md:text-2xl text-white font-bold uppercase">
                     Sign In
                   </p>
                 </Link>
                 <Link href={"/register"} className="w-1/2 flex py-2 bg-white justify-center items-center">
-                  <p className="text-2xl text-gray-800 font-bold uppercase">
+                  <p className="text-lg md:text-2xl text-gray-800 font-bold uppercase">
                     Register
                   </p>
                 </Link>
               </div>
             </div>
-            <div className="flex flex-col space-y-1.5 mx-auto w-10/12 pt-2">
-              <label class="block text-gray-800">Email Address</label>
+            <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 pt-2">
+              <label class="text-sm md:text-base block text-gray-800">Email Address</label>
               <input
                 className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
                 type="email"
                 placeholder="Email"
               />
             </div>
-            <div className="flex flex-col space-y-1.5 mx-auto w-10/12">
-              <label class="block text-gray-800">Password</label>
+            <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12">
+              <label class="text-sm md:text-base block text-gray-800">Password</label>
               <div className="relative items-center">
                 <input
                   className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
@@ -81,7 +80,7 @@ export default function Login() {
                 </button>
               </div>
             </div>
-            <div class="flex flex-col space-y-1.5 mx-auto w-10/12 text-left mt-2 underline">
+            <div class="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 text-left mt-2 underline">
               <a
                 href="#"
                 class="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700"
@@ -89,15 +88,15 @@ export default function Login() {
                 Forgot Password?
               </a>
             </div>
-            <div className="flex flex-col space-y-1.5 mx-auto w-10/12">
+            <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12">
               <button className="w-full py-2 bg-blue-800 hover:bg-blue-700 border border-gray-800 rounded text-lg uppercase font-bold text-gray-50 transition duration-200 ">
                 Sign In
               </button>
             </div>
-            <div className=" flex flex-row space-x-2  mx-auto w-10/12 bg-green-100 rounded py-2 px-2  border-l-8 border-green-500">
+            <div className=" flex flex-row space-x-2  mx-auto w-11/12 md:w-10/12 bg-green-100 rounded py-2 px-2  border-l-8 border-green-500">
               <div></div>
               <div className="flex flex-row">
-                <span className="font-semibold">
+                <span className="text-sm md:text-md font-semibold text-slate-900">
                   We&lsquo;ve changed how you sign in to Man City. If you&lsquo;ve
                   previously signed in via any social networks,{" "}
                   <a href="#" className="underline">
@@ -106,8 +105,8 @@ export default function Login() {
                 </span>
               </div>
             </div>
-            <div className="flex flex-col space-y-1.5 mx-auto w-10/12">
-              <div className="flex flex-row space-x-1 font-semibold py-3 border-t border-blue-300 justify-center">
+            <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12">
+              <div className="flex flex-row text-sm md:text-base space-x-1 text-slate-900 font-semibold py-3 border-t border-blue-300 justify-center">
                 <span>Dont have an account?</span>
                 <Link href={"/register"} className="underline">
                   Register Now
