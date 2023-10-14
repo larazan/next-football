@@ -84,14 +84,14 @@ export default function Suggest() {
     <>
       <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-3 px-3 md:px-6 lg:px-0 py-0 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
         <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
-          <Link
-            href={"/"}
+          <div
+            
             className="flex space-x-1 items-center hover:opacity-80"
           >
             <span className="text-lg md:text-2xl font-bold text-[#002f6c]">
               You Might Also Like
             </span>
-          </Link>
+          </div>
           {/* <div className="flex space-x-1">
             <div
               onClick={() => slide(-shiftN)}
@@ -200,7 +200,7 @@ export default function Suggest() {
                   <div className="flex flex-col space-y-2 w-[130px] md:w-[230px]  justify-center bg-white2 border2 shadow2 hover:shadow-lg">
                     <div className="w-full bg-gray-200  flex ">
                       <Link
-                        href="/"
+                        href="/shop/product-2"
                         className="flex p-2 space-y-3 justify-center items-center"
                       >
                         <div className="flex space-x-3">
@@ -209,10 +209,12 @@ export default function Suggest() {
                       </Link>{" "}
                     </div>
                     <div className="flex flex-col justify-center2 items-center2">
-                      <div className="flex text-center2 ">
-                        <span className="font-bold text-[10px] md:text-xs text-[#002f6c]">
+                      <div className="flex text-center2 leading-tight">
+                        <Link href={"/shop/product-2"}>
+                        <span className="font-bold text-[10px] md:text-xs text-[#002f6c]  hover:underline">
                           {data.title}
                         </span>
+                        </Link>
                       </div>
                       <div>
                         <span className="font-bold text-xs md:text-sm text-[#002f6c]">

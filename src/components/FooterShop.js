@@ -10,8 +10,8 @@ export default function FooterShop() {
       <section class="mx-auto w-full padding-x padding-t">
         <footer class="bg-[#98c5e9] w-full">
           <div class="mx-auto w-11/12 py-4 md:py-8 flex flex-col md:flex-row space-y-3 md:justify-between items-center flex-wrap2 ">
-            <div class="w-full md:w-8/12 flex flex-row items-center justify-center md:justify-start">
-              <div className="flex space-x-4">
+            <div class="w-full md:w-8/12 flex flex-row items-center justify-around md:justify-start">
+              <div className=" flex space-x-4 leading-tight">
                 <Link href={"/"}>
                   <span className="text-sm md:text-lg font-bold text-slate-800">
                     Delivery & Shipping
@@ -19,7 +19,7 @@ export default function FooterShop() {
                 </Link>
                 <Link href={"/"}>
                   <span className="text-sm md:text-lg font-bold text-slate-800">
-                    Track My Order
+                    Track Order
                   </span>
                 </Link>
                 <Link href={"/"}>

@@ -9,6 +9,11 @@ import product4 from "@/assets/img/product/product4.png";
 import product5 from "@/assets/img/product/product5.png";
 import product6 from "@/assets/img/product/product6.png";
 import product7 from "@/assets/img/product/product7.png";
+import product8 from "@/assets/img/product/product8.png";
+import product9 from "@/assets/img/product/product9.png";
+import product10 from "@/assets/img/product/product10.png";
+import product11 from "@/assets/img/product/product11.png";
+import product12 from "@/assets/img/product/product12.png";
 
 export default function ProductCard() {
   const productData = [
@@ -53,6 +58,33 @@ export default function ProductCard() {
       slug: "product-1",
       price: "91,00",
       img: product7,
+    },
+    {
+      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      slug: "product-1",
+      price: "91,00",
+      img: product8,
+    },
+    {
+      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      slug: "product-1",
+      price: "91,00",
+      img: product9,
+    },{
+      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      slug: "product-1",
+      price: "91,00",
+      img: product10,
+    },{
+      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      slug: "product-1",
+      price: "91,00",
+      img: product11,
+    },{
+      title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
+      slug: "product-1",
+      price: "91,00",
+      img: product12,
     },
   ];
 

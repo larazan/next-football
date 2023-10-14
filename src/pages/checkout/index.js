@@ -4,9 +4,8 @@ import Image from "next/image";
 import Head from "next/head";
 
 import Header from "@/components/Navbar";
-import Hero from "@/components/Hero";
 import Footer from "@/components/FooterShop";
-import GoTop from "@/components/GoTop";
+import ScrollTop from "@/components/ScrollTop";
 
 function Checkout() {
   return (

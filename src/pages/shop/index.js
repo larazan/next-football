@@ -6,7 +6,7 @@ import Head from "next/head";
 import Header from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Footer from "@/components/FooterShop";
-import GoTop from "@/components/GoTop";
+import ScrollTop from "@/components/ScrollTop";
 import ProductCard from '@/components/ProductCard';
 
 
@@ -21,6 +21,7 @@ function Shop() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <ScrollTop />
 
       <div className='bg-white'>
         <Hero />

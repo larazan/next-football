@@ -4,10 +4,8 @@ import Link from "next/link";
 import Head from "next/head";
 
 import Header from "@/components/Navbar";
-import Hero from "@/components/Hero";
 import Footer from "@/components/FooterShop";
-import GoTop from "@/components/GoTop";
-import ProductCarousel from "@/components/ProductCarousel";
+import ScrollTop from "@/components/ScrollTop";
 import Suggest from "@/components/Suggest";
 
 import CartItem from "@/components/CartItem";

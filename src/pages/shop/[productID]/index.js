@@ -4,9 +4,8 @@ import Image from "next/image";
 import Head from "next/head";
 
 import Header from "@/components/Navbar";
-import Hero from "@/components/Hero";
 import Footer from "@/components/FooterShop";
-import GoTop from "@/components/GoTop";
+import ScrollTop from "@/components/ScrollTop";
 import ProductCarousel from "@/components/ProductCarousel";
 import Suggest from "@/components/Suggest";
 
@@ -66,6 +65,7 @@ export default function Detail() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <ScrollTop />
 
       <div className="w-full md:py-20 bg-[#f5f7f9]">
         <ToastContainer />
