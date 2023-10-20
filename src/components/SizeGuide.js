@@ -146,63 +146,63 @@ export default function SizeGuide() {
                 </div>
                 {/* body */}
                 <div className="relative px-6 flex-auto">
-                  <div class="container  mx-auto sm:p-4 dark:text-gray-100">
+                  <div className="container  mx-auto sm:p-4 dark:text-gray-100">
                     
-                    <div class="overflow-x-auto">
-                      <table class="min-w-full text-sm">
-                        <thead class="bg-[#dde6ed] dark:bg-gray-700">
-                          <tr class="text-left">
-                            <th class="p-3 text-center" colSpan={8}>
+                    <div className="overflow-x-auto">
+                      <table className="min-w-full text-sm">
+                        <thead className="bg-[#dde6ed] dark:bg-gray-700">
+                          <tr className="text-left">
+                            <th className="p-3 text-center" colSpan={8}>
                               Product Measurements Cm
                             </th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr class="border-b font-bold border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
-                            <td class="p-2">
+                          <tr className="border-b font-bold border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
+                            <td className="p-2">
                               <p>Sizes</p>
                             </td>
-                            <td class="p-2">
+                            <td className="p-2">
                               <p>S</p>
                             </td>
-                            <td class="p-2">
+                            <td className="p-2">
                               <p>M</p>
                             </td>
-                            <td class="p-2">
+                            <td className="p-2">
                               <p>L</p>
                             </td>
-                            <td class="p-2">
+                            <td className="p-2">
                               <p>XL</p>
                             </td>
-                            <td class="p-2">
+                            <td className="p-2">
                               <p>XXL</p>
                             </td>
-                            <td class="p-2">
+                            <td className="p-2">
                               <p>3XL</p>
                             </td>
                           </tr>
                           {measurements.map((data, index) => {
                             return (
-                              <tr class="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
-                                <td class="p-2 capitalize font-bold">
+                              <tr className="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
+                                <td className="p-2 capitalize font-bold">
                                   <p>{data.title}</p>
                                 </td>
-                                <td class="p-2">
+                                <td className="p-2">
                                   <p>{data.small}</p>
                                 </td>
-                                <td class="p-2">
+                                <td className="p-2">
                                   <p>{data.medium}</p>
                                 </td>
-                                <td class="p-2">
+                                <td className="p-2">
                                   <p>{data.large}</p>
                                 </td>
-                                <td class="p-2">
+                                <td className="p-2">
                                   <p>{data.extraLarge}</p>
                                 </td>
-                                <td class="p-2">
+                                <td className="p-2">
                                   <p>{data.doubleXL}</p>
                                 </td>
-                                <td class="p-2">
+                                <td className="p-2">
                                   <p>{data.tripleXL}</p>
                                 </td>
                               </tr>
@@ -216,7 +216,7 @@ export default function SizeGuide() {
                         Explanation how to measure from image below
                       </span>
                     </div>
-                    <div class="px-4 text-sm">
+                    <div className="px-4 text-sm">
                       <ul className="list-disc">
                         <li>
                           <strong>A: Chest -</strong> Measure the shirt from
@@ -242,56 +242,56 @@ export default function SizeGuide() {
                         </li>
                       </ul>
                     </div>
-                    <div class="overflow-x-auto py-4 ">
-                      <table class="min-w-full text-sm">
-                        <thead class="bg-[#dde6ed] dark:bg-gray-700">
-                          <tr class="text-left">
-                            <th class="p-2 text-center" colSpan={8}>
+                    <div className="overflow-x-auto py-4 ">
+                      <table className="min-w-full text-sm">
+                        <thead className="bg-[#dde6ed] dark:bg-gray-700">
+                          <tr className="text-left">
+                            <th className="p-2 text-center" colSpan={8}>
                                 International Size Conversion table
                             </th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr class="border-b font-bold border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
-                            <td class="p-2">
+                          <tr className="border-b font-bold border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
+                            <td className="p-2">
                               <p>UK</p>
                             </td>
-                            <td class="p-2">
+                            <td className="p-2">
                               <p>DE</p>
                             </td>
-                            <td class="p-2">
+                            <td className="p-2">
                               <p>FR</p>
                             </td>
-                            <td class="p-2">
+                            <td className="p-2">
                               <p>IT</p>
                             </td>
-                            <td class="p-2">
+                            <td className="p-2">
                               <p>ES</p>
                             </td>
-                            <td class="p-2">
+                            <td className="p-2">
                               <p>US</p>
                             </td>
                             
                           </tr>
                           {conversions.map((data, index) => {
                             return (
-                              <tr class="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
-                                <td class="p-2 capitalize font-bold">
+                              <tr className="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
+                                <td className="p-2 capitalize font-bold">
                                   <p>{data.uk}</p>
                                 </td>
-                                <td class="p-2">
+                                <td className="p-2">
                                   <p>{data.de}</p>
                                 </td>
-                                <td class="p-2">
+                                <td className="p-2">
                                   <p>{data.fr}</p>
                                 </td>
-                                <td class="p-2">
+                                <td className="p-2">
                                   <p>{data.it}</p>
                                 </td>
-                                <td class="p-2">
+                                <td className="p-2">
                                   <p>{data.es}</p>
                                 </td>
-                                <td class="p-2">
+                                <td className="p-2">
                                   <p>{data.us}</p>
                                 </td>
                                 
