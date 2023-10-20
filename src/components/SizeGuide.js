@@ -120,7 +120,7 @@ export default function SizeGuide() {
                 {/*header*/}
                 <div className="flex items-center justify-between px-5 py-4">
                 <h2 className=" text-2xl text-slate-900 uppercase tracking-tighter font-semibold">
-                      Men's Jersey Sizing Chart
+                      Men&lsquo;s Jersey Sizing Chart
                     </h2>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -183,7 +183,7 @@ export default function SizeGuide() {
                           </tr>
                           {measurements.map((data, index) => {
                             return (
-                              <tr className="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
+                              <tr key={index} className="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
                                 <td className="p-2 capitalize font-bold">
                                   <p>{data.title}</p>
                                 </td>
@@ -275,7 +275,7 @@ export default function SizeGuide() {
                           </tr>
                           {conversions.map((data, index) => {
                             return (
-                              <tr className="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
+                              <tr key={index} className="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
                                 <td className="p-2 capitalize font-bold">
                                   <p>{data.uk}</p>
                                 </td>
