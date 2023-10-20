@@ -47,36 +47,43 @@ export default function Suggest() {
       title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
       price: "91,00",
       img: product1,
+      discount: "20",
     },
     {
       title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
       price: "91,00",
       img: product2,
+      discount: "20",
     },
     {
       title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
       price: "91,00",
       img: product3,
+      discount: "20",
     },
     {
       title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
       price: "91,00",
       img: product4,
+      discount: "20",
     },
     {
       title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
       price: "91,00",
       img: product5,
+      discount: "20",
     },
     {
       title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
       price: "91,00",
       img: product6,
+      discount: "20",
     },
     {
       title: "Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing",
       price: "91,00",
       img: product7,
+      discount: "20",
     },
   ];
 
@@ -88,7 +95,7 @@ export default function Suggest() {
             
             className="flex space-x-1 items-center hover:opacity-80"
           >
-            <span className="text-lg md:text-2xl font-bold text-[#002f6c]">
+            <span className="text-lg tracking-tighter uppercase md:text-2xl font-bold text-[#002f6c]">
               You Might Also Like
             </span>
           </div>
@@ -198,7 +205,7 @@ export default function Suggest() {
                   key={index}
                 >
                   <div className="flex flex-col space-y-2 w-[130px] md:w-[230px]  justify-center bg-white2 border2 shadow2 hover:shadow-lg">
-                    <div className="w-full bg-gray-200  flex ">
+                    <div className="relative w-full bg-gray-200  flex ">
                       <Link
                         href="/shop/product-2"
                         className="flex p-2 space-y-3 justify-center items-center"
@@ -207,6 +214,11 @@ export default function Suggest() {
                           <Image src={data.img} alt="" className="w-26 " />
                         </div>
                       </Link>{" "}
+                      <div className="absolute top-1 right-1">
+                        <div className="border-2 border-slate-700 px-1 ">
+                          <span className="text-sm font-semibold tracking-tighter uppercase">-{data.discount}%</span>
+                        </div>
+                      </div>
                     </div>
                     <div className="flex flex-col justify-center2 items-center2">
                       <div className="flex text-center2 leading-tight">
@@ -217,8 +229,8 @@ export default function Suggest() {
                         </Link>
                       </div>
                       <div>
-                        <span className="font-bold text-xs md:text-sm text-[#002f6c]">
-                          {data.price}
+                        <span className="font-bold text-xs md:text-sm text-[#002f6c] tracking-tighter">
+                        £ {data.price}
                         </span>
                       </div>
                     </div>

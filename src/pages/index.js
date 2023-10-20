@@ -1,4 +1,5 @@
 import Banner from '@/components/Banner'
+import CookieConsent from '@/components/CookieConsent'
 import Footer from '@/components/Footer'
 import GoTop from '@/components/GoTop'
 import Header from '@/components/Header'
@@ -23,6 +24,7 @@ export default function Home() {
       </Head>
       <Header />
       <GoTop />
+      <CookieConsent />
       <Slideshow />
       <HomeMatch />
       <Banner />

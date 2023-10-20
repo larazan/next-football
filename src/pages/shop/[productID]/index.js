@@ -11,6 +11,7 @@ import Suggest from "@/components/Suggest";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import SizeGuide from "@/components/SizeGuide";
 
 export default function Detail() {
   const [selectedSize, setSelectedSize] = useState();
@@ -107,10 +108,8 @@ export default function Detail() {
               <div className="mb-10">
                 {/* HEADING START */}
                 <div className="flex items-center justify-between mb-2">
-                  <div className="text-md text-slate-900 font-semibold">Select Size</div>
-                  <div className="text-xs hover:text-slate-700 hover:underline font-medium text-black/[0.5] cursor-pointer">
-                    Select Guide
-                  </div>
+                  <div className="text-md text-slate-900 font-semibold tracking-tight uppercase">Select Size</div>
+                  <SizeGuide />
                 </div>
                 {/* HEADING END */}
 
@@ -147,7 +146,7 @@ export default function Detail() {
 
               {/* ADD TO CART BUTTON START */}
               <button
-                className="w-full py-2 md:py-4 rounded-full bg-black text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75"
+                className="w-full py-2 md:py-4 rounded bg-[#001838] text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-80 uppercase tracking-tighter"
                 onClick={() => {
                   if (!selectedSize) {
                     setShowError(true);
@@ -165,7 +164,7 @@ export default function Detail() {
               {/* ADD TO CART BUTTON END */}
 
               {/* WHISHLIST BUTTON START */}
-              <button className="w-full py-2 md:py-4 rounded-full border border-black text-slate-900 text-base md:text-lg font-medium transition-transform active:scale-95 flex items-center justify-center gap-2 hover:opacity-75 mb-10">
+              <button className="w-full py-2 md:py-4 rounded border bg-[#3bd6ff] border-black text-slate-900 text-base md:text-lg font-medium transition-transform active:scale-95 flex items-center justify-center gap-2 hover:opacity-75 mb-10 uppercase tracking-tighter">
                 Whishlist
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -184,9 +183,11 @@ export default function Detail() {
               </button>
               {/* WHISHLIST BUTTON END */}
 
+
+
               <div className="text-slate-900">
-                <div className="text-lg font-bold mb-5">Product Details</div>
-                <div className="markdown text-md mb-5">
+                <div className="text-lg font-bold mb-5 md:mb-2">Product Details</div>
+                <div className="markdown text-md mb-5 leading-tight md:leading-snug">
                   With the Manchester City 2023/24 Home Kit, we celebrate the
                   20th anniversary of City at the Etihad Stadium and all those
                   who call it home. Inspired by the stadium walkways and the

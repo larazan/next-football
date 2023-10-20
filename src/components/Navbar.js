@@ -105,7 +105,7 @@ const Navbar = () => {
                   <ul className="flex flex-col min-h-[250px]">
                     <li className="flex w-full text-lg md:text-2xl uppercase">
                       <Link
-                        className="px-6 py-3 w-full hover:underline"
+                        className="px-6 py-3 w-full hover:underline tracking-tighter"
                         href="/category"
                       >
                         Sale
@@ -113,7 +113,7 @@ const Navbar = () => {
                     </li>
                     <li className="flex w-full text-lg md:text-2xl uppercase">
                       <Link
-                        className="px-6 py-3 w-full hover:underline"
+                        className="px-6 py-3 w-full hover:underline tracking-tighter"
                         href="/category"
                       >
                         Kits
@@ -121,7 +121,7 @@ const Navbar = () => {
                     </li>
                     <li className="flex w-full text-lg md:text-2xl uppercase">
                       <Link
-                        className="px-6 py-3 w-full hover:underline"
+                        className="px-6 py-3 w-full hover:underline tracking-tighter"
                         href="/category"
                       >
                         Shop by Player
@@ -129,7 +129,7 @@ const Navbar = () => {
                     </li>
                     <li className="flex w-full text-lg md:text-2xl uppercase">
                       <Link
-                        className="px-6 py-3 w-full hover:underline"
+                        className="px-6 py-3 w-full hover:underline tracking-tighter"
                         href="/category"
                       >
                         Training
@@ -137,7 +137,7 @@ const Navbar = () => {
                     </li>
                     <li className="flex w-full text-lg md:text-2xl uppercase">
                       <Link
-                        className="px-6 py-3 w-full hover:underline"
+                        className="px-6 py-3 w-full hover:underline tracking-tighter"
                         href="/category"
                       >
                         lifestyle
@@ -145,7 +145,7 @@ const Navbar = () => {
                     </li>
                     <li className="flex w-full text-lg md:text-2xl uppercase">
                       <Link
-                        className="px-6 py-3 w-full hover:underline"
+                        className="px-6 py-3 w-full hover:underline tracking-tighter"
                         href="/category"
                       >
                         Gifts
@@ -153,7 +153,7 @@ const Navbar = () => {
                     </li>
                     <li className="flex w-full text-lg md:text-2xl uppercase">
                       <Link
-                        className="px-6 py-3 w-full hover:underline"
+                        className="px-6 py-3 w-full hover:underline tracking-tighter"
                         href="/login"
                       >
                         Login
@@ -185,7 +185,7 @@ const Navbar = () => {
                             stroke-linejoin="round"
                           ></path>
                         </svg>
-                        <span>Bag</span>
+                        <span className="tracking-tighter">Bag</span>
                       </Link>
                     </li>
                   </ul>

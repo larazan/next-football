@@ -31,7 +31,7 @@ export default function Cart() {
         <div className={`w-full max-w-[1280px] px-5 md:px-10 mx-auto`}>
           {/* HEADING AND PARAGRAPH START */}
           <div className="text-center max-w-[800px] mx-auto mt-8 md:mt-0">
-            <div className="text-[28px] md:text-[34px] mb-5 font-semibold leading-tight text-slate-900">
+            <div className="text-[28px] md:text-[34px] mb-5 font-semibold uppercase tracking-tight leading-tight text-slate-900">
               Shopping Cart
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function Cart() {
             <div className="flex-[1]">
               <div className="text-lg font-bold text-slate-900">Summary</div>
 
-              <div className="p-5 my-5 bg-black/[0.05] rounded-xl">
+              <div className="p-5 my-5 bg-black/[0.05] rounded-lg">
                 <div className="flex justify-between">
                   <div className="uppercase text-md md:text-lg font-medium text-black">
                     Subtotal
@@ -60,7 +60,7 @@ export default function Cart() {
                     &#8377;200
                   </div>
                 </div>
-                <div className="text-sm md:text-md py-5 border-t mt-5 text-slate-900">
+                <div className="text-sm md:text-md py-3 text-slate-900">
                   The subtotal reflects the total price of your order, including
                   duties and taxes, before any applicable discounts. It does not
                   include delivery costs and international transaction fees.
@@ -68,7 +68,7 @@ export default function Cart() {
               </div>
 
               {/* BUTTON START */}
-              <button className="w-full py-2 md:py-3 rounded-full bg-black text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75 flex items-center gap-2 justify-center">
+              <button className="w-full py-2 md:py-3 rounded uppercase tracking-tighter bg-[#001838] text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-80 flex items-center gap-2 justify-center">
                 Checkout
                 {loading && <Image src={spinner} alt="" />}
               </button>

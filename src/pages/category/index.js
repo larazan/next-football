@@ -30,7 +30,7 @@ function Category() {
       <div className="w-full py-1 md:py-20 relative bg-white">
         <div className={`w-full max-w-[1280px] px-5 md:px-10 mx-auto`}>
           <div className="text-center max-w-[800px] mx-auto mt-8 md:mt-0">
-            <div className="text-[28px] md:text-[34px] md:mb-5 font-semibold leading-tight text-slate-900">
+            <div className="text-[28px] md:text-[34px] md:mb-5 font-semibold tracking-tight uppercase leading-tight text-slate-900">
               category
             </div>
           </div>
@@ -39,7 +39,7 @@ function Category() {
 
           <div className="flex gap-3 items-center justify-center my-10 md:my-0">
             <button
-              className={`rounded py-2 px-4 bg-black text-white disabled:bg-gray-200 disabled:text-gray-500`}
+              className={`rounded py-2 px-4 bg-black text-white uppercase tracking-tight font-semibold disabled:bg-gray-200 disabled:text-gray-500`}
               disabled={pageIndex === 1}
               onClick={() => setPageIndex(pageIndex - 1)}
             >
@@ -51,7 +51,7 @@ function Category() {
             }`}</span>
 
             <button
-              className={`rounded py-2 px-4 bg-black text-white disabled:bg-gray-200 disabled:text-gray-500`}
+              className={`rounded py-2 px-4 bg-[#001838] text-white uppercase tracking-tight font-semibold disabled:bg-gray-200 disabled:text-gray-500`}
               onClick={() => setPageIndex(pageIndex + 1)}
             >
               Next

@@ -13,20 +13,20 @@ export default function FooterShop() {
             <div class="w-full md:w-8/12 flex flex-row items-center justify-around md:justify-start">
               <div className=" flex space-x-4 leading-tight">
                 <Link href={"/"}>
-                  <span className="text-sm md:text-lg font-bold text-slate-800">
+                  <span className="text-sm tracking-tighter md:text-lg font-bold text-slate-800">
                     Delivery & Shipping
                   </span>
                 </Link>
                 <Link href={"/"}>
-                  <span className="text-sm md:text-lg font-bold text-slate-800">
+                  <span className="text-sm tracking-tighter md:text-lg font-bold text-slate-800">
                     Track Order
                   </span>
                 </Link>
                 <Link href={"/"}>
-                  <span className="text-sm md:text-lg font-bold text-slate-800">FAQ</span>
+                  <span className="text-sm tracking-tighter md:text-lg font-bold text-slate-800">FAQ</span>
                 </Link>
                 <Link href={"/"}>
-                  <span className="text-sm md:text-lg font-bold text-slate-800">
+                  <span className="text-sm tracking-tighter md:text-lg font-bold text-slate-800">
                     Contact
                   </span>
                 </Link>
@@ -127,17 +127,19 @@ export default function FooterShop() {
               <div class="w-full md:w-1/2 flex flex-1 justify-center md:justify-start items-center gap-2 font-montserrat cursor-pointer">
                 <div className="flex space-x-3">
                   <Link href={"/"}>
-                    <span className="text-sm font-semibold text-slate-800">
+                    <span className="text-xs tracking-tighter md:text-sm font-bold text-slate-800">
                       Privacy Policy
                     </span>
                   </Link>
                   <Link href={"/"}>
-                    <span className="text-sm font-semibold text-slate-800">
-                      Terms and Conditions
+                    <span className="text-xs tracking-tighter md:text-sm font-bold text-slate-800">
+                      Terms & Conditions
                     </span>
                   </Link>
                   <Link href={"/"}>
-                    <span className="text-sm font-semibold text-slate-800">Return Policy</span>
+                    <span className="text-xs tracking-tighter md:text-sm font-bold text-slate-800">
+                      Return Policy
+                    </span>
                   </Link>
                   
                 </div>

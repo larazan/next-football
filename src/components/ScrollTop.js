@@ -30,22 +30,12 @@ const ScrollTop = () => {
         {isVisible && (
           <div
             onClick={scrollToTop}
-            className="fixed p-2 opacity-50 rounded-lg bg-[#98c5e9] bottom-6 right-3 hover:bg-blue-500 lg:bottom-5 lg:right-5 cursor-pointer"
+            className="fixed p-2 opacity-50 rounded-lg border border-[#1cd0ff] bg-[#e6ff00] bottom-4 right-3 hover:bg-[#fdfc3b] lg:bottom-5 lg:right-5 cursor-pointer"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M8 7l4-4m0 0l4 4m-4-4v18"
-              />
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-6 h-6 text-[#1cd0ff]">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+</svg>
+
           </div>
         )}
       </div>

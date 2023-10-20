@@ -47,7 +47,7 @@ const CartItem = () => {
         <div className="flex flex-col md:flex-row justify-between">
           {/* PRODUCT TITLE */}
           <Link
-            href=""
+            href="/shop/product-3"
             className="text-base leading-tight hover:underline font-semibold text-black/[0.8]"
           >
             Manchester City Home Jersey 2023/24 with DE BRUYNE 17 printing
