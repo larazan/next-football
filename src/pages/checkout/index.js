@@ -21,7 +21,7 @@ function Checkout() {
 
       <div className="grid  md:grid-cols-2 lg:px-20 xl:px-32 ">
         <div className="px-6 pt-8 pb-8 bg-white border-r shadow">
-          <p className="text-xl font-medium uppercase tracking-tighter">Contact Information</p>
+          <p className="text-xl font-medium uppercase tracking-tighter text-gray-800">Contact Information</p>
           <p className="text-sm text-gray-800">
             Already have an account? <Link href={"/login"} className="text-blue-500">Log in</Link>
           </p>
@@ -42,7 +42,7 @@ function Checkout() {
                 </div>
               </div>
             <div className="mt-4 py-2">
-              <span className="text-base font-semibold">Shipping Address</span>
+              <span className="text-base font-semibold text-gray-800">Shipping Address</span>
             </div>
             <div className="flex space-x-1">
               <input
@@ -125,7 +125,7 @@ function Checkout() {
               </div>
           </div>
 
-          <p className="mt-8 text-lg font-medium uppercase tracking-tighter">Shipping Methods</p>
+          <p className="mt-8 text-lg font-medium uppercase tracking-tighter text-gray-800">Shipping Methods</p>
           <form className="mt-2 grid gap-3">
             <div className="relative bg-pink-50">
               <input
@@ -146,7 +146,7 @@ function Checkout() {
                   alt=""
                 />
                 <div className="ml-5">
-                  <span className="mt-2 font-semibold">Fedex Delivery</span>
+                  <span className="mt-2 font-semibold text-gray-800">Fedex Delivery</span>
                   <p className="text-slate-500 text-sm leading-6">
                     Delivery: 2-4 Days
                   </p>
@@ -172,7 +172,7 @@ function Checkout() {
                   alt=""
                 />
                 <div className="ml-5">
-                  <span className="mt-2 font-semibold">Fedex Delivery</span>
+                  <span className="mt-2 font-semibold text-gray-800">Fedex Delivery</span>
                   <p className="text-slate-500 text-sm leading-6">
                     Delivery: 2-4 Days
                   </p>
@@ -187,7 +187,7 @@ function Checkout() {
           </Link>
         </div>
         <div className="mt-0 bg-[#f5f7f9] px-6 pt-8 lg:mt-0 pb-10">
-          <p className="text-xl font-medium uppercase tracking-tighter">Order Summary</p>
+          <p className="text-xl font-medium uppercase tracking-tighter text-gray-800">Order Summary</p>
           <p className="text-sm text-gray-800">
           Check your items. And select a suitable shipping method.
           </p>
