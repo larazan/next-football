@@ -10,8 +10,8 @@ export default function CookieConsent() {
   return (
     <>
       {isShow ? (
-        <div className="fixed left-0 bottom-0 z-20 ">
-          <div className="fixed sm:left-4 bottom-5 rounded-lg bg-white shadow-2xl w-full sm:w-1/2 xl:w-1/4 max-w-[450px] overflow-hidden">
+        <div className="fixed left-2 bottom-0 z-20 ">
+          <div className="fixed sm:left-4 bottom-3 border rounded-lg bg-white shadow-2xl w-full sm:w-1/2 xl:w-1/4 max-w-[300px] md:max-w-[450px] overflow-hidden">
             <div className="">
               <div className="relative overflow-hidden px-8 pt-8">
                 <div
@@ -33,13 +33,13 @@ export default function CookieConsent() {
                     />
                   </svg>
                 </div>
-                <div className="text-2xl flex flex-col pb-4 text-gray-800">
+                <div className="text-lg md:text-2xl flex flex-col pb-4 text-gray-800">
                   <small>Hello there..</small>
-                  <span className="text-3xl font-bold">
+                  <span className="text-2xl md:text-3xl font-bold">
                     We are the Cookies !
                   </span>
                 </div>
-                <div className="pb-4 text-gray-800">
+                <div className="pb-4 text-gray-800 leading-tight md:leading-snug">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Ab, accusamus aliquid aperiam beatae consectetur culpa
