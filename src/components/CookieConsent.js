@@ -33,13 +33,13 @@ export default function CookieConsent() {
                     />
                   </svg>
                 </div>
-                <div className="text-2xl flex flex-col pb-4">
+                <div className="text-2xl flex flex-col pb-4 text-gray-800">
                   <small>Hello there..</small>
                   <span className="text-3xl font-bold">
                     We are the Cookies !
                   </span>
                 </div>
-                <div className="pb-4">
+                <div className="pb-4 text-gray-800">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Ab, accusamus aliquid aperiam beatae consectetur culpa

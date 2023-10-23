@@ -216,7 +216,7 @@ export default function Suggest() {
                       </Link>{" "}
                       <div className="absolute top-1 right-1">
                         <div className="border-2 border-slate-700 px-1 ">
-                          <span className="text-sm font-semibold tracking-tighter uppercase">-{data.discount}%</span>
+                          <span className="text-sm font-semibold tracking-tighter text-gray-700 uppercase">-{data.discount}%</span>
                         </div>
                       </div>
                     </div>

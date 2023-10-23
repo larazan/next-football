@@ -31,14 +31,14 @@ function Checkout() {
                 type="text"
                 id="email"
                 name="email"
-                className="w-full rounded-md border border-gray-200 px-4 py-3  text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="w-full rounded-md bg-white border border-gray-200 px-4 py-3  text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 placeholder="Email"
               />
             </div>
             <div className="mt-2">
                 <div className="inline-flex items-center">
-                  <input type="checkbox" name="" id="" className="" />
-                  <label for="" className="text-sm ml-2 text-gray-500">My billing address is different than above.</label>
+                  <input type="checkbox" name="" id="" className="bg-white" />
+                  <label for="" className="text-sm  ml-2 text-gray-500">My billing address is different than above.</label>
                 </div>
               </div>
             <div className="mt-4 py-2">
@@ -49,14 +49,14 @@ function Checkout() {
                 type="text"
                 id="card-holder"
                 name="card-holder"
-                className="w-full rounded-md border border-gray-200 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="w-full rounded-md bg-white border border-gray-200 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 placeholder="First name"
               />
               <input
                 type="text"
                 id="card-holder"
                 name="card-holder"
-                className="w-full rounded-md border border-gray-200 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="w-full rounded-md bg-white border border-gray-200 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 placeholder="Last name"
               />
             </div>
@@ -65,7 +65,7 @@ function Checkout() {
                 type="text"
                 id="card-holder"
                 name="card-holder"
-                className="w-full rounded-md border border-gray-200 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="w-full rounded-md bg-white border border-gray-200 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 placeholder="Address"
               />
               </div>
@@ -74,7 +74,7 @@ function Checkout() {
                   type="text"
                   id="card-holder"
                   name="card-holder"
-                  className="w-full rounded-md border border-gray-200 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                  className="w-full rounded-md bg-white border border-gray-200 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                   placeholder="City"
                 />
               </div>
@@ -113,13 +113,13 @@ function Checkout() {
                   type="text"
                   id="card-holder"
                   name="card-holder"
-                  className="w-full rounded-md border border-gray-200 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                  className="w-full rounded-md bg-white border border-gray-200 px-4 py-3 text-sm  shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                   placeholder="Postal Code"
                 />
               </div>
               <div className="mt-2">
                 <div className="inline-flex items-center">
-                  <input type="checkbox" name="" id="" className="border-gray-200 shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" />
+                  <input type="checkbox" name="" id="" className="border-gray-200 bg-white shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" />
                   <label for="" className="text-sm ml-2 text-gray-500">Save this information for next time</label>
                 </div>
               </div>
@@ -202,7 +202,7 @@ function Checkout() {
                 type="text"
                 id="discount"
                 name="discount"
-                className="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
+                className="w-full rounded-md bg-white border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500"
                 placeholder="Discount code"
               />
               <button className=" w-40 rounded-md bg-gray-900 px-3 py-3 font-medium text-white">

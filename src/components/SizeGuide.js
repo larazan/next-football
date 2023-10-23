@@ -152,13 +152,13 @@ export default function SizeGuide() {
                       <table className="min-w-full text-sm">
                         <thead className="bg-[#dde6ed] dark:bg-gray-700">
                           <tr className="text-left">
-                            <th className="p-3 text-center" colSpan={8}>
+                            <th className="p-3 text-center text-gray-800" colSpan={8}>
                               Product Measurements Cm
                             </th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr className="border-b font-bold border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
+                          <tr className="border-b bg-white text-gray-800 font-bold border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
                             <td className="p-2">
                               <p>Sizes</p>
                             </td>
@@ -183,7 +183,7 @@ export default function SizeGuide() {
                           </tr>
                           {measurements.map((data, index) => {
                             return (
-                              <tr key={index} className="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
+                              <tr key={index} className="bg-white text-gray-800 border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
                                 <td className="p-2 capitalize font-bold">
                                   <p>{data.title}</p>
                                 </td>
@@ -217,7 +217,7 @@ export default function SizeGuide() {
                       </span>
                     </div>
                     <div className="px-4 text-sm">
-                      <ul className="list-disc">
+                      <ul className="list-disc text-gray-800">
                         <li>
                           <strong>A: Chest -</strong> Measure the shirt from
                           just under the left armhole to the right armhole.
@@ -242,17 +242,17 @@ export default function SizeGuide() {
                         </li>
                       </ul>
                     </div>
-                    <div className="overflow-x-auto py-4 ">
+                    <div className="overflow-x-auto py-4 hidden md:block">
                       <table className="min-w-full text-sm">
                         <thead className="bg-[#dde6ed] dark:bg-gray-700">
                           <tr className="text-left">
-                            <th className="p-2 text-center" colSpan={8}>
+                            <th className="p-2 text-center text-gray-800" colSpan={8}>
                                 International Size Conversion table
                             </th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr className="border-b font-bold border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
+                          <tr className="bg-white text-gray-800 border-b font-bold border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
                             <td className="p-2">
                               <p>UK</p>
                             </td>
@@ -275,7 +275,7 @@ export default function SizeGuide() {
                           </tr>
                           {conversions.map((data, index) => {
                             return (
-                              <tr key={index} className="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
+                              <tr key={index} className="bg-white text-gray-800 border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
                                 <td className="p-2 capitalize font-bold">
                                   <p>{data.uk}</p>
                                 </td>

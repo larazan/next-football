@@ -54,7 +54,7 @@ export default function Register() {
               <div className="flex flex-row space-x-2">
                 <select
                   placeholder="day"
-                  className=" py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
+                  className=" py-3 px-3 text-sm bg-white focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
                 >
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -62,14 +62,14 @@ export default function Register() {
                   <option value="4">4</option>
                   <option value="5">5</option>
                 </select>
-                <select className=" py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry">
+                <select className=" py-3 px-3 text-sm bg-white focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry">
                   <option value="1">January</option>
                   <option value="2">Pebruary</option>
                   <option value="3">Maret</option>
                   <option value="4">April</option>
                   <option value="5">Mei</option>
                 </select>
-                <select className=" py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry">
+                <select className=" py-3 px-3 text-sm bg-white focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry">
                   <option value="1">1990</option>
                   <option value="2">1991</option>
                   <option value="3">1992</option>
@@ -87,7 +87,7 @@ export default function Register() {
                 Email Address
               </label>
               <input
-                className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
+                className="w-full bg-white py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
                 type="email"
                 placeholder="Email"
               />
@@ -99,7 +99,7 @@ export default function Register() {
                 </label>
                 <div className="relative items-center">
                   <input
-                    className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
+                    className="w-full bg-white py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
                     type="text"
                     placeholder="Password"
                   />
@@ -132,7 +132,7 @@ export default function Register() {
                 </label>
                 <div className="relative items-center">
                   <input
-                    className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
+                    className="w-full bg-white py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
                     type="text"
                     placeholder="Password"
                   />

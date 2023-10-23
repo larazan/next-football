@@ -52,7 +52,7 @@ export default function Login() {
                 Email Address
               </label>
               <input
-                className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
+                className="w-full py-3 px-3 text-sm bg-white focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
                 type="email"
                 placeholder="Email"
               />
@@ -63,7 +63,7 @@ export default function Login() {
               </label>
               <div className="relative items-center">
                 <input
-                  className="w-full py-3 px-3 text-sm  focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
+                  className="w-full py-3 px-3 text-sm bg-white focus:outline-none outline-none focus:border-blue-400 border border-gray-800 rounded text-gray-800 font-mabry"
                   type="text"
                   placeholder="Password"
                 />
