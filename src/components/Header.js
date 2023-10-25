@@ -62,9 +62,9 @@ export default function Header() {
                     Contact
                   </div>
                 </Link>
-                <Link href={"/"}>
+                <Link href={"/account/profile"}>
                   <div className="text-white font-semibold text-sm">
-                    Alianz Arena
+                    Profile
                   </div>
                 </Link>
                 <div>

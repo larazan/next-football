@@ -51,21 +51,30 @@ export default function CookieConsent() {
               </div>
             </div>
 
-            <div className="w-full flex justify-center items-center border-t border-solid border-gray-200">
+            <div className="flex flex-col space-y-2 mx-auto w-11/12 pb-7">
+              <div onClick={handleClick} className="flex justify-center w-full py-2 rounded-md bg-blue-700 hover:bg-blue-800 cursor-pointer text-white font-semibold">
+                <span>Accept all cookies</span>
+              </div>
+              <div className="flex justify-center w-full py-2 border rounded-md bg-white hover:bg-gray-50 cursor-pointer text-gray-800 font-semibold">
+                <span>Manage cookies</span>
+              </div>
+            </div>
+
+            {/* <div className="w-full flex justify-center items-center border-t border-solid border-gray-200">
               <button onClick={handleClick} className="border-r border-gray-200 flex-1 px-4 py-3 text-gray-500 hover:text-white hover:bg-red-400 duration-150">
                 No thanks !
               </button>
               <button className="flex-1 px-4 py-3 text-gray-500 hover:text-white hover:bg-green-400 duration-150">
                 Off course
               </button>
-            </div>
+            </div> */}
           </div>
 
           {/* <button className="fixed left-4 bottom-2 uppercase text-sm px-4 py-3 bg-gray-900 text-white rounded-full">
             Cookies
           </button> */}
         </div>
-        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+        <div className="opacity-50 fixed inset-0 z-40 bg-black"></div>
         </>
       ) : (
         <></>

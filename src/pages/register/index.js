@@ -47,8 +47,8 @@ export default function Register() {
                 </Link>
               </div>
             </div>
-            <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 pt-2">
-              <label class="text-sm md:text-base block text-gray-800">
+            <div className="flex flex-col space-y-1 mx-auto w-11/12 md:w-10/12 pt-2">
+              <label class="text-sm md:text-base font-semibold block text-gray-800">
                 Date of Birth
               </label>
               <div className="flex flex-row space-x-2">
@@ -82,8 +82,8 @@ export default function Register() {
                 for identification and security in the future.
               </span>
             </div>
-            <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 pt-2">
-              <label class="text-sm md:text-base block text-gray-800">
+            <div className="flex flex-col space-y-1 mx-auto w-11/12 md:w-10/12 pt-2">
+              <label class="text-sm md:text-base font-semibold block text-gray-800">
                 Email Address
               </label>
               <input
@@ -93,8 +93,8 @@ export default function Register() {
               />
             </div>
             <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-2 mx-auto w-11/12 md:w-10/12">
-              <div className="w-full md:w-1/2 flex flex-col space-y-1.5 ">
-                <label class="text-sm md:text-base block text-gray-800">
+              <div className="w-full md:w-1/2 flex flex-col space-y-1 ">
+                <label class="text-sm md:text-base font-semibold block text-gray-800">
                   Password
                 </label>
                 <div className="relative items-center">
@@ -126,8 +126,8 @@ export default function Register() {
                   </button>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 flex flex-col space-y-1.5 ">
-                <label class="text-sm md:text-base block text-gray-800">
+              <div className="w-full md:w-1/2 flex flex-col space-y-1 ">
+                <label class="text-sm md:text-base font-semibold block text-gray-800">
                   Confirm Password
                 </label>
                 <div className="relative items-center">
