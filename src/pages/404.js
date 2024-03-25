@@ -1,10 +1,11 @@
 import React from "react";
+import Link from "next/link";
 
 export default function FourOhFour() {
   return (
     <>
-      <section className="py-26 md:py-48 min-h-screen md:min-h-0 bg-white">
-        <div className="container px-4 mx-auto">
+      <section className="py-20 md:py-48 min-h-screen md:min-h-0 bg-white">
+        <div className="container px-10 md:px-4 mx-auto">
           <div className="max-w-xl mx-auto text-center">
             <span className="inline-flex mb-6 h-6 items-center justify-center text-xs font-extrabold px-2 text-indigo-900 rounded border-2 border-indigo-900 bg-green-200 uppercase shadow-sm">
               Error 404
@@ -16,18 +17,18 @@ export default function FourOhFour() {
               Something went wrong, so this page is broken.
             </p>
             <div className="flex flex-wrap items-center justify-center">
-              <a
-                className="inline-block w-full md:w-auto py-4 px-6 mb-4 md:mb-0 md:mr-6 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-3 border-indigo-900 shadow rounded transition duration-200"
-                href="#"
+              <Link
+                className="inline-block w-full md:w-auto py-4 px-6 mb-4 md:mb-0 md:mr-6 text-center leading-6 text-lg text-white font-extrabold bg-indigo-800 hover:bg-indigo-900 border-2 border-indigo-900 shadow rounded transition duration-200"
+                href="/"
               >
                 Go back to Homepage
-              </a>
-              <a
-                className="inline-block w-full md:w-auto py-4 px-6 text-center leading-6 text-lg text-indigo-900 hover:text-white font-extrabold bg-white hover:bg-indigo-800 border-3 border-indigo-900 shadow rounded transition duration-200"
+              </Link>
+              <Link
+                className="inline-block w-full md:w-auto py-4 px-6 text-center leading-6 text-lg text-indigo-900 hover:text-white font-extrabold bg-white hover:bg-indigo-800 border-2 border-indigo-900 shadow rounded transition duration-200"
                 href="#"
               >
                 Try Again
-              </a>
+              </Link>
             </div>
           </div>
         </div>

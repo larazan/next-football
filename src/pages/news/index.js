@@ -34,7 +34,7 @@ export default function News() {
               News
             </span>
           </div>
-          <div className="flex flex-col md:flex-row w-full space-y-3 md:space-x-4">
+          <div className="flex flex-col md:flex-row w-full space-y-3 md:space-y-0 md:space-x-4">
             <div className="w-full md:w-2/3 flex flex-wrap space-x-2">
               <button className="flex rounded px-2 py-1 items-center bg-[#dc052d] ">
                 <span className=" font-semibold text-white text-sm">All</span>

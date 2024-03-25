@@ -265,7 +265,7 @@ export default function HomeMatch() {
           )}
           {/*  */}
           <div
-            className="mb-[1em] flex flex-row overflow-x-auto scroll-smooth"
+            className="mb-[1em] flex flex-row overflow-x-auto scroll-smooth custom-scrollbar"
             ref={scrl}
             onScroll={scrollCheck}
           >

@@ -1,14 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation"
 
 import logo from "@/assets/img/fcbayern.svg";
 import tlogo from "@/assets/img/partners/telekom_logo_header_neu.svg";
+import Search from "./Search";
 
 export default function Header() {
   const [adsModalOpen, setAdsModalOpen] = useState(false);
   const [searchModalOpen, setSearchModalOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
+
+  const pathname = usePathname();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -19,6 +23,10 @@ export default function Header() {
 
   const clickMenu = () => {
     setOpenMenu(!openMenu);
+  };
+
+  const clickSearch = () => {
+    setSearchModalOpen(!searchModalOpen);
   };
 
   return (
@@ -235,51 +243,51 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="hidden md:block py-0.5 px-5 bg-[#c60428]">
+        <div className="hidden md:block py-0 pt-1 px-5 bg-[#c60428]">
           <div className="flex space-x-4 items-center mx-auto w-full lg:w-1/2">
             <Link
               href={"/news"}
-              className="py-1.5 border-b border-[#c60428] hover:border-white "
+              className={`py-1.5 px-1  border-b-2 ${pathname == "/news" ? 'border-white' : 'border-[#c60428]'} hover:border-white `}
             >
               <span className="font-semibold text-white">News</span>
             </Link>
             <Link
               href={"/media"}
-              className="py-1.5 border-b border-[#c60428] hover:border-white "
+              className={`py-1.5 px-1  border-b-2 ${pathname == "/media" ? 'border-white' : 'border-[#c60428]'} hover:border-white `}
             >
               <span className="font-semibold text-white">FC Bayern TV</span>
             </Link>
             <Link
               href={"/match"}
-              className="py-1.5 border-b border-[#c60428] hover:border-white "
+              className={`py-1.5 px-1  border-b-2 ${pathname == "/match" ? 'border-white' : 'border-[#c60428]'} hover:border-white `}
             >
               <span className="font-semibold text-white">Matches</span>
             </Link>
             <Link
               href={"/teams"}
-              className="py-1.5 border-b border-[#c60428] hover:border-white "
+              className={`py-1.5 px-1  border-b-2 ${pathname == "/teams" ? 'border-white' : 'border-[#c60428]'} hover:border-white `}
             >
               <span className="font-semibold text-white">Teams</span>
             </Link>
             <Link
               href={"/club"}
-              className="py-1.5 border-b border-[#c60428] hover:border-white "
+              className={`py-1.5 px-1  border-b-2 ${pathname == "/club" ? 'border-white' : 'border-[#c60428]'} hover:border-white `}
             >
               <span className="font-semibold text-white">Club</span>
             </Link>
             <Link
               href={"/fans"}
-              className="py-1.5 border-b border-[#c60428] hover:border-white "
+              className={`py-1.5 px-1  border-b-2 ${pathname == "/fans" ? 'border-white' : 'border-[#c60428]'} hover:border-white `}
             >
               <span className="font-semibold text-white">Fans</span>
             </Link>
             <Link
-              href={"/"}
-              className="py-1.5 border-b border-[#c60428] hover:border-white "
+              href={"/ticket"}
+              className={`py-1.5 px-1  border-b-2 ${pathname == "/ticket" ? 'border-white' : 'border-[#c60428]'} hover:border-white `}
             >
               <span className="font-semibold text-white">Tickets</span>
             </Link>
-            <button className="text-white">
+            <button className="text-white" onClick={clickSearch}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -298,6 +306,12 @@ export default function Header() {
           </div>
         </div>
       </header>
+
+      <Search 
+        searchModalOpen={searchModalOpen} 
+        setSearchModalOpen={setSearchModalOpen} 
+        clickSearch={clickSearch} 
+      />
     </>
   );
 }

@@ -27,6 +27,7 @@ import union from "@/assets/img/clubs/union_berlin.png";
 import vfb from "@/assets/img/clubs/vfb.png";
 import bremen from "@/assets/img/clubs/werderbremen.png";
 import wolfsburg from "@/assets/img/clubs/wolfsburg.png";
+import AdsModal from "@/components/AdsModal";
 
 export default function News() {
   const matchData = [
@@ -150,36 +151,37 @@ export default function News() {
       </Head>
       <Header />
       <GoTop />
+      <AdsModal />
 
       <div className="relative  block min-h-80 lg:col-span-2 lg:h-full bg-white">
         <div className="py-0 flex flex-col space-y-2">
           <div className="h-max flex flex-col mx-auto w-full lg:w-1/2">
-            <div className="flex flex-col md:flex-row md:justify-between space-y-5 py-4 px-2 md:px-6 border-b items-start">
-              <div className="flex flex-wrap space-x-2">
-                <button className="flex rounded px-2 py-1 items-center bg-[#dc052d] ">
+            <div className="flex flex-col w-full md:flex-row md:justify-between space-y-5 py-4 px-2 md:px-6 border-b items-start">
+              <div className="w-full md:w-1/2 flex flex-wrap">
+                <button className="flex rounded mr-2 mt-2 px-2 py-1 items-center bg-[#dc052d] ">
                   <span className=" font-semibold text-white text-sm">
                     Matchplan
                   </span>
                 </button>
-                <button className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
+                <button className="flex rounded mr-2 mt-2 px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
                   <span className=" font-semibold text-[#002f6c] text-sm">
                     Matchdays
                   </span>
                 </button>
                 <Link href={'/standing'}>
-                <button className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
+                <button className="flex rounded mr-2 mt-2 px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
                   <span className=" font-semibold text-[#002f6c] text-sm">
                     Standings
                   </span>
                 </button>
                 </Link>
-                <button className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
+                <button className="flex rounded mr-2 mt-2 px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
                   <span className=" font-semibold text-[#002f6c] text-sm">
                     Stats
                   </span>
                 </button>
               </div>
-              <div className="flex w-full flex-col space-y-2 md:justify-end ">
+              <div className="flex w-full md:w-1/2 flex-col space-y-2 md:justify-end ">
                 <div className="flex flex-wrap md:flex-nowrap justify-end space-x-2">
                   <select
                     name="version"

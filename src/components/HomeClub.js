@@ -60,7 +60,7 @@ export default function HomeClub() {
           </div> */}
         </div>
         <div className="flex space-x-3  mx-auto w-full md:w-12/12 ">
-          <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 ">
+          <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow">
             <Link
               href="https://statamic.com/blog/statamic-4-unleashed"
               className="relative"
@@ -80,7 +80,7 @@ export default function HomeClub() {
             </div>
           </div>
 
-          <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 ">
+          <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow">
             <Link
               href="https://statamic.com/blog/statamic-4-unleashed"
               className="relative"
@@ -100,7 +100,7 @@ export default function HomeClub() {
             </div>
           </div>
 
-          <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 ">
+          <div className=" bg-white group flex flex-col overflow-hidden hover:scale-105 shadow">
             <Link
               href="https://statamic.com/blog/statamic-4-unleashed"
               className="relative"
