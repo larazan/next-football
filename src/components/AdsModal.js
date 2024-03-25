@@ -53,7 +53,7 @@ const AdsModal = () => {
 
                   <h2 className="mt-6 font-black">
                     <span className="text-2xl text-[#02574d] md:text-3xl lg:text-6xl">
-                      Get 25% OFF All Plants products
+                      Get 25% OFF All products
                     </span>
 
                     {/* <span className="mt-2 block text-sm">

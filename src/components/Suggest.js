@@ -194,7 +194,7 @@ export default function Suggest() {
           )}
           {/*  */}
           <div
-            className="mb-[1em] flex flex-row overflow-x-auto scroll-smooth"
+            className="mb-[1em] flex flex-row overflow-x-auto overflow-hidden2 custom-scrollbar scroll-smooth"
             ref={scrl}
             onScroll={scrollCheck}
           >

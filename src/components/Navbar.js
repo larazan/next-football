@@ -4,14 +4,18 @@ import Image from "next/image";
 
 import { SidebarContext } from "../context/SidebarContext";
 import Sidebar from "./Sidebar";
+import Search from "./Search";
 
 import logo from "@/assets/img/logo.svg";
+import NewsFeed from "./NewsFeed";
+import UserMenu from "./UserMenu";
 
 const Navbar = () => {
   const totalQTY = useState(1);
   const [navState, setNavState] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
+  const [searchModalOpen, setSearchModalOpen] = useState(false);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -19,6 +23,10 @@ const Navbar = () => {
 
   const clickMenu = () => {
     setOpenMenu(!openMenu);
+  };
+
+  const clickSearch = () => {
+    setSearchModalOpen(!searchModalOpen);
   };
 
   const onNavScroll = () => {
@@ -38,7 +46,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className=" bg-[#98c5e9] w-full top-0 left-0 right-0 h-[9vh] flex items-center justify-center opacity-100 z-[200] ">
+      <header className=" bg-[#98c5e9] w-full top-0 left-0 right-0 h-[7vh] md:h-[9vh] flex items-center justify-center opacity-100 z-[200] ">
         <nav className="mx-auto w-full px-2 md:w-11/12 flex items-center justify-between">
           <section className="w-1/3 flex justify-start items-between z-20">
             <div
@@ -198,13 +206,14 @@ const Navbar = () => {
               <Image
                 src={logo}
                 alt="logo/img"
-                className={`w-12 h-auto ${navState && "filter brightness-0"}`}
+                className={`w-10 md:w-12 h-auto ${navState && "filter brightness-0"}`}
               />
             </Link>
           </div>
           <div className="w-1/3 flex justify-end">
             <ul className="flex items-center justify-center gap-4">
               <li className="hidden md:grid items-center">
+                <button onClick={clickSearch}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -219,8 +228,10 @@ const Navbar = () => {
                     d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
                   />
                 </svg>
+                </button>
               </li>
               <li className="hidden md:grid items-center">
+                <Link href={"/wishlist"}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -235,6 +246,10 @@ const Navbar = () => {
                     d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
                   />
                 </svg>
+                </Link>
+              </li>
+              <li className="grid items-center">
+                <UserMenu />
               </li>
               <li className="grid items-center">
                 <button
@@ -258,7 +273,7 @@ const Navbar = () => {
                   </svg>
 
                   <div
-                    className={`absolute top-4 right-0 shadow w-4 h-4 text-[0.65rem] leading-tight font-medium rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-all duration-300 ${
+                    className={`absolute top-3 right-1 shadow w-4 h-4 text-[0.65rem] leading-tight font-medium rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-all duration-300 ${
                       navState
                         ? "bg-slate-900 text-slate-100 shadow-slate-900"
                         : "bg-slate-100 text-slate-900 shadow-slate-100"
@@ -272,15 +287,15 @@ const Navbar = () => {
           </div>
         </nav>
       </header>
-      <div className="flex bg-[#e6ff00] w-full  py-2">
-        <div className="flex mx-auto w-11/12 justify-center">
-          <span className="font-semibold text-sm text-slate-900 md:text-base uppercase leading-tight">
-            FREE EU SHIPPING WHEN YOU SPEND € 100
-          </span>
-        </div>
-      </div>
+     
+      <NewsFeed />
 
       <Sidebar isOpen={isOpen} handleClose={handleClose} />
+      <Search 
+        searchModalOpen={searchModalOpen} 
+        setSearchModalOpen={setSearchModalOpen} 
+        clickSearch={clickSearch} 
+      />
     </>
   );
 };

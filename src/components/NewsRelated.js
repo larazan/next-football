@@ -70,7 +70,7 @@ export default function NewsRelated() {
                 href="https://statamic.com/blog/statamic-4-unleashed"
                 className="relative"
               >
-                <Image src={club1} alt="" className="w-80" />{" "}
+                <Image src={club1} alt="" className="w-full" />{" "}
                 <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
               </Link>{" "}
               <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
@@ -92,7 +92,7 @@ export default function NewsRelated() {
                 href="https://statamic.com/blog/statamic-4-unleashed"
                 className="relative"
               >
-                <Image src={club2} alt="" className="w-80" />{" "}
+                <Image src={club2} alt="" className="w-full" />{" "}
                 <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
               </Link>{" "}
               <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
@@ -114,7 +114,7 @@ export default function NewsRelated() {
                 href="https://statamic.com/blog/statamic-4-unleashed"
                 className="relative"
               >
-                <Image src={club3} alt="" className="w-80" />{" "}
+                <Image src={club3} alt="" className="w-full" />{" "}
                 <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
               </Link>{" "}
               <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
@@ -136,7 +136,7 @@ export default function NewsRelated() {
                 href="https://statamic.com/blog/statamic-4-unleashed"
                 className="relative"
               >
-                <Image src={club1} alt="" className="w-80" />{" "}
+                <Image src={club1} alt="" className="w-full" />{" "}
                 <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
               </Link>{" "}
               <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
@@ -158,7 +158,7 @@ export default function NewsRelated() {
                 href="https://statamic.com/blog/statamic-4-unleashed"
                 className="relative"
               >
-                <Image src={club2} alt="" className="w-80" />{" "}
+                <Image src={club2} alt="" className="w-full" />{" "}
                 <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
               </Link>{" "}
               <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">
@@ -180,7 +180,7 @@ export default function NewsRelated() {
                 href="https://statamic.com/blog/statamic-4-unleashed"
                 className="relative"
               >
-                <Image src={club3} alt="" className="w-80" />{" "}
+                <Image src={club3} alt="" className="w-full" />{" "}
                 <div className="absolute opacity-0 group-hover:opacity-75 z-20 inset-0 mix-blend-overlay w-full bg-gradient-to-br from-purple-hot to-teal"></div>
               </Link>{" "}
               <div className="px-3 py-2 pb-4 flex flex-col space-y-1 leading-tight">

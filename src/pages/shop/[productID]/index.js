@@ -12,6 +12,7 @@ import Suggest from "@/components/Suggest";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SizeGuide from "@/components/SizeGuide";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export default function Detail() {
   const [selectedSize, setSelectedSize] = useState();
@@ -67,6 +68,7 @@ export default function Detail() {
       </Head>
       <Header />
       <ScrollTop />
+      <Breadcrumb />
 
       <div className="w-full md:py-20 bg-[#f5f7f9]">
         <ToastContainer />
