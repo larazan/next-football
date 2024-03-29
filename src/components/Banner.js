@@ -11,7 +11,7 @@ export default function Banner() {
     <>
       <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-4 px-4 md:px-6 lg:px-0 py-0 md:py-6 justify-center2 items-center2 bg-[#f5f7f9]">
         <Image src={banne} alt="" />
-        <div className="flex flex-col md:flex-row space-y-3 md:space-x-4 w-full">
+        <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-4 w-full">
           <div className="w-full md:w-1/3">
           <Image src={prediction} alt="" className="w-full" />
           </div>

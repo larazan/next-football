@@ -14,7 +14,7 @@ export default function Invoice() {
             <div className="flex justify-between items-top">
               <div className="space-y-4">
                 <div>
-                  <Image className="h-6 object-cover mb-4" src="https://cdn.mjwebs.com/sites/mjwebs/mjwebs-logo.png" />
+                  {/* <Image className="h-6 object-cover mb-4" src="https://cdn.mjwebs.com/sites/mjwebs/mjwebs-logo.png" /> */}
                   <p className="font-bold text-lg"> Invoice </p>
                   <p> MJWebs </p>
                 </div>

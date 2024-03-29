@@ -7,14 +7,14 @@ export default function SubsribeForm() {
             Newsletter
           </span>
           <div className="w-full">
-            <div className="flex flex-col md:flex-row space-y-2 md:space-x-2 items-center">
+            <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 items-center">
               <input
                 type="email"
                 placeholder="Enter your email"
                 className="w-full px-4 py-3 md:w-80 rounded bg-[#1a273f] shadow-sm text-white focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               />
 
-              <button className="bg-[#dc052d] hover:opacity-80 text-white py-2 px-4 rounded font-semibold w-full md:w-40 ">
+              <button className="bg-[#dc052d] hover:opacity-80 text-white py-3 px-4 rounded font-semibold w-full md:w-40 ">
                 Subscribe
               </button>
             </div>

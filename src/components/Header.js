@@ -35,7 +35,7 @@ export default function Header() {
         <div className="flex w-full top-0 md:m-0 px-4 md:px-5 py-4 md:py-3  items-center justify-between bg-[#dc052d]">
           <div className="flex items-center justify-between mx-auto w-full lg:w-1/2">
             <div className="flex w-full md:w-3/5 justify-between space-x-4">
-              <div className="flex space-x-2 md:space-x-4 w-full items-center">
+              <div className="flex space-x-2 md:space-x-4 lg:space-x-2 w-full items-center">
                 <div className="flex justify-center items-center">
                   <Link href={"/"}>
                     <Image
@@ -45,8 +45,8 @@ export default function Header() {
                     />
                   </Link>
                 </div>
-                <Link href={"/"}>
-                  <span className="text-base md:text-2xl text-white font-bold">
+                <Link href={"/"} className="leading-tight">
+                  <span className="text-base md:text-2xl lg:text-lg leading-tight text-white font-bold">
                     FC Bayern Munchen
                   </span>
                 </Link>
@@ -197,7 +197,7 @@ export default function Header() {
                   <div className="w-full py-5">
                     <ul className="flex flex-col min-h-[250px]">
                       <li className="flex w-full text-lg border-b">
-                        <Link className="px-6 py-3 w-full" href="/news">
+                        <Link className="px-6 py-3 w-full " href="/news">
                           News
                         </Link>
                       </li>
@@ -244,48 +244,48 @@ export default function Header() {
         </div>
 
         <div className="hidden md:block py-0 pt-1 px-5 bg-[#c60428]">
-          <div className="flex space-x-4 items-center mx-auto w-full lg:w-1/2">
+          <div className="flex space-x-4 lg:space-x-2 items-center mx-auto w-full lg:w-1/2">
             <Link
               href={"/news"}
               className={`py-1.5 px-1  border-b-2 ${pathname == "/news" ? 'border-white' : 'border-[#c60428]'} hover:border-white `}
             >
-              <span className="font-semibold text-white">News</span>
+              <span className="font-semibold text-white tracking-tight">News</span>
             </Link>
             <Link
               href={"/media"}
               className={`py-1.5 px-1  border-b-2 ${pathname == "/media" ? 'border-white' : 'border-[#c60428]'} hover:border-white `}
             >
-              <span className="font-semibold text-white">FC Bayern TV</span>
+              <span className="font-semibold text-white tracking-tight">FC Bayern TV</span>
             </Link>
             <Link
               href={"/match"}
               className={`py-1.5 px-1  border-b-2 ${pathname == "/match" ? 'border-white' : 'border-[#c60428]'} hover:border-white `}
             >
-              <span className="font-semibold text-white">Matches</span>
+              <span className="font-semibold text-white tracking-tight">Matches</span>
             </Link>
             <Link
               href={"/teams"}
               className={`py-1.5 px-1  border-b-2 ${pathname == "/teams" ? 'border-white' : 'border-[#c60428]'} hover:border-white `}
             >
-              <span className="font-semibold text-white">Teams</span>
+              <span className="font-semibold text-white tracking-tight">Teams</span>
             </Link>
             <Link
               href={"/club"}
               className={`py-1.5 px-1  border-b-2 ${pathname == "/club" ? 'border-white' : 'border-[#c60428]'} hover:border-white `}
             >
-              <span className="font-semibold text-white">Club</span>
+              <span className="font-semibold text-white tracking-tight">Club</span>
             </Link>
             <Link
               href={"/fans"}
               className={`py-1.5 px-1  border-b-2 ${pathname == "/fans" ? 'border-white' : 'border-[#c60428]'} hover:border-white `}
             >
-              <span className="font-semibold text-white">Fans</span>
+              <span className="font-semibold text-white tracking-tight">Fans</span>
             </Link>
             <Link
               href={"/ticket"}
               className={`py-1.5 px-1  border-b-2 ${pathname == "/ticket" ? 'border-white' : 'border-[#c60428]'} hover:border-white `}
             >
-              <span className="font-semibold text-white">Tickets</span>
+              <span className="font-semibold text-white tracking-tight">Tickets</span>
             </Link>
             <button className="text-white" onClick={clickSearch}>
               <svg

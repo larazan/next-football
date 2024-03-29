@@ -229,13 +229,13 @@ export default function News() {
               </div>
             </div>
             <div class="w-full bottom-0 pb-[1px] px-3 py-1.5 md:px-3 overflow-x-auto overflow-hidden">
-              <ul class="flex items-center md:justify-center space-x-2 md:space-x-4  md:tracking-widest font-semibold text-xs  ">
+              <ul class="flex items-center justify-center space-x-2 md:space-x-4  md:tracking-widest font-semibold text-xs  ">
                 <li class=" border-b-2 border-[#0066b2] md:-mt-px  ">
                   <a
                     class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline">Jul</span>
+                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Jul</span>
                   </a>
                 </li>
                 <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
@@ -243,7 +243,7 @@ export default function News() {
                     class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline">Aug</span>
+                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Aug</span>
                   </a>
                 </li>
                 <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
@@ -251,7 +251,7 @@ export default function News() {
                     class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline">Sep</span>
+                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Sep</span>
                   </a>
                 </li>
                 <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
@@ -259,7 +259,7 @@ export default function News() {
                     class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline">Oct</span>
+                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Oct</span>
                   </a>
                 </li>
                 <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
@@ -267,7 +267,7 @@ export default function News() {
                     class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline">Nov</span>
+                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Nov</span>
                   </a>
                 </li>
                 <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
@@ -275,7 +275,7 @@ export default function News() {
                     class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline">Dec</span>
+                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Dec</span>
                   </a>
                 </li>
                 <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
@@ -283,7 +283,7 @@ export default function News() {
                     class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline">Jan</span>
+                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Jan</span>
                   </a>
                 </li>
                 <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
@@ -291,7 +291,7 @@ export default function News() {
                     class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline">Feb</span>
+                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Feb</span>
                   </a>
                 </li>
                 <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
@@ -299,7 +299,7 @@ export default function News() {
                     class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline">Mar</span>
+                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Mar</span>
                   </a>
                 </li>
                 <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
@@ -307,7 +307,7 @@ export default function News() {
                     class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline">Apr</span>
+                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Apr</span>
                   </a>
                 </li>
                 <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
@@ -315,7 +315,7 @@ export default function News() {
                     class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline">May</span>
+                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">May</span>
                   </a>
                 </li>
                 <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
@@ -323,7 +323,7 @@ export default function News() {
                     class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline">Jun</span>
+                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Jun</span>
                   </a>
                 </li>
               </ul>

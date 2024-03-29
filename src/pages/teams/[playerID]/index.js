@@ -348,7 +348,7 @@ export default function Detail() {
             </table>
           </div>
           <div>
-          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" role="img" xmlns="http://www.w3.org/2000/svg" class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"><title>icon</title><path fillRule="evenodd" clipRule="evenodd" d="M6 4.5H18C19.933 4.5 21.5 6.067 21.5 8V16C21.5 17.933 19.933 19.5 18 19.5H6C4.067 19.5 2.5 17.933 2.5 16V8C2.5 6.067 4.067 4.5 6 4.5ZM1 8C1 5.23858 3.23858 3 6 3H18C20.7614 3 23 5.23858 23 8V16C23 18.7614 20.7614 21 18 21H6C3.23858 21 1 18.7614 1 16V8ZM15 12L10 9V15L15 12Z"></path></svg>
+          
           </div>
          
          

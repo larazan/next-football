@@ -79,7 +79,7 @@ export default function Detail() {
           </div>
         </div>
         <div className="flex flex-row py-4 md:py-6 border-y">
-          <div className="flex flex-col space-y-3 md:flex-row mx-auto w-11/12 md:w-8/12 lg:w-1/2">
+          <div className="flex flex-col space-y-3 md:space-y-0 md:flex-row mx-auto w-11/12 md:w-8/12 lg:w-1/2">
             <div className="flex flex-col w-full md:w-1/2 ">
               <div>
                 <span className="text-sm font-semibold text-gray-400">Topics of this article</span>
