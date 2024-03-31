@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Breadcrumb = () => {
   return (
@@ -10,31 +11,31 @@ const Breadcrumb = () => {
               
               <ul className="scrollbar-fix flex flex-row flex-nowrap justify-start overflow-x-scroll no-scrollbar">
                 <li className="">
-                  <a
+                  <Link
                     className="whitespace-nowrap text-sm font-semibold hover:underline text-black text-[11px] uppercase leading-3 tracking-[2px] opacity-70"
                     href="/"
                   >
                     Product
-                  </a>
+                  </Link>
                 </li>
                 
                 
                 <li className='before:inline before:px-1 before:text-sm before:content-[">"] text-black text-[11px] font-medium uppercase leading-3 tracking-[2px] opacity-70'>
-                  <a
+                  <Link
                     className="whitespace-nowrap text-sm font-semibold hover:underline text-black text-[11px] uppercase leading-3 tracking-[2px] opacity-70"
                     href="/"
                   >
                     Jersey
-                  </a>
+                  </Link>
                 </li>
 
                 <li className='before:inline before:px-1 before:text-sm before:content-[">"] text-black text-[11px] font-medium uppercase leading-3 tracking-[2px] opacity-70'>
-                  <a
+                  <Link
                     className="whitespace-nowrap text-sm font-semibold hover:underline text-black text-[11px] uppercase leading-3 tracking-[2px] opacity-70"
                     href="/"
                   >
                     Home Jersey 
-                  </a>
+                  </Link>
                 </li>
                 
               </ul>

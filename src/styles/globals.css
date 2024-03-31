@@ -181,3 +181,69 @@ input[type='number']::-webkit-inner-spin-button,
   border-radius: 8px;
   /* border: 1px solid #fff; */
 }
+
+.markdown {
+  --tw-text-opacity: 1;
+  background-color: transparent;
+  color: rgb(25 26 27/var(--tw-text-opacity));
+  line-height: 1.625;
+}
+
+.markdown-blog p {
+  font-size: 21px;
+  line-height: 32px;
+}
+.markdown-blog p {
+  color: #3e3e3e;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.markdown-blog h2 {
+  color: #1b1b1b;
+  font-size: 36px;
+  line-height: 56px;
+}
+.markdown-blog h2 {
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.markdown-blog h3 {
+  /* font-size: 28px; */
+  /* line-height: 1.25rem; */
+}
+.markdown-blog h3 {
+  color: #1b1b1b;
+  margin-top: 1.4rem;
+  margin-bottom: 1.0rem;
+  font-size: 1.25rem;
+  line-height: 1.35rem;
+  font-weight: 500;
+}
+
+.markdown-blog ol {
+  margin-left: 18px;
+  color: #3e3e3e;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.markdown-blog blockquote {
+  position: relative;
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.markdown-blog section {
+  position: relative;
+  margin-top: 2.85rem;
+  margin-bottom: 2.25rem;
+}

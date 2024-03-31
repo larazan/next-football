@@ -191,7 +191,7 @@ export default function Detail() {
           <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
             <span className="text-lg md:text-2xl font-bold text-[#002f6c]">Statistic</span>
           </div>
-          <div className="flex flex-col md:flex-row space-y-2 md:space-x-2 ">
+          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 ">
             <div className="flex flex-wrap md:flex-nowrap md:justify-end space-x-2">
               <select
                 name="version"

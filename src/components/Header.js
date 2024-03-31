@@ -31,7 +31,7 @@ export default function Header() {
 
   return (
     <>
-      <header className=" z-20 flex flex-col  w-full">
+      <header className=" z-20 flex flex-col w-full">
         <div className="flex w-full top-0 md:m-0 px-4 md:px-5 py-4 md:py-3  items-center justify-between bg-[#dc052d]">
           <div className="flex items-center justify-between mx-auto w-full lg:w-1/2">
             <div className="flex w-full md:w-3/5 justify-between space-x-4">
@@ -243,7 +243,9 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="hidden md:block py-0 pt-1 px-5 bg-[#c60428]">
+        
+      </header>
+      <div className="hidden md:block py-0 pt-1 px-5 bg-[#c60428] sticky top-0 z-20">
           <div className="flex space-x-4 lg:space-x-2 items-center mx-auto w-full lg:w-1/2">
             <Link
               href={"/news"}
@@ -305,7 +307,6 @@ export default function Header() {
             </button>
           </div>
         </div>
-      </header>
 
       <Search 
         searchModalOpen={searchModalOpen} 

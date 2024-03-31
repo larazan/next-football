@@ -78,7 +78,7 @@ export default function Media() {
 
         <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-4 md:px-4 py-5 md:py-4 lg:px-0 justify-center2 items-center2 bg-transparent">
           <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
-            <div className="flex space-x-1 items-center hover:opacity-80">
+            <div className="flex space-x-1 items-center">
               <span className="text-lg md:text-2xl font-bold text-white">
                 Latest Video
               </span>
@@ -99,7 +99,7 @@ export default function Media() {
                             preserveAspectRatio="xMidYMid meet"
                             role="img"
                             xmlns="http://www.w3.org/2000/svg"
-                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                            className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                           >
                             <title>icon</title>
                             <path
