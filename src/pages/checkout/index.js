@@ -140,11 +140,7 @@ function Checkout() {
                 className="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4"
                 for="radio_1"
               >
-                <img
-                  className="w-14 object-contain"
-                  src="/images/naorrAeygcJzX0SyNI4Y0.png"
-                  alt=""
-                />
+                
                 <div className="ml-5">
                   <span className="mt-2 font-semibold text-gray-800">Fedex Delivery</span>
                   <p className="text-slate-500 text-sm leading-6">

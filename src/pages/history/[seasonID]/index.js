@@ -49,7 +49,7 @@ export default function Season() {
               <section className="w-full mx-auto  mt-0 md:mt-0 px-5 markdown-blog">
                 <article>
                   <p>
-                  Hlozek joined head coach Gerardo Seoane and his squad for the team's training camp in Austria in July. Florian Wirtz also made the trip to continue his rehabilitation after his cruciate ligament injury in March.
+                  Hlozek joined head coach Gerardo Seoane and his squad for the team&lsquo;s training camp in Austria in July. Florian Wirtz also made the trip to continue his rehabilitation after his cruciate ligament injury in March.
                   </p>
                   <p>
                   Alongside training sessions, media appointments and time with travelling fans, there were also two friendly matches. The game against Greek Cup holders Panathinaikos - where Hlozek made his debut - ended goalless. An encounter with Udinese of Italy resulted in a 2-1 win.

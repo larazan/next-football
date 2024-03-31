@@ -67,57 +67,57 @@ const NewsFeed = () => {
               className="w-full shrink-0 text-center text-xs before:mr-2 before:text-gray-900 before:content-['\2713'] md:text-sm xl:flex xl:w-auto xl:items-center xl:justify-center xl:text-left"
             >
               <span className="text-slate-900 font-semibold">
-                <a
+                <Link
                   href="/"
                   className=""
                 >
                   Free Standard Shipping over €95
-                </a>
+                </Link>
               </span>
             </div>
             <div 
               className="w-full shrink-0 text-center text-xs before:mr-2 before:text-gray-900 before:content-['\2713'] md:text-sm xl:flex xl:w-auto xl:items-center xl:justify-center xl:text-left"
             >
               <span className="text-slate-900 font-semibold">
-                <a className="" href="/">
+                <Link className="" href="/">
                 Newsletter Sign Up - <strong className="font-bold">Get 10% Discount</strong>
                   
-                </a>
+                </Link>
               </span>
             </div>
             <div className="w-full shrink-0 text-center text-xs before:mr-2 before:text-primary before:content-['\2713'] md:text-sm xl:flex xl:w-auto xl:items-center xl:justify-center xl:text-left">
               <span className="text-slate-900 font-semibold">
-                <a
+                <Link
                   href="/"
                   className=""
                   rel="noreferrer noopener"
                 >
                   Order Now Pay Later with <strong className="font-bold">Klarna</strong>
-                </a>
+                </Link>
               </span>
             </div>
             <div className="w-full shrink-0 text-center text-xs before:mr-2 before:text-primary before:content-['\2713'] md:text-sm xl:flex xl:w-auto xl:items-center xl:justify-center xl:text-left xl:invisible 3xl:visible">
               <span className="text-slate-900 font-semibold">
-                <a
+                <Link
                   href="/"
                   className=""
                   rel="noreferrer noopener"
                 >
                   Ordered on weekdays before{" "}
                   <strong className="font-bold">12pm</strong>, shipped today
-                </a>
+                </Link>
               </span>
             </div>
             <div className=" w-full shrink-0 text-center text-xs before:mr-2 before:text-primary before:content-['\2713'] md:text-sm xl:hidden ">
               <span className="text-slate-900 font-semibold">
-              <a
+              <Link
                 href="/"
                 className=""
                 rel="noreferrer noopener"
               >
                 <strong className="font-bold">Free shipping</strong> for orders over
                 €75,-
-              </a>
+              </Link>
               </span>
             </div> 
             </Slider>
