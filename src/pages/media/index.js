@@ -84,7 +84,7 @@ export default function Media() {
               </span>
             </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 mx-auto w-full md:w-12/12 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-auto w-full md:w-12/12 ">
             {mediaData.map((data, index) => (
               <div className="px-3 py-3 w-full" key={index}>
                 <div className=" bg-white group flex flex-col overflow-hidden rounded border border-gray-700 hover:scale-105 shadow ">

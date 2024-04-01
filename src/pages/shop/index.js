@@ -8,6 +8,7 @@ import Hero from "@/components/Hero";
 import Footer from "@/components/FooterShop";
 import ScrollTop from "@/components/ScrollTop";
 import ProductCard from '@/components/ProductCard';
+import AdsModal from '@/components/AdsModal';
 
 
 
@@ -22,6 +23,7 @@ function Shop() {
       </Head>
       <Header />
       <ScrollTop />
+      <AdsModal />
 
       <div className='bg-white'>
         <Hero />

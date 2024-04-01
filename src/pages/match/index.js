@@ -151,7 +151,7 @@ export default function News() {
       </Head>
       <Header />
       <GoTop />
-      <AdsModal />
+      
 
       <div className="relative  block min-h-80 lg:col-span-2 lg:h-full bg-white">
         <div className="py-0 flex flex-col space-y-2">
