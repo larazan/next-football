@@ -280,7 +280,7 @@ export default function Test() {
                     <div className="absolute flex bottom-[34px] right-[32px] flex-col items-center css-xf9ljh-TopLeft ek2uae19">
                       <div className="flex flex-col items-center css-1j9o5tz-SubInOutContainer ek2uae18">
                         <span className="text-[12px] leading-[14px] text-white font-semibold css-1lptc2q-SubText ek2uae17">
-                          81'
+                          81&lsquo;
                         </span>
                         <div className="badgeContainer  css-1qh57t7-BadgeContainer ek2uae110">
                           <svg
@@ -426,7 +426,7 @@ export default function Test() {
                     </div>
                     <div className="css-xf9ljh-TopLeft ek2uae19">
                       <div className="css-1j9o5tz-SubInOutContainer ek2uae18">
-                        <span className="css-1lptc2q-SubText ek2uae17">58'</span>
+                        <span className="css-1lptc2q-SubText ek2uae17">58&lsquo;</span>
                         <div className="css-1qh57t7-BadgeContainer ek2uae110">
                           <svg
                             width="12"
@@ -514,7 +514,7 @@ export default function Test() {
                     </div>
                     <div className="css-xf9ljh-TopLeft ek2uae19">
                       <div className="css-1j9o5tz-SubInOutContainer ek2uae18">
-                        <span className="css-1lptc2q-SubText ek2uae17">76'</span>
+                        <span className="css-1lptc2q-SubText ek2uae17">76&lsquo;</span>
                         <div className="css-1qh57t7-BadgeContainer ek2uae110">
                           <svg
                             width="12"
@@ -602,7 +602,7 @@ export default function Test() {
                     </div>
                     <div className="css-xf9ljh-TopLeft ek2uae19">
                       <div className="css-1j9o5tz-SubInOutContainer ek2uae18">
-                        <span className="css-1lptc2q-SubText ek2uae17">57'</span>
+                        <span className="css-1lptc2q-SubText ek2uae17">57&lsquo;</span>
                         <div className="css-1qh57t7-BadgeContainer ek2uae110">
                           <svg
                             width="12"
@@ -760,7 +760,7 @@ export default function Test() {
                     </div>
                     <div className="css-xf9ljh-TopLeft ek2uae19">
                       <div className="css-1j9o5tz-SubInOutContainer ek2uae18">
-                        <span className="css-1lptc2q-SubText ek2uae17">25'</span>
+                        <span className="css-1lptc2q-SubText ek2uae17">25&lsquo;</span>
                         <div className="css-1qh57t7-BadgeContainer ek2uae110">
                           <svg
                             width="12"
@@ -813,7 +813,7 @@ export default function Test() {
                     </div>
                     <div className="css-xf9ljh-TopLeft ek2uae19">
                       <div className="css-1j9o5tz-SubInOutContainer ek2uae18">
-                        <span className="css-1lptc2q-SubText ek2uae17">57'</span>
+                        <span className="css-1lptc2q-SubText ek2uae17">57&lsquo;</span>
                         <div className="css-1qh57t7-BadgeContainer ek2uae110">
                           <svg
                             width="12"
