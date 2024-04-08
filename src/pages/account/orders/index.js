@@ -29,7 +29,7 @@ export default function Orders() {
               </span>
             </div>
             <div className="overflow-x-auto py-4 ">
-              <table className="min-w-full text-sm">
+              <table className="min-w-full text-sm selectedTable">
                 <thead className="bg-white border border-gray-300">
                   <tr className="text-left">
                     <th className="text-xs text-center p-4 uppercase text-gray-500">

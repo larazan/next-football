@@ -41,18 +41,18 @@ const Slideshow = () => {
 		transitionDuration: 300,
 		infinite: true,
 		prevArrow: (
-			<div className="hidden md:block ml-3 top-[30%] md:top-[40%] px-2 py-5 border rounded ">
+			<div className="hidden backdrop-blur group-hover:block  ml-3 top-[30%] md:top-[40%] px-2 py-5 border rounded ">
 				<ArrowLeftIcon className="h-8 w-8 text-white cursor-pointer" />
 			</div>
 		),
 		nextArrow: (
-				<div className="hidden md:block mr-3 top-[30%] md:top-[40%] px-2 py-5 border rounded">
+				<div className="hidden backdrop-blur group-hover:block mr-3 top-[30%] md:top-[40%] px-2 py-5 border rounded">
 				   <ArrowRightIcon className="h-8 w-8 text-white cursor-pointer" />
 			    </div>
 		),
 	};
 	return (
-		<div className="mx-auto w-full ">
+		<div className="mx-auto w-full group">
 			<Zoom {...zoomInProperties}>
 				{images.map((data, index) => (
 					<div key={index} className="flex justify-center md:items-center items-start w-screen relative">

@@ -27,6 +27,8 @@ import union from "@/assets/img/clubs/union_berlin.png";
 import vfb from "@/assets/img/clubs/vfb.png";
 import bremen from "@/assets/img/clubs/werderbremen.png";
 import wolfsburg from "@/assets/img/clubs/wolfsburg.png";
+import SortSeason from "@/components/SortSeason";
+import SortCompetition from "@/components/SortCompetition";
 
 export default function Standing() {
     const standingData = [
@@ -225,8 +227,8 @@ export default function Standing() {
       <div className="relative  block min-h-80 lg:col-span-2 lg:h-full">
         <div className="py-0 flex flex-col space-y-2">
           <div className="h-max flex flex-col mx-auto w-full lg:w-1/2">
-            <div className="flex justify-between py-4 px-6 border-b items-start">
-              <div className="flex space-x-2">
+            <div className="flex flex-col md:flex-row w-full md:justify-between space-y-3 md:space-y-0 py-4 px-6 border-b items-start">
+              <div className="flex w-full space-x-2">
                 <button className="flex rounded px-2 py-1 items-center bg-[#dc052d] hover:bg-blue-200">
                   <span className=" font-semibold text-white text-sm">
                     Matchplan
@@ -248,9 +250,9 @@ export default function Standing() {
                   </span>
                 </button>
               </div>
-              <div className="flex flex-col space-y-2 justify-end">
+              <div className="flex w-full flex-col space-y-2 justify-end items-end ">
                 <div className="flex flex-wrap md:flex-nowrap justify-end space-x-2">
-                  <select
+                  {/* <select
                     name="version"
                     className="input-select flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200 font-semibold text-[#002f6c] text-sm"
                   >
@@ -258,11 +260,12 @@ export default function Standing() {
                     <option value="all">Season 2023/2024</option>
                     <option value="blog">Season 2023/2024</option>
                     <option value="boilerplate">Season 2023/2024</option>
-                  </select>
+                  </select> */}
+                  <SortSeason />
                 </div>
                 <div className="flex space-x-2">
-                  <div className="flex flex-wrap md:flex-nowrap items-center space-x-2">
-                    <select
+                  <div className="flex flex-wrap md:flex-nowrap items-center justify-center space-x-2">
+                    {/* <select
                       name="version"
                       className="input-select flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200 font-semibold text-[#002f6c] text-sm"
                     >
@@ -272,8 +275,9 @@ export default function Standing() {
                       <option value="boilerplate">
                         International Champion Cup
                       </option>
-                    </select>
-                    <button className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
+                    </select> */}
+                    <SortCompetition />
+                    <button className="flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200 border border-indigo-300">
                       <span className=" font-semibold text-[#002f6c] text-sm">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -295,8 +299,13 @@ export default function Standing() {
                 </div>
               </div>
             </div>
-            <div className="flex px-6 py-5">
-                <table className="w-full">
+            <div className="flex px-3 py-2 md:px-6 md:py-3  w-full md:w-12/12 ">
+              <span className="text-lg md:text-2xl font-bold text-[#002f6c] uppercase">
+                Standing
+              </span>
+            </div>
+            <div className="flex px-6 py-5 w-full overflow-x-auto">
+                <table className="w-full overflow-x-auto selectedTable">
                     <thead className="py-6">
                         <tr className="border-y w-full h-10 ">
                             <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">Rank</span></td>
@@ -314,11 +323,13 @@ export default function Standing() {
                         return (
                             <>
                             <tr className="py-4 h-11 border-b" key={index}>
-                            <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">{index+1}</span></td>
+                            <td className={`w-1/12 text-center py-1 border-l-2 ${index <= 3 ? 'border-green-400' : index >= 15 ? 'border-red-400' : 'border-white' } `}>
+                              <span className="text-xs uppercase font-bold text-[#002f6c]">{index+1}</span>
+                            </td>
                             <td className="w-5/12">
                                 <div className="flex space-x-2 items-center">
                                     <Image src={data.logo} alt="" className="w-7" />
-                                <span className="text-xs uppercase font-bold justify-start text-[#002f6c]">{data.club}</span>
+                                <span className="text-xs uppercase font-semibold md:font-bold justify-start text-[#002f6c]">{data.club}</span>
                                 </div>
                             </td>
                             <td className="w-1/12 text-center"><span className="text-xs uppercase font-bold text-[#002f6c]">{data.gameplay}</span></td>
@@ -334,6 +345,28 @@ export default function Standing() {
                         
                     </tbody>
                 </table>
+            </div>
+            <div className="px-6 py-4 pb-10 grid gap-4 grid-cols-2">
+                <div className="flex items-center space-x-2">
+                    <div className="w-4 h-4 rounded-full bg-green-500">
+                    </div>
+                    <span className="text-xs text-slate-700 font-semibold">Champion League</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                    <div className="w-4 h-4 rounded-full bg-indigo-600">
+                    </div>
+                    <span className="text-xs text-slate-700 font-semibold">European League</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                    <div className="w-4 h-4 rounded-full bg-blue-500">
+                    </div>
+                    <span className="text-xs text-slate-700 font-semibold">Conferense League</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                    <div className="w-4 h-4 rounded-full bg-red-500">
+                    </div>
+                    <span className="text-xs text-slate-700 font-semibold">Degradasi</span>
+                </div>
             </div>
           </div>
         </div>

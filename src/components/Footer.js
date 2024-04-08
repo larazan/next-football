@@ -93,96 +93,68 @@ export default function Footer() {
             <div className="flex flex-col space-y-1">
               <h2 className="font-semibold text-sm">News</h2>
               <div className="flex flex-col font-thin space-y-1 text-sm dark:text-white">
-                <a rel="noopener noreferrer" href="#">
-                  Installation
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Release Notes
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Upgrade Guide
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Using with Preprocessors
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Optimizing for Production
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Browser Support
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  IntelliSense
-                </a>
+                <Link rel="noopener noreferrer" href="#">
+                  FC Bayern TV
+                </Link>
+                <Link rel="noopener noreferrer" href="#">
+                  News
+                </Link>
               </div>
             </div>
             <div className="flex flex-col space-y-1">
-              <h2 className="font-semibold text-sm">Core Concepts</h2>
+              <h2 className="font-semibold text-sm">Club</h2>
               <div className="flex flex-col font-thin space-y-1 text-sm dark:text-white">
-                <a rel="noopener noreferrer" href="#">
-                  Utility-First
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Responsive Design
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Hover, Focus, &amp; Other
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Dark Mode
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Adding Base Styles
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Extracting Components
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Adding New Utilities
-                </a>
+                <Link rel="noopener noreferrer" href="#">
+                  Matches
+                </Link>
+                <Link rel="noopener noreferrer" href="#">
+                  Standing
+                </Link>
+                <Link rel="noopener noreferrer" href="#">
+                  History
+                </Link>
+                <Link rel="noopener noreferrer" href="#">
+                  Tickets
+                </Link>
+                <Link rel="noopener noreferrer" href="#">
+                  Fans
+                </Link>
+               
               </div>
             </div>
             <div className="flex flex-col space-y-1">
-              <h2 className="font-semibold text-sm">Customization</h2>
+              <h2 className="font-semibold text-sm">Teams</h2>
               <div className="flex flex-col font-thin space-y-1 text-sm dark:text-white">
-                <a rel="noopener noreferrer" href="#">
-                  Configuration
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Theme Configuration
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Breakpoints
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Customizing Colors
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Customizing Spacing
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Configuring Variants
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Plugins
-                </a>
+                <Link rel="noopener noreferrer" href="#">
+                  Mens First team
+                </Link>
+                <Link rel="noopener noreferrer" href="#">
+                  Women team
+                </Link>
+                <Link rel="noopener noreferrer" href="#">
+                  Esport
+                </Link>
+                <Link rel="noopener noreferrer" href="#">
+                  Under 21 
+                </Link>
+               
               </div>
             </div>
             <div className="flex flex-col space-y-1 ">
-              <h2 className="font-semibold text-sm">Community</h2>
+              <h2 className="font-semibold text-sm">Online Store</h2>
               <div className="flex flex-col font-thin space-y-1 text-sm dark:text-white">
-                <a rel="noopener noreferrer" href="#">
-                  GitHub
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Discord
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  Twitter
-                </a>
-                <a rel="noopener noreferrer" href="#">
-                  YouTube
-                </a>
+                <Link rel="noopener noreferrer" href="#">
+                  Kits/Training
+                </Link>
+                <Link rel="noopener noreferrer" href="#">
+                  Clothing
+                </Link>
+                <Link rel="noopener noreferrer" href="#">
+                  New Arrival
+                </Link>
+                <Link rel="noopener noreferrer" href="#">
+                  Accessories
+                </Link>
               </div>
             </div>
           </div>
@@ -359,16 +331,16 @@ export default function Footer() {
           <div className="flex flex-col">
             <div className="flex space-x-2">
               <Link href={"/"}>
-                <span className="text-xs text-white">Privacy Policy</span>
+                <span className="text-xs text-white leading-tight">Privacy Policy</span>
               </Link>
               <Link href={"/"}>
-                <span className="text-xs text-white">Terms and Conditions</span>
+                <span className="text-xs text-white leading-tight">Terms and Conditions</span>
               </Link>
               <Link href={"/"}>
-                <span className="text-xs text-white">FAQ</span>
+                <span className="text-xs text-white leading-tight">FAQ</span>
               </Link>
               <Link href={"/"}>
-                <span className="text-xs text-white">Contact</span>
+                <span className="text-xs text-white leading-tight">Contact</span>
               </Link>
             </div>
             <div>

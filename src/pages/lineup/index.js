@@ -11,6 +11,10 @@ import lineup from "@/assets/img/lineup.png";
 import bayern from "@/assets/img/clubs/bayern.png";
 import city from "@/assets/img/clubs/manchester-city.png";
 import MatchResult from "@/components/MatchResult";
+import Subtitution from "@/components/Subtitution";
+
+import arteta from "@/assets/img/player/arteta.png";
+import guardiola from "@/assets/img/player/guardiola.png";
 
 export default function Lineup() {
   const bayernFirstData = [
@@ -437,7 +441,7 @@ export default function Lineup() {
                           aria-hidden="true"
                           focusable="false"
                           xmlns="http://www.w3.org/2000/svg"
-                          class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                          className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                         >
                           <title>icon</title>
                           <path d="M6.53034 3.53033L5.46968 2.46967L1.93935 6L5.46968 9.53033L6.53034 8.46967L4.81067 6.75H17C18.7949 6.75 20.25 8.20507 20.25 10V12H21.75V10C21.75 7.37665 19.6234 5.25 17 5.25H4.81066L6.53034 3.53033ZM2.25 14V12H3.75V14C3.75 15.7949 5.20507 17.25 7 17.25H19.1893L17.4697 15.5303L18.5303 14.4697L22.0607 18L18.5303 21.5303L17.4697 20.4697L19.1893 18.75H7C4.37665 18.75 2.25 16.6234 2.25 14Z"></path>
@@ -512,7 +516,7 @@ export default function Lineup() {
                           aria-hidden="true"
                           focusable="false"
                           xmlns="http://www.w3.org/2000/svg"
-                          class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                          className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                         >
                           <title>icon</title>
                           <path d="M6.53034 3.53033L5.46968 2.46967L1.93935 6L5.46968 9.53033L6.53034 8.46967L4.81067 6.75H17C18.7949 6.75 20.25 8.20507 20.25 10V12H21.75V10C21.75 7.37665 19.6234 5.25 17 5.25H4.81066L6.53034 3.53033ZM2.25 14V12H3.75V14C3.75 15.7949 5.20507 17.25 7 17.25H19.1893L17.4697 15.5303L18.5303 14.4697L22.0607 18L18.5303 21.5303L17.4697 20.4697L19.1893 18.75H7C4.37665 18.75 2.25 16.6234 2.25 14Z"></path>
@@ -526,7 +530,7 @@ export default function Lineup() {
           </div>
         </div>
 
-        <div className="mx-auto w-full lg:w-1/2">
+        {/* <div className="mx-auto w-full lg:w-1/2">
           <div className="flex flex-row justify-between mx-auto w-full ">
             <span className="text-2xl font-bold text-[#002f6c] uppercase">
               Substitutes
@@ -581,7 +585,7 @@ export default function Lineup() {
                           aria-hidden="true"
                           focusable="false"
                           xmlns="http://www.w3.org/2000/svg"
-                          class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                          className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                         >
                           <title>icon</title>
                           <path d="M6.53034 3.53033L5.46968 2.46967L1.93935 6L5.46968 9.53033L6.53034 8.46967L4.81067 6.75H17C18.7949 6.75 20.25 8.20507 20.25 10V12H21.75V10C21.75 7.37665 19.6234 5.25 17 5.25H4.81066L6.53034 3.53033ZM2.25 14V12H3.75V14C3.75 15.7949 5.20507 17.25 7 17.25H19.1893L17.4697 15.5303L18.5303 14.4697L22.0607 18L18.5303 21.5303L17.4697 20.4697L19.1893 18.75H7C4.37665 18.75 2.25 16.6234 2.25 14Z"></path>
@@ -640,7 +644,7 @@ export default function Lineup() {
                           aria-hidden="true"
                           focusable="false"
                           xmlns="http://www.w3.org/2000/svg"
-                          class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                          className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                         >
                           <title>icon</title>
                           <path d="M6.53034 3.53033L5.46968 2.46967L1.93935 6L5.46968 9.53033L6.53034 8.46967L4.81067 6.75H17C18.7949 6.75 20.25 8.20507 20.25 10V12H21.75V10C21.75 7.37665 19.6234 5.25 17 5.25H4.81066L6.53034 3.53033ZM2.25 14V12H3.75V14C3.75 15.7949 5.20507 17.25 7 17.25H19.1893L17.4697 15.5303L18.5303 14.4697L22.0607 18L18.5303 21.5303L17.4697 20.4697L19.1893 18.75H7C4.37665 18.75 2.25 16.6234 2.25 14Z"></path>
@@ -652,7 +656,53 @@ export default function Lineup() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
+{/* COACH */}
+        <section className="flex justify-between w-full px-10 py-3 min-h-14 bg-white2 md:h-14 border-b  items-center">
+          <div className="flex flex-row items-center">
+            <div className="mr-3 flex flex-col justify-center items-center">
+              <div className="coachIcon">
+                <Image
+                  src={guardiola}
+                  className="Image PlayerImage rounded-full bg-white "
+                  alt=""
+                />
+              </div>
+              <div className="block md:hidden">
+                <span className="font-semibold text-xs text-[#002f6c]">
+                  Pep Guardiola
+                </span>
+              </div>
+            </div>
+            <span className="hidden md:block text-sm text-[#002f6c] font-bold capitalize">
+              Pep Guardiola
+            </span>
+          </div>
+          <h2 className="text-sm text-[#002f6c] font-bold capitalize">Pelatih</h2>
+          <div className="flex flex-row-reverse items-center ">
+            <div className="ml-3 flex flex-col justify-center items-center">
+              <div className="coachIcon">
+                <Image
+                  src={arteta}
+                  className="Image PlayerImage rounded-full bg-white "
+                  alt=""
+                />
+              </div>
+
+              <div className="block md:hidden">
+                <span className="font-semibold text-xs text-slate-900">
+                  Mikel Arteta
+                </span>
+              </div>
+            </div>
+            <span className="hidden md:block text-sm text-[#002f6c] font-bold capitalize">
+              Mikel Arteta
+            </span>
+          </div>
+        </section>
+
+        <Subtitution />
 
         <div className="mx-auto w-full lg:w-1/2">
           <div className="flex flex-row justify-between mx-auto w-full ">

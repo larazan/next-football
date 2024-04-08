@@ -28,6 +28,8 @@ import vfb from "@/assets/img/clubs/vfb.png";
 import bremen from "@/assets/img/clubs/werderbremen.png";
 import wolfsburg from "@/assets/img/clubs/wolfsburg.png";
 import AdsModal from "@/components/AdsModal";
+import SortCompetition from "@/components/SortCompetition";
+import SortSeason from "@/components/SortSeason";
 
 export default function News() {
   const matchData = [
@@ -183,7 +185,7 @@ export default function News() {
               </div>
               <div className="flex w-full md:w-1/2 flex-col space-y-2 md:justify-end ">
                 <div className="flex flex-wrap md:flex-nowrap justify-end space-x-2">
-                  <select
+                  {/* <select
                     name="version"
                     className="input-select flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200 font-semibold text-[#002f6c] text-sm"
                   >
@@ -191,11 +193,12 @@ export default function News() {
                     <option value="all">Season 2023/2024</option>
                     <option value="blog">Season 2023/2024</option>
                     <option value="boilerplate">Season 2023/2024</option>
-                  </select>
+                  </select> */}
+                  <SortSeason />
                 </div>
                 <div className="flex space-x-2 justify-end">
                   <div className="flex flex-wrap md:flex-nowrap items-center space-x-2">
-                    <select
+                    {/* <select
                       name="version"
                       className="input-select flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200 font-semibold text-[#002f6c] text-sm"
                     >
@@ -205,8 +208,9 @@ export default function News() {
                       <option value="boilerplate">
                         International Champion Cup
                       </option>
-                    </select>
-                    <button className="hidden md:flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200">
+                    </select> */}
+                    <SortCompetition />
+                    <button className="hidden md:flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200 border border-indigo-300">
                       <span className=" font-semibold text-[#002f6c] text-sm">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -328,7 +332,7 @@ export default function News() {
                 </li>
               </ul>
             </div>
-            <div className="flex px-3 py-4 md:px-6 md:py-10  w-full md:w-12/12 ">
+            <div className="flex px-3 py-4 md:px-6 md:py-6  w-full md:w-12/12 ">
               <span className="text-lg md:text-2xl font-bold text-[#002f6c] uppercase">
                 Matchplan season 2023/2024
               </span>

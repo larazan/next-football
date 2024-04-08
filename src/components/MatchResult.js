@@ -78,7 +78,7 @@ export default function MatchResult() {
                             82&lsquo;
                           </span>
                         </div>
-                        <div className="text-white">
+                        <div className="bg-white rounded-full text-slate-800 shadow-md">
                           <svg
                             height="16"
                             width="16"
@@ -107,7 +107,7 @@ export default function MatchResult() {
                   <ul>
                     <li>
                       <div className="flex space-x-2 items-center">
-                        <div className="text-white">
+                        <div className="bg-white rounded-full text-slate-800 shadow-md">
                           <svg
                             height="16"
                             width="16"
@@ -142,7 +142,7 @@ export default function MatchResult() {
                     </li>
                     <li>
                       <div className="flex space-x-2 items-center">
-                        <div className="text-white">
+                      <div className="bg-white rounded-full text-slate-800 shadow-md">
                           <svg
                             height="16"
                             width="16"

@@ -19,6 +19,14 @@ a {
   box-sizing: border-box;
 }
 
+.selectedTable tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.selectedTable tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+} 
+
 ::-webkit-scrollbar {
   height: 12px;
   width: 16px
@@ -253,8 +261,9 @@ input[type='number']::-webkit-inner-spin-button,
   left: 50%;
   bottom: 10%;
   transform: translate(-50%, 50%);
-  filter: opacity(1);
-  background-color: rgb(226, 0, 26);
+  border-radius: 15px;
+  background: rgba(51, 51, 51, 1.0);
+  filter: opacity(0.6375);
   min-width: 28px;
   min-height: 22px;
   display: flex;
@@ -262,7 +271,6 @@ input[type='number']::-webkit-inner-spin-button,
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  border-radius: 15px;
 }
 
 .cb {
@@ -272,7 +280,7 @@ input[type='number']::-webkit-inner-spin-button,
   transform: translate(-50%, 50%);
   border-radius: 15px;
   background: rgba(51, 51, 51, 1.0);
-  filter: opacity(0.242553);
+  filter: opacity(0.6375);
   min-width: 28px;
   min-height: 22px;
   display: flex;
@@ -287,8 +295,9 @@ input[type='number']::-webkit-inner-spin-button,
   left: 83%;
   bottom: 26%;
   transform: translate(-50%, 50%);
-  filter: opacity(1);
-  background-color: rgb(8, 80, 152);
+  border-radius: 15px;
+  background: rgba(51, 51, 51, 1.0);
+  filter: opacity(0.6375);
   min-width: 28px;
   min-height: 22px;
   display: flex;
@@ -296,7 +305,6 @@ input[type='number']::-webkit-inner-spin-button,
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  border-radius: 15px;
 }
 
 .lb {
@@ -304,8 +312,9 @@ input[type='number']::-webkit-inner-spin-button,
   left: 17%;
   bottom: 26%;
   transform: translate(-50%, 50%);
-  filter: opacity(1);
-  background-color: rgb(8, 80, 152);
+  border-radius: 15px;
+  background: rgba(51, 51, 51, 1.0);
+  filter: opacity(0.6375);
   min-width: 28px;
   min-height: 22px;
   display: flex;
@@ -313,7 +322,6 @@ input[type='number']::-webkit-inner-spin-button,
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  border-radius: 15px;
 }
 
 .dm {
@@ -332,6 +340,7 @@ input[type='number']::-webkit-inner-spin-button,
   align-items: center;
   border-radius: 15px;
 }
+
 .rm {
   position: absolute;
   left: 83%;
@@ -348,6 +357,7 @@ input[type='number']::-webkit-inner-spin-button,
   -webkit-box-align: center;
   align-items: center;
 }
+
 .cm {
   position: absolute;
   left: 50%;
@@ -421,7 +431,7 @@ input[type='number']::-webkit-inner-spin-button,
   transform: translate(-50%, 50%);
   border-radius: 15px;
   background: rgba(51, 51, 51, 1.0);
-  filter: opacity(0.345833);
+  filter: opacity(0.6375);
   min-width: 28px;
   min-height: 22px;
   display: flex;
@@ -438,7 +448,7 @@ input[type='number']::-webkit-inner-spin-button,
   transform: translate(-50%, 50%);
   border-radius: 15px;
   background: rgba(51, 51, 51, 1.0);
-  filter: opacity(0.2625);
+  filter: opacity(0.6375);
   min-width: 28px;
   min-height: 22px;
   display: flex;
@@ -462,6 +472,22 @@ input[type='number']::-webkit-inner-spin-button,
   min-width: 44px;
   height: 44px;
   min-height: 44px;
+}
+
+.coachIcon {
+    display: flex;
+    position: relative;
+    box-sizing: content-box;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    align-items: end;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    min-height: 30px;
 }
 
 .playerRating {
@@ -503,4 +529,200 @@ input[type='number']::-webkit-inner-spin-button,
     border-radius: 50%;
     top: calc(50% - 81px);
     left: -78px;
+}
+
+/* 4222  */
+
+.empat222 .posGK {
+  top: 37.5%;
+  left: 0.4%;
+  height: 25%;
+  width: 19.2%;
+}
+
+.empat222 .posRB {
+  top: 75%;
+  left: 10.05%;
+  height: 25%;
+  width: 38.5%;
+}
+
+.empat222 .posRCB {
+  top: 50%;
+  left: 19.65%;
+  height: 25%;
+  width: 19.3%;
+}
+
+.empat222 .posCB {
+
+}
+
+.empat222 .posLCB {
+  top: 25%;
+  left: 19.7%;
+  height: 25%;
+  width: 19.2%;
+}
+
+.empat222 .posLB {
+  top: 0%;
+  left: 19.65%;
+  height: 25%;
+  width: 19.3%;
+}
+
+.empat222 .posDM {
+
+}
+
+.empat222 .posRCM {
+  top: 57.5%;
+  left: 38.85%;
+  height: 25%;
+  width: 19.3%;
+}
+
+.empat222 .posLCM {
+  top: 17.5%;
+  left: 38.85%;
+  height: 25%;
+  width: 19.3%;
+}
+
+.empat222 .posRW {
+  top: 71.3%;
+  left: 48.55%;
+  height: 25%;
+  width: 38.5%;
+}
+
+.empat222 .posLW {
+  top: 3.7%;
+  left: 58.15%;
+  height: 25%;
+  width: 19.3%;
+}
+
+.empat222 .posAM {
+
+}
+
+.empat222 .posST {
+
+}
+
+.empat222 .posRCF {
+  top: 57.5%;
+  left: 77.35%;
+  height: 25%;
+  width: 19.3%;
+}
+
+.empat222 .posLCF {
+  top: 17.5%;
+  left: 74%;
+  height: 25%;
+  width: 26%;
+}
+
+/* 4231 */
+
+.empat231 .posGK {
+  top: 37.5%;
+    left: 80.4%;
+    height: 25%;
+    width: 19.2%;
+}
+
+.empat231 .posRB {
+  top: 0%;
+    left: 61.05%;
+    height: 25%;
+    width: 19.3%;
+}
+
+.empat231 .posRCB {
+  top: 25%;
+    left: 61.1%;
+    height: 25%;
+    width: 19.2%;
+}
+
+.empat231 .posCB {
+
+}
+
+.empat231 .posLCB {
+  top: 50%;
+    left: 61.05%;
+    height: 25%;
+    width: 19.3%;
+}
+
+.empat231 .posLB {
+  top: 75%;
+    left: 51.45%;
+    height: 25%;
+    width: 38.5%;
+}
+
+.empat231 .posDM {
+
+}
+
+.empat231 .posRCM {
+  top: 17.5%;
+    left: 41.85%;
+    height: 25%;
+    width: 19.3%;
+}
+
+.empat231 .posLCM {
+  top: 57.5%;
+    left: 41.85%;
+    height: 25%;
+    width: 19.3%;
+}
+
+.empat231 .posRW {
+  top: 3.7%;
+    left: 22.55%;
+    height: 25%;
+    width: 19.3%;
+}
+
+.empat231 .posLW {
+  top: 71.3%;
+    left: 12.95%;
+    height: 25%;
+    width: 38.5%;
+}
+
+.empat231 .posAM {
+  top: 37.5%;
+  left: 22.55%;
+  height: 25%;
+  width: 19.3%;
+}
+
+.empat231 .posST {
+  top: 37.5%;
+  left: 3.35%;
+  height: 25%;
+  width: 19.3%;
+}
+
+.empat231 .posRCF {
+  top: 57.5%;
+  left: 77.35%;
+  height: 25%;
+  width: 19.3%;
+}
+
+.empat231 .posLCF {
+  top: 17.5%;
+  left: 74%;
+  height: 25%;
+  width: 26%;
 }

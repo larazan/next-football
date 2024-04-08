@@ -109,47 +109,46 @@ export default function Statistic() {
               </div>
             </div>
           </div>
+          <div className="flex flex-col py-2 space-y-2">
+            <div className="flex justify-center">
+              <span className="text-xs md:text-sm font-bold text-[#002f6c]">Penguasaan bola</span>
+              </div>
+              <div className="w-full flex space-x-2">
+                <div className="flex justify-start items-center h-7 rounded-l-full bg-[#c60428] w-[55%]">
+                  <div className="flex justify-center rounded-full  w-14 text-sm text-white font-semibold">55%</div>
+                </div>
+                <div className="flex justify-end items-center h-7 rounded-r-full bg-[#98c5e9] w-[45%]">
+                  <div className="flex justify-center rounded-full  w-14 text-sm text-white font-semibold">45%</div>
+                </div>
+              </div>
+          </div>
           {statistics.map((data, index) => {
             return (
               <div
-                className="flex w-full justify-between items-center h-10 py-1.5"
+                className="flex w-full justify-between items-center space-y-0 py-1"
                 key={index}
               >
                 <div className="flex w-1/12">
-                  <div>
-                    <span className="text-sm font-bold text-[#002f6c]">
+                  <div className={`flex ${data.home > data.away ? 'bg-[#c60428] text-white' : 'text-[#002f6c]'} px-2 py-1  rounded-full `}>
+                    <span className="text-xs font-bold ">
                       {data.home}
                     </span>
                   </div>
                 </div>
                 <div className="w-10/12">
                   <div className="flex flex-row w-full mx-auto justify-center items-center">
-                    <div className="w-5/12">
-                      <div className="overflow-hidden transform rotate-180 h-3 text-xs flex rounded bg-gray-300">
-                        <div
-                          style={{ width: "30%" }}
-                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"
-                        ></div>
-                      </div>
-                    </div>
-                    <div className="w-2/12 text-center leading-tight">
+                    
+                    <div className="w-8/12 text-center leading-tight">
                       <span className="text-xs md:text-sm font-bold text-[#002f6c]">
                         {data.title}
                       </span>
                     </div>
-                    <div className="w-5/12">
-                      <div className="overflow-hidden h-3 text-xs flex rounded bg-gray-300">
-                        <div
-                          style={{ width: "30%" }}
-                          className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"
-                        ></div>
-                      </div>
-                    </div>
+                    
                   </div>
                 </div>
                 <div className="flex w-1/12 justify-end">
-                  <div>
-                    <span className="text-sm font-bold text-[#002f6c]">
+                <div className={`flex ${data.away > data.home ? 'bg-[#98c5e9] text-[#002f6c]' : 'text-[#002f6c]'}  rounded-full px-2 py-1`}>
+                    <span className="text-xs font-bold ">
                       {data.away}
                     </span>
                   </div>

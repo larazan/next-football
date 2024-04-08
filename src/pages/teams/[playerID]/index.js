@@ -11,6 +11,8 @@ import benjamin_pavard from "@/assets/img/teams/benjamin_pavard.png";
 
 import bg from "@/assets/img/horizontal.png";
 import NewsRelated from "@/components/NewsRelated";
+import SortSeason from "@/components/SortSeason";
+import SortCompetition from "@/components/SortCompetition";
 
 export default function Detail() {
   return (
@@ -193,7 +195,7 @@ export default function Detail() {
           </div>
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 ">
             <div className="flex flex-wrap md:flex-nowrap md:justify-end space-x-2">
-              <select
+              {/* <select
                 name="version"
                 className="input-select flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200 font-semibold text-[#002f6c] text-sm"
               >
@@ -202,11 +204,12 @@ export default function Detail() {
                 <option value="all">Season 2023/2024</option>
                 <option value="blog">Season 2023/2024</option>
                 <option value="boilerplate">Season 2023/2024</option>
-              </select>
+              </select> */}
+              <SortSeason />
             </div>
             <div className="flex space-x-2">
               <div className="flex flex-wrap md:flex-nowrap items-center space-x-2">
-                <select
+                {/* <select
                   name="version"
                   className="input-select flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200 font-semibold text-[#002f6c] text-sm"
                 >
@@ -216,7 +219,8 @@ export default function Detail() {
                   <option value="boilerplate">
                     International Champion Cup
                   </option>
-                </select>
+                </select> */}
+                <SortCompetition />
               </div>
             </div>
           </div>
