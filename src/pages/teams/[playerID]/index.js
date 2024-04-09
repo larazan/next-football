@@ -13,6 +13,7 @@ import bg from "@/assets/img/horizontal.png";
 import NewsRelated from "@/components/NewsRelated";
 import SortSeason from "@/components/SortSeason";
 import SortCompetition from "@/components/SortCompetition";
+import Position from "@/components/Position";
 
 export default function Detail() {
   return (
@@ -27,7 +28,11 @@ export default function Detail() {
       <GoTop />
 
       <div className="relative w-full">
-        <Image src={bg} alt="" className="w-full  sm:h-20 md:h-80 h-60 lg:h-[470px]" />
+        <Image
+          src={bg}
+          alt=""
+          className="w-full  sm:h-20 md:h-80 h-60 lg:h-[470px]"
+        />
         <div className="absolute lg:mx-auto mt-2 lg:w-1/2 bottom-0 flex lg:left-[25%] space-x-6 z-20">
           <div className="w-1/2 md:w-1/3 lg:w-1/2">
             <Image src={benjamin_pavard} alt="" className="w-[900px]" />
@@ -112,9 +117,9 @@ export default function Detail() {
         </div>
       </div>
 
-      <div className="h-max flex flex-row space-x-6 px-4 lg:px-0 py-3 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
-        <div className="flex flex-col md:flex-row space-y-3 md:space-x-3 mx-auto w-full lg:w-1/2">
-        <div className="w-full md:w-1/2 flex flex-col space-y-4">
+      <div className="h-max flex flex-col space-y-3 px-4 lg:px-0 py-3 md:py-4 justify-center2 items-center2 bg-[#f5f7f9]">
+        {/* submenu */}
+        <div className=" space-y-2">
           <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
             <span className="text-2xl font-bold text-[#002f6c]">Personal</span>
           </div>
@@ -131,8 +136,10 @@ export default function Detail() {
               </span>
             </button>
           </div>
-
-          <div className="flex justify-center border-y border-gray-300 ">
+        </div>
+        <div className="flex flex-col md:flex-row space-y-3 md:space-x-3 mx-auto w-full lg:w-1/2">
+          <div className="w-full md:w-1/2 flex flex-col space-y-4">
+            {/* <div className="flex justify-center border-y border-gray-300 ">
             <div className="flex flex-col w-full text-gray-800">
               <div className="flex items-center border-b border-gray-300 py-3 px-3">
                 <div className="w-5/12 text-sm font-semibold">
@@ -187,176 +194,378 @@ export default function Detail() {
                 <div className="w-7/12 text-sm font-mabry">Right</div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="w-full md:w-1/2 flex flex-col space-y-4">
-          <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
-            <span className="text-lg md:text-2xl font-bold text-[#002f6c]">Statistic</span>
-          </div>
-          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 ">
-            <div className="flex flex-wrap md:flex-nowrap md:justify-end space-x-2">
-              {/* <select
-                name="version"
-                className="input-select flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200 font-semibold text-[#002f6c] text-sm"
-              >
-                <option value="all">All Season</option>
-                <option value="all">Season 2023/2024</option>
-                <option value="all">Season 2023/2024</option>
-                <option value="blog">Season 2023/2024</option>
-                <option value="boilerplate">Season 2023/2024</option>
-              </select> */}
-              <SortSeason />
-            </div>
-            <div className="flex space-x-2">
-              <div className="flex flex-wrap md:flex-nowrap items-center space-x-2">
-                {/* <select
-                  name="version"
-                  className="input-select flex rounded px-2 py-1 items-center bg-blue-100 hover:bg-blue-200 font-semibold text-[#002f6c] text-sm"
-                >
-                  <option value="all">All competitions</option>
-                  <option value="all">DFB Cup</option>
-                  <option value="blog">Champion League</option>
-                  <option value="boilerplate">
-                    International Champion Cup
-                  </option>
-                </select> */}
-                <SortCompetition />
+          </div> */}
+
+            <div className="grid grid-cols-2 gap-4">
+              <div className="flex flex-col py-2 px-2 border-b">
+                <div>
+                  <span className="font-bold text-lg text-slate-800">
+                    186 cm
+                  </span>
+                </div>
+                <span className="text-sm text-slate-600 font-semibold">
+                  Tinggi
+                </span>
+              </div>
+              <div className="flex flex-col py-2 px-2 border-b">
+                <div>
+                  <span className="font-bold text-lg text-slate-800">5</span>
+                </div>
+                <span className="text-sm text-slate-600 font-semibold">No Punggung</span>
+              </div>
+              <div className="flex flex-col py-2 px-2 border-b">
+                <div>
+                  <span className="font-bold text-lg text-slate-800">
+                    20 tahun
+                  </span>
+                </div>
+                <span className="text-sm text-slate-600 font-semibold">
+                  29 Jun 2003
+                </span>
+              </div>
+              <div className="flex flex-col py-2 px-2 border-b">
+                <div>
+                  <span className="font-bold text-lg text-slate-800">
+                    Kanan
+                  </span>
+                </div>
+                <span className="text-sm text-slate-600 font-semibold">
+                  Kaki andalan
+                </span>
+              </div>
+              <div className="flex flex-col py-2 px-2 border-b">
+                <div>
+                  <span className="font-bold text-lg text-slate-800">
+                    Inggris
+                  </span>
+                </div>
+                <span className="text-sm text-slate-600 font-semibold">
+                  Negara
+                </span>
+              </div>
+              <div className="flex flex-col py-2 px-2 border-b">
+                <div>
+                  <span className="font-bold text-lg text-slate-800">
+                    29 Jun 2025
+                  </span>
+                </div>
+                <span className="text-sm text-slate-600 font-semibold">
+                  Kontrak
+                </span>
               </div>
             </div>
           </div>
-          <div className="w-full">
-            <table className="w-full">
-              <tbody>
-                <tr>
-                  <td className="px-4 py-4 border ">
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="text-[#002f6c]">
-                      <svg height="32" width="32" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"><title>icon</title><path fillRule="evenodd" clipRule="evenodd" d="M11.532 5.25H0.0890503L1.14829 10.6642L9.28908 11.8703L8.73617 12.4842L8.77645 12.8221C9.17309 16.1496 11.9511 18.75 15.347 18.75C18.3485 18.75 20.8665 16.7195 21.6854 13.95H21.7999C22.8769 13.95 23.7499 13.0769 23.7499 12C23.7499 10.923 22.8769 10.05 21.7999 10.05H21.6854C20.8665 7.28048 18.3484 5.25 15.347 5.25H13.21L11.532 6.10768V5.25ZM21.9534 11.5768C21.9619 11.7168 21.9662 11.8579 21.9662 12C21.9662 12.1421 21.9619 12.2832 21.9534 12.4231C22.1264 12.3604 22.2499 12.1946 22.2499 12C22.2499 11.8054 22.1264 11.6396 21.9534 11.5768ZM1.91095 6.75H10.032V8.55898L13.5712 6.75H15.347C18.1588 6.75 20.4662 9.08484 20.4662 12C20.4662 14.9152 18.1588 17.25 15.347 17.25C12.8557 17.25 10.7612 15.4182 10.3153 12.9723L12.275 10.7963L2.41683 9.33578L1.91095 6.75Z"></path></svg>
-                      </div>
-                      <div>
-                        <span className="text-xs text-[#002f6c] font-semibold">Mathes Played</span>
-                      </div>
-                      <div>
-                        <span className="text-lg font-bold text-[#dc052d]">162</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="px-4 py-4 border ">
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="text-[#002f6c]">
-                      <svg height="32" width="32" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"><title>icon</title><path fillRule="evenodd" clipRule="evenodd" d="M11.25 2.77997C7.60694 3.07228 4.5594 5.47541 3.33127 8.76549L7.89199 10.1812L11.25 7.48923V2.77997ZM2.75 12C2.75 11.3874 2.80955 10.7887 2.92318 10.2094L7.38099 11.5932L8.69652 15.8532L6.37133 19.3409C4.16941 17.6501 2.75 14.9908 2.75 12ZM7.63118 20.1553C8.9323 20.8538 10.4199 21.25 12 21.25C13.5801 21.25 15.0677 20.8538 16.3688 20.1553L14.0986 16.75H9.9014L7.63118 20.1553ZM15.3035 15.8531L17.6287 19.3409C19.8306 17.6501 21.25 14.9908 21.25 12C21.25 11.3874 21.1904 10.7887 21.0768 10.2094L16.619 11.5932L15.3035 15.8531ZM12.75 2.77997C16.3931 3.07228 19.4406 5.47541 20.6687 8.76549L16.108 10.1812L12.75 7.48924V2.77997ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM8.86713 11.3219L10.0802 15.25H13.9198L15.1329 11.3219L12 8.81048L8.86713 11.3219Z" fill="currentColor"></path></svg>
-                      </div>
-                      <div>
-                        <span className="text-xs text-[#002f6c] font-semibold">Goals</span>
-                      </div>
-                      <div>
-                        <span className="text-lg font-bold text-[#dc052d]">12</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="px-4 py-4 border ">
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="text-[#002f6c]">
-                      <svg height="32" width="32" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"><title>icon</title><path fillRule="evenodd" clipRule="evenodd" d="M22.75 6.99999C22.75 6.58578 22.4142 6.24999 22 6.24999H18.4758C17.263 3.87923 14.8231 2.25 12 2.25C9.17684 2.25 6.73701 3.87923 5.52414 6.24999L2 6.24999C1.58579 6.24999 1.25 6.58578 1.25 6.99999V21C1.25 21.4142 1.58579 21.75 2 21.75H7H17H22C22.4142 21.75 22.75 21.4142 22.75 21V6.99999ZM16.25 16.75V20.25H7.75L7.75 16.75H16.25ZM17.75 16V20.25H21.25V7.74999L2.75 7.74999V20.25H6.25V16C6.25 15.5858 6.58579 15.25 7 15.25L17 15.25C17.4142 15.25 17.75 15.5858 17.75 16ZM16.7314 6.24999C15.6789 4.73342 13.9484 3.75 12 3.75C10.0516 3.75 8.32105 4.73342 7.26861 6.24999L16.7314 6.24999ZM11 11C11 11.5523 11.4477 12 12 12C12.5523 12 13 11.5523 13 11C13 10.4477 12.5523 9.99999 12 9.99999C11.4477 9.99999 11 10.4477 11 11Z"></path></svg>
-                      </div>
-                      <div>
-                        <span className="text-xs text-[#002f6c] font-semibold">Assists</span>
-                      </div>
-                      <div>
-                        <span className="text-lg font-bold text-[#dc052d]">11</span>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-4 border ">
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="text-[#002f6c]">
-                      <svg height="32" width="32" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"><title>icon</title><path fillRule="evenodd" clipRule="evenodd" d="M12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12C2.75 9.45308 3.77836 7.14779 5.4443 5.47426L4.38123 4.41602C2.44688 6.35918 1.25 9.04054 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25V2.75ZM7.2076 6.17972C6.91276 6.00453 6.53665 6.05165 6.29415 6.29416C6.05164 6.53666 6.00452 6.91277 6.17971 7.20761L10.3514 14.2282C10.3833 14.2819 10.4217 14.3313 10.4658 14.3754C11.5666 15.4762 13.3637 15.5907 14.4772 14.4772C15.5907 13.3637 15.4762 11.5666 14.3754 10.4658C14.3313 10.4217 14.2819 10.3833 14.2282 10.3514L7.2076 6.17972ZM13.4165 13.4165C12.9725 13.8605 12.1698 13.8977 11.5884 13.3736L8.97435 8.97436L13.3736 11.5884C13.8977 12.1698 13.8605 12.9726 13.4165 13.4165Z"></path></svg>
-                      </div>
-                      <div>
-                        <span className="text-xs text-[#002f6c] font-semibold">Minutes Played</span>
-                      </div>
-                      <div>
-                        <span className="text-lg font-bold text-[#dc052d]">13.208</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="px-4 py-4 border ">
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="text-[#002f6c]">
-                      <svg height="32" width="32" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"><title>icon</title><path d="M6.53034 3.53033L5.46968 2.46967L1.93935 6L5.46968 9.53033L6.53034 8.46967L4.81067 6.75H17C18.7949 6.75 20.25 8.20507 20.25 10V12H21.75V10C21.75 7.37665 19.6234 5.25 17 5.25H4.81066L6.53034 3.53033ZM2.25 14V12H3.75V14C3.75 15.7949 5.20507 17.25 7 17.25H19.1893L17.4697 15.5303L18.5303 14.4697L22.0607 18L18.5303 21.5303L17.4697 20.4697L19.1893 18.75H7C4.37665 18.75 2.25 16.6234 2.25 14Z"></path></svg>
-                      </div>
-                      <div className="text-center leading-tight">
-                        <span className="text-xs text-[#002f6c] font-semibold">Substitution <br /> (On)</span>
-                      </div>
-                      <div>
-                        <span className="text-lg font-bold text-[#dc052d]">13</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="px-4 py-4 border ">
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="text-[#002f6c]">
-                      <svg height="32" width="32" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"><title>icon</title><path d="M6.53034 3.53033L5.46968 2.46967L1.93935 6L5.46968 9.53033L6.53034 8.46967L4.81067 6.75H17C18.7949 6.75 20.25 8.20507 20.25 10V12H21.75V10C21.75 7.37665 19.6234 5.25 17 5.25H4.81066L6.53034 3.53033ZM2.25 14V12H3.75V14C3.75 15.7949 5.20507 17.25 7 17.25H19.1893L17.4697 15.5303L18.5303 14.4697L22.0607 18L18.5303 21.5303L17.4697 20.4697L19.1893 18.75H7C4.37665 18.75 2.25 16.6234 2.25 14Z"></path></svg>
-                      </div>
-                      <div className="text-center leading-tight">
-                        <span className="text-xs text-[#002f6c] font-semibold">Substitutions <br /> (Off)</span>
-                      </div>
-                      <div>
-                        <span className="text-lg font-bold text-[#dc052d]">22</span>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-4 border ">
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="h-8 w-6 rounded bg-yellow-300 shadow">
-                      </div>
-                      <div>
-                        <span className="text-xs text-[#002f6c] font-semibold">Yellow Cards</span>
-                      </div>
-                      <div>
-                        <span className="text-lg font-bold text-[#dc052d]">21</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="px-4 py-4 border ">
-                    <div className="flex flex-col justify-center items-center">
-                    <div className="h-8 w-6 rounded bg-[#dc052d] shadow">
-                      </div>
-                      <div>
-                        <span className="text-xs text-[#002f6c] font-semibold">Red Cards</span>
-                      </div>
-                      <div>
-                        <span className="text-lg font-bold text-[#dc052d]">2</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="px-4 py-4 border ">
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="text-[#002f6c]">
-                      <svg height="32" width="32" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"><title>icon</title><path fillRule="evenodd" clipRule="evenodd" d="M11.532 5.25H0.0890503L1.14829 10.6642L9.28908 11.8703L8.73617 12.4842L8.77645 12.8221C9.17309 16.1496 11.9511 18.75 15.347 18.75C18.3485 18.75 20.8665 16.7195 21.6854 13.95H21.7999C22.8769 13.95 23.7499 13.0769 23.7499 12C23.7499 10.923 22.8769 10.05 21.7999 10.05H21.6854C20.8665 7.28048 18.3484 5.25 15.347 5.25H13.21L11.532 6.10768V5.25ZM21.9534 11.5768C21.9619 11.7168 21.9662 11.8579 21.9662 12C21.9662 12.1421 21.9619 12.2832 21.9534 12.4231C22.1264 12.3604 22.2499 12.1946 22.2499 12C22.2499 11.8054 22.1264 11.6396 21.9534 11.5768ZM1.91095 6.75H10.032V8.55898L13.5712 6.75H15.347C18.1588 6.75 20.4662 9.08484 20.4662 12C20.4662 14.9152 18.1588 17.25 15.347 17.25C12.8557 17.25 10.7612 15.4182 10.3153 12.9723L12.275 10.7963L2.41683 9.33578L1.91095 6.75Z"></path></svg>
-                      </div>
-                      <div>
-                        <span className="text-xs text-[#002f6c] font-semibold">Mathes Played</span>
-                      </div>
-                      <div>
-                        <span className="text-lg font-bold text-[#dc052d]">162</span>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="w-full md:w-1/2 flex justify-between px-3">
+            <div className="space-y-2">
+              <div>
+                <span className="text-lg font-semibold text-slate-800">
+                  Posisi
+                </span>
+              </div>
+              <div>
+                <ul className="text-sm font-semibold text-slate-700">
+                  <li>Gelandang Tengah</li>
+                  <li>Gelandang Kiri</li>
+                  <li>Sayap Kiri</li>
+                  <li>Penyerang</li>
+                </ul>
+              </div>
+            </div>
+            <Position />
           </div>
-          <div>
-          
-          </div>
-         
-         
         </div>
+        <div className="flex flex-col md:flex-row space-y-3 md:space-x-3 mx-auto w-full lg:w-1/2">
+          <div className="w-full md:w-1/2 flex flex-col space-y-4">
+            <div className="flex flex-row justify-between mx-auto w-full md:w-12/12 space-x-6 items-center">
+              <span className="text-2xl font-bold text-[#002f6c]">
+                Statistic
+              </span>
+            </div>
+            <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 ">
+              <div className="flex flex-wrap md:flex-nowrap md:justify-end space-x-2">
+                <SortSeason />
+              </div>
+              <div className="flex space-x-2">
+                <div className="flex flex-wrap md:flex-nowrap items-center space-x-2">
+                  <SortCompetition />
+                </div>
+              </div>
+            </div>
+            <div className="w-full">
+              <table className="w-full">
+                <tbody>
+                  <tr>
+                    <td className="px-4 py-4 border ">
+                      <div className="flex flex-col justify-center items-center">
+                        <div className="text-[#002f6c]">
+                          <svg
+                            height="32"
+                            width="32"
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                            role="img"
+                            aria-hidden="true"
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                          >
+                            <title>icon</title>
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M11.532 5.25H0.0890503L1.14829 10.6642L9.28908 11.8703L8.73617 12.4842L8.77645 12.8221C9.17309 16.1496 11.9511 18.75 15.347 18.75C18.3485 18.75 20.8665 16.7195 21.6854 13.95H21.7999C22.8769 13.95 23.7499 13.0769 23.7499 12C23.7499 10.923 22.8769 10.05 21.7999 10.05H21.6854C20.8665 7.28048 18.3484 5.25 15.347 5.25H13.21L11.532 6.10768V5.25ZM21.9534 11.5768C21.9619 11.7168 21.9662 11.8579 21.9662 12C21.9662 12.1421 21.9619 12.2832 21.9534 12.4231C22.1264 12.3604 22.2499 12.1946 22.2499 12C22.2499 11.8054 22.1264 11.6396 21.9534 11.5768ZM1.91095 6.75H10.032V8.55898L13.5712 6.75H15.347C18.1588 6.75 20.4662 9.08484 20.4662 12C20.4662 14.9152 18.1588 17.25 15.347 17.25C12.8557 17.25 10.7612 15.4182 10.3153 12.9723L12.275 10.7963L2.41683 9.33578L1.91095 6.75Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div>
+                          <span className="text-xs text-[#002f6c] font-semibold">
+                            Mathes Played
+                          </span>
+                        </div>
+                        <div>
+                          <span className="text-lg font-bold text-[#dc052d]">
+                            162
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-4 py-4 border ">
+                      <div className="flex flex-col justify-center items-center">
+                        <div className="text-[#002f6c]">
+                          <svg
+                            height="32"
+                            width="32"
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                            role="img"
+                            aria-hidden="true"
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                          >
+                            <title>icon</title>
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M11.25 2.77997C7.60694 3.07228 4.5594 5.47541 3.33127 8.76549L7.89199 10.1812L11.25 7.48923V2.77997ZM2.75 12C2.75 11.3874 2.80955 10.7887 2.92318 10.2094L7.38099 11.5932L8.69652 15.8532L6.37133 19.3409C4.16941 17.6501 2.75 14.9908 2.75 12ZM7.63118 20.1553C8.9323 20.8538 10.4199 21.25 12 21.25C13.5801 21.25 15.0677 20.8538 16.3688 20.1553L14.0986 16.75H9.9014L7.63118 20.1553ZM15.3035 15.8531L17.6287 19.3409C19.8306 17.6501 21.25 14.9908 21.25 12C21.25 11.3874 21.1904 10.7887 21.0768 10.2094L16.619 11.5932L15.3035 15.8531ZM12.75 2.77997C16.3931 3.07228 19.4406 5.47541 20.6687 8.76549L16.108 10.1812L12.75 7.48924V2.77997ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM8.86713 11.3219L10.0802 15.25H13.9198L15.1329 11.3219L12 8.81048L8.86713 11.3219Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div>
+                          <span className="text-xs text-[#002f6c] font-semibold">
+                            Goals
+                          </span>
+                        </div>
+                        <div>
+                          <span className="text-lg font-bold text-[#dc052d]">
+                            12
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-4 py-4 border ">
+                      <div className="flex flex-col justify-center items-center">
+                        <div className="text-[#002f6c]">
+                          <svg
+                            height="32"
+                            width="32"
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                            role="img"
+                            aria-hidden="true"
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                          >
+                            <title>icon</title>
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M22.75 6.99999C22.75 6.58578 22.4142 6.24999 22 6.24999H18.4758C17.263 3.87923 14.8231 2.25 12 2.25C9.17684 2.25 6.73701 3.87923 5.52414 6.24999L2 6.24999C1.58579 6.24999 1.25 6.58578 1.25 6.99999V21C1.25 21.4142 1.58579 21.75 2 21.75H7H17H22C22.4142 21.75 22.75 21.4142 22.75 21V6.99999ZM16.25 16.75V20.25H7.75L7.75 16.75H16.25ZM17.75 16V20.25H21.25V7.74999L2.75 7.74999V20.25H6.25V16C6.25 15.5858 6.58579 15.25 7 15.25L17 15.25C17.4142 15.25 17.75 15.5858 17.75 16ZM16.7314 6.24999C15.6789 4.73342 13.9484 3.75 12 3.75C10.0516 3.75 8.32105 4.73342 7.26861 6.24999L16.7314 6.24999ZM11 11C11 11.5523 11.4477 12 12 12C12.5523 12 13 11.5523 13 11C13 10.4477 12.5523 9.99999 12 9.99999C11.4477 9.99999 11 10.4477 11 11Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div>
+                          <span className="text-xs text-[#002f6c] font-semibold">
+                            Assists
+                          </span>
+                        </div>
+                        <div>
+                          <span className="text-lg font-bold text-[#dc052d]">
+                            11
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-4 border ">
+                      <div className="flex flex-col justify-center items-center">
+                        <div className="text-[#002f6c]">
+                          <svg
+                            height="32"
+                            width="32"
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                            role="img"
+                            aria-hidden="true"
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                          >
+                            <title>icon</title>
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12C2.75 9.45308 3.77836 7.14779 5.4443 5.47426L4.38123 4.41602C2.44688 6.35918 1.25 9.04054 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25V2.75ZM7.2076 6.17972C6.91276 6.00453 6.53665 6.05165 6.29415 6.29416C6.05164 6.53666 6.00452 6.91277 6.17971 7.20761L10.3514 14.2282C10.3833 14.2819 10.4217 14.3313 10.4658 14.3754C11.5666 15.4762 13.3637 15.5907 14.4772 14.4772C15.5907 13.3637 15.4762 11.5666 14.3754 10.4658C14.3313 10.4217 14.2819 10.3833 14.2282 10.3514L7.2076 6.17972ZM13.4165 13.4165C12.9725 13.8605 12.1698 13.8977 11.5884 13.3736L8.97435 8.97436L13.3736 11.5884C13.8977 12.1698 13.8605 12.9726 13.4165 13.4165Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div>
+                          <span className="text-xs text-[#002f6c] font-semibold">
+                            Minutes Played
+                          </span>
+                        </div>
+                        <div>
+                          <span className="text-lg font-bold text-[#dc052d]">
+                            13.208
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-4 py-4 border ">
+                      <div className="flex flex-col justify-center items-center">
+                        <div className="text-[#002f6c]">
+                          <svg
+                            height="32"
+                            width="32"
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                            role="img"
+                            aria-hidden="true"
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                          >
+                            <title>icon</title>
+                            <path d="M6.53034 3.53033L5.46968 2.46967L1.93935 6L5.46968 9.53033L6.53034 8.46967L4.81067 6.75H17C18.7949 6.75 20.25 8.20507 20.25 10V12H21.75V10C21.75 7.37665 19.6234 5.25 17 5.25H4.81066L6.53034 3.53033ZM2.25 14V12H3.75V14C3.75 15.7949 5.20507 17.25 7 17.25H19.1893L17.4697 15.5303L18.5303 14.4697L22.0607 18L18.5303 21.5303L17.4697 20.4697L19.1893 18.75H7C4.37665 18.75 2.25 16.6234 2.25 14Z"></path>
+                          </svg>
+                        </div>
+                        <div className="text-center leading-tight">
+                          <span className="text-xs text-[#002f6c] font-semibold">
+                            Substitution <br /> (On)
+                          </span>
+                        </div>
+                        <div>
+                          <span className="text-lg font-bold text-[#dc052d]">
+                            13
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-4 py-4 border ">
+                      <div className="flex flex-col justify-center items-center">
+                        <div className="text-[#002f6c]">
+                          <svg
+                            height="32"
+                            width="32"
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                            role="img"
+                            aria-hidden="true"
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                          >
+                            <title>icon</title>
+                            <path d="M6.53034 3.53033L5.46968 2.46967L1.93935 6L5.46968 9.53033L6.53034 8.46967L4.81067 6.75H17C18.7949 6.75 20.25 8.20507 20.25 10V12H21.75V10C21.75 7.37665 19.6234 5.25 17 5.25H4.81066L6.53034 3.53033ZM2.25 14V12H3.75V14C3.75 15.7949 5.20507 17.25 7 17.25H19.1893L17.4697 15.5303L18.5303 14.4697L22.0607 18L18.5303 21.5303L17.4697 20.4697L19.1893 18.75H7C4.37665 18.75 2.25 16.6234 2.25 14Z"></path>
+                          </svg>
+                        </div>
+                        <div className="text-center leading-tight">
+                          <span className="text-xs text-[#002f6c] font-semibold">
+                            Substitutions <br /> (Off)
+                          </span>
+                        </div>
+                        <div>
+                          <span className="text-lg font-bold text-[#dc052d]">
+                            22
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-4 border ">
+                      <div className="flex flex-col justify-center items-center">
+                        <div className="h-8 w-6 rounded bg-yellow-300 shadow"></div>
+                        <div>
+                          <span className="text-xs text-[#002f6c] font-semibold">
+                            Yellow Cards
+                          </span>
+                        </div>
+                        <div>
+                          <span className="text-lg font-bold text-[#dc052d]">
+                            21
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-4 py-4 border ">
+                      <div className="flex flex-col justify-center items-center">
+                        <div className="h-8 w-6 rounded bg-[#dc052d] shadow"></div>
+                        <div>
+                          <span className="text-xs text-[#002f6c] font-semibold">
+                            Red Cards
+                          </span>
+                        </div>
+                        <div>
+                          <span className="text-lg font-bold text-[#dc052d]">
+                            2
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-4 py-4 border ">
+                      <div className="flex flex-col justify-center items-center">
+                        <div className="text-[#002f6c]">
+                          <svg
+                            height="32"
+                            width="32"
+                            viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet"
+                            role="img"
+                            aria-hidden="true"
+                            focusable="false"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                          >
+                            <title>icon</title>
+                            <path
+                              fillRule="evenodd"
+                              clipRule="evenodd"
+                              d="M11.532 5.25H0.0890503L1.14829 10.6642L9.28908 11.8703L8.73617 12.4842L8.77645 12.8221C9.17309 16.1496 11.9511 18.75 15.347 18.75C18.3485 18.75 20.8665 16.7195 21.6854 13.95H21.7999C22.8769 13.95 23.7499 13.0769 23.7499 12C23.7499 10.923 22.8769 10.05 21.7999 10.05H21.6854C20.8665 7.28048 18.3484 5.25 15.347 5.25H13.21L11.532 6.10768V5.25ZM21.9534 11.5768C21.9619 11.7168 21.9662 11.8579 21.9662 12C21.9662 12.1421 21.9619 12.2832 21.9534 12.4231C22.1264 12.3604 22.2499 12.1946 22.2499 12C22.2499 11.8054 22.1264 11.6396 21.9534 11.5768ZM1.91095 6.75H10.032V8.55898L13.5712 6.75H15.347C18.1588 6.75 20.4662 9.08484 20.4662 12C20.4662 14.9152 18.1588 17.25 15.347 17.25C12.8557 17.25 10.7612 15.4182 10.3153 12.9723L12.275 10.7963L2.41683 9.33578L1.91095 6.75Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div>
+                          <span className="text-xs text-[#002f6c] font-semibold">
+                            Mathes Played
+                          </span>
+                        </div>
+                        <div>
+                          <span className="text-lg font-bold text-[#dc052d]">
+                            162
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div></div>
+          </div>
         </div>
       </div>
       <NewsRelated />

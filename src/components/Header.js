@@ -245,7 +245,7 @@ export default function Header() {
 
         
       </header>
-      <div className="hidden md:block py-0 pt-1 px-5 bg-[#c60428] sticky top-0 z-20">
+      <div className="hidden md:block py-0 pt-1 px-5 bg-[#c60428] sticky top-0 z-30">
           <div className="flex space-x-4 lg:space-x-2 items-center mx-auto w-full lg:w-1/2">
             <Link
               href={"/news"}
