@@ -7,10 +7,10 @@ import payment1 from "@/assets/img/payment/payment1.svg";
 export default function FooterShop() {
   return (
     <>
-      <section class="mx-auto w-full padding-x padding-t">
-        <footer class="bg-[#98c5e9] w-full">
-          <div class="mx-auto w-11/12 py-4 md:py-8 flex flex-col md:flex-row space-y-3 md:justify-between items-center flex-wrap2 ">
-            <div class="w-full md:w-8/12 flex flex-row items-center justify-around md:justify-start">
+      <section className="mx-auto w-full padding-x padding-t">
+        <footer className="bg-[#98c5e9] w-full">
+          <div className="mx-auto w-11/12 py-4 md:py-8 flex flex-col md:flex-row space-y-3 md:justify-between items-center flex-wrap2 ">
+            <div className="w-full md:w-8/12 flex flex-row items-center justify-around md:justify-start">
               <div className=" flex space-x-4 leading-tight">
                 <Link href={"/"}>
                   <span className="text-sm tracking-tighter md:text-lg font-bold text-slate-800">
@@ -32,7 +32,7 @@ export default function FooterShop() {
                 </Link>
               </div>
             </div>
-            <div class="w-full md:w-6/12 flex flex-row justify-center md:justify-end">
+            <div className="w-full md:w-6/12 flex flex-row justify-center md:justify-end">
               <div className="flex space-x-4">
                 <Link href={"/"} className="text-slate-800">
                   <span className="text-slate-800">
@@ -122,9 +122,9 @@ export default function FooterShop() {
               </div>
             </div>
           </div>
-          <div class="bg-white py-4">
+          <div className="bg-white py-4">
             <div className="mx-auto w-11/12 flex flex-col md:flex-row space-y-2 justify-between text-slate-800-400  max-sm:flex-col max-sm:items-center">
-              <div class="w-full md:w-1/2 flex flex-1 justify-center md:justify-start items-center gap-2 font-montserrat cursor-pointer">
+              <div className="w-full md:w-1/2 flex flex-1 justify-center md:justify-start items-center gap-2 font-montserrat cursor-pointer">
                 <div className="flex space-x-3">
                   <Link href={"/"}>
                     <span className="text-xs tracking-tighter md:text-sm font-bold text-slate-800">

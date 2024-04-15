@@ -48,7 +48,7 @@ export default function Register() {
               </div>
             </div>
             <div className="flex flex-col space-y-1 mx-auto w-11/12 md:w-10/12 pt-2">
-              <label class="text-sm md:text-base font-semibold block text-gray-800">
+              <label className="text-sm md:text-base font-semibold block text-gray-800">
                 Date of Birth
               </label>
               <div className="flex flex-row space-x-2">
@@ -83,7 +83,7 @@ export default function Register() {
               </span>
             </div>
             <div className="flex flex-col space-y-1 mx-auto w-11/12 md:w-10/12 pt-2">
-              <label class="text-sm md:text-base font-semibold block text-gray-800">
+              <label className="text-sm md:text-base font-semibold block text-gray-800">
                 Email Address
               </label>
               <input
@@ -94,7 +94,7 @@ export default function Register() {
             </div>
             <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-2 mx-auto w-11/12 md:w-10/12">
               <div className="w-full md:w-1/2 flex flex-col space-y-1 ">
-                <label class="text-sm md:text-base font-semibold block text-gray-800">
+                <label className="text-sm md:text-base font-semibold block text-gray-800">
                   Password
                 </label>
                 <div className="relative items-center">
@@ -103,7 +103,7 @@ export default function Register() {
                     type="text"
                     placeholder="Password"
                   />
-                  <button class="absolute inline-block bottom-3 right-4 ">
+                  <button className="absolute inline-block bottom-3 right-4 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -127,7 +127,7 @@ export default function Register() {
                 </div>
               </div>
               <div className="w-full md:w-1/2 flex flex-col space-y-1 ">
-                <label class="text-sm md:text-base font-semibold block text-gray-800">
+                <label className="text-sm md:text-base font-semibold block text-gray-800">
                   Confirm Password
                 </label>
                 <div className="relative items-center">
@@ -136,7 +136,7 @@ export default function Register() {
                     type="text"
                     placeholder="Password"
                   />
-                  <button class="absolute inline-block bottom-3 right-4 ">
+                  <button className="absolute inline-block bottom-3 right-4 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -161,7 +161,7 @@ export default function Register() {
               </div>
             </div>
 
-            <div class="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 text-left mt-2 ">
+            <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 text-left mt-2 ">
               <div className="leading-tight">
                 <span className="font-bold text-sm md:text-[17px] leading-tight text-slate-900">
                   Do you want to be the first to hear about our competitions,

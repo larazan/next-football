@@ -70,7 +70,7 @@ export default function Detail() {
       <ScrollTop />
       <Breadcrumb />
 
-      <div className="w-full md:py-20 bg-[#f5f7f9]">
+      <div className="w-full py-5 md:py-5 bg-[#f5f7f9]">
         <ToastContainer />
         <div className={`w-full max-w-[1280px] px-5 md:px-10 mx-auto`}>
           <div className="flex flex-col md:flex-row md:px-10 gap-[50px] lg:gap-[100px]">

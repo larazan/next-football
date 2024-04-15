@@ -48,7 +48,7 @@ export default function Login() {
               </div>
             </div>
             <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 pt-2">
-              <label class="text-sm md:text-base block text-gray-800">
+              <label className="text-sm md:text-base block text-gray-800">
                 Email Address
               </label>
               <input
@@ -58,7 +58,7 @@ export default function Login() {
               />
             </div>
             <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12">
-              <label class="text-sm md:text-base block text-gray-800">
+              <label className="text-sm md:text-base block text-gray-800">
                 Password
               </label>
               <div className="relative items-center">
@@ -67,7 +67,7 @@ export default function Login() {
                   type="text"
                   placeholder="Password"
                 />
-                <button class="absolute inline-block bottom-3 right-4 ">
+                <button className="absolute inline-block bottom-3 right-4 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -90,10 +90,10 @@ export default function Login() {
                 </button>
               </div>
             </div>
-            <div class="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 text-left mt-2 underline">
+            <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 text-left mt-2 underline">
               <a
                 href="#"
-                class="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700"
+                className="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700"
               >
                 Forgot Password?
               </a>

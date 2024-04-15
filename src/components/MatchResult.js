@@ -88,7 +88,7 @@ export default function MatchResult() {
                             aria-hidden="true"
                             focusable="false"
                             xmlns="http://www.w3.org/2000/svg"
-                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                            className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                           >
                             <title>icon</title>
                             <path
@@ -117,7 +117,7 @@ export default function MatchResult() {
                             aria-hidden="true"
                             focusable="false"
                             xmlns="http://www.w3.org/2000/svg"
-                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                            className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                           >
                             <title>icon</title>
                             <path
@@ -152,7 +152,7 @@ export default function MatchResult() {
                             aria-hidden="true"
                             focusable="false"
                             xmlns="http://www.w3.org/2000/svg"
-                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                            className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                           >
                             <title>icon</title>
                             <path

@@ -465,7 +465,7 @@ input[type='number']::-webkit-inner-spin-button,
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-box-align: end;
-  align-items: end;
+  align-items: flex-end;
   background-color: rgba(255, 255, 255, 1.0);
   border-radius: 50%;
   width: 44px;
@@ -481,7 +481,7 @@ input[type='number']::-webkit-inner-spin-button,
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: end;
-    align-items: end;
+    align-items: flex-end;
     background-color: white;
     border-radius: 50%;
     width: 30px;

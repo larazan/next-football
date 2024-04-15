@@ -145,34 +145,34 @@ const Subtitution = () => {
 
   return (
     <>
-         <section class="flex w-full justify-between py-[20px] ">
+         <section className="flex w-full justify-between py-[20px] ">
           
-          <ul class="w-1/2 px-4 md:divide-y">
+          <ul className="w-1/2 px-4 md:divide-y">
           {HomeSubsData.map((data, index) => (
-              <div class=" last:last-of-type:border-b" key={index}>
-                  <li class="hidden md:flex justify-between h-[60px] ">
-                      <div class="flex items-center ">
+              <div className=" last:last-of-type:border-b" key={index}>
+                  <li className="hidden md:flex justify-between h-[60px] ">
+                      <div className="flex items-center ">
                           <a href="/id/matches/athletic-club-vs-real-madrid/2dil23?player=172321#4205639">
-                              <div class="flex items-center space-x-2 ">
-                                  <div class="playerIcon rounded-full border border-slate-300">
+                              <div className="flex items-center space-x-2 ">
+                                  <div className="playerIcon rounded-full border border-slate-300">
                                       <Image src={data.img} alt="" className="rounded-full w-full object-cover" />
                                   </div>
-                                  <div class="playerRating"><span className="text-[11px]">5,8</span></div>
-                                  <div class="flex flex-col ">
+                                  <div className="playerRating"><span className="text-[11px]">5,8</span></div>
+                                  <div className="flex flex-col ">
                                       <span className="flex items-center space-x-2">
-                                        <span class="text-sm text-gray-500 font-semibold ">{data.number}</span>
-                                        <span class="text-sm text-[#002f6c] font-bold capitalize">{data.name}</span>
+                                        <span className="text-sm text-gray-500 font-semibold ">{data.number}</span>
+                                        <span className="text-sm text-[#002f6c] font-bold capitalize">{data.name}</span>
                                       </span>
-                                      <span class="css-1gu2818-NotAvailableInfoContainer e4z8hgt4"></span>
+                                      <span className="css-1gu2818-NotAvailableInfoContainer e4z8hgt4"></span>
                                   </div>
                               </div>
                           </a>
                       </div>
-                      <div class="flex items-center justify-end ">
-                          <div class="flex mr-[6px] "></div>
-                          <div class="flex justify-center items-center ">
-                              <span class="font-semibold text-sm text-green-800 ">72&lsquo;</span>
-                              <div class="badgeContainer ">
+                      <div className="flex items-center justify-end ">
+                          <div className="flex mr-[6px] "></div>
+                          <div className="flex justify-center items-center ">
+                              <span className="font-semibold text-sm text-green-800 ">72&lsquo;</span>
+                              <div className="badgeContainer ">
                                   <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path
                                           d="M6.99984 0.333659C5.23496 0.344154 3.54536 1.0499 2.29739 2.29788C1.04941 3.54585 0.343664 5.23545 0.333169 7.00033C0.345611 8.76626 1.0533 10.4562 2.30294 11.704C3.55257 12.9518 5.24352 13.6571 7.00947 13.667C8.77308 13.6553 10.461 12.9489 11.7072 11.7009C12.9534 10.4529 13.6574 8.76396 13.6665 7.00033C13.6562 5.23539 12.9505 3.54568 11.7025 2.29767C10.4545 1.04965 8.76477 0.343961 6.99984 0.333659ZM10.7184 7.00033C10.72 7.09845 10.7 7.19574 10.66 7.28533C10.6199 7.37491 10.5607 7.45463 10.4865 7.51885L8.04206 9.92255C7.92463 10.0362 7.76697 10.0988 7.60354 10.0966C7.52522 10.0984 7.44734 10.0844 7.37462 10.0552C7.3019 10.0261 7.23585 9.98251 7.18045 9.92712C7.12506 9.87172 7.08147 9.80567 7.05234 9.73295C7.0232 9.66023 7.00912 9.58235 7.01095 9.50403C7.01235 9.42273 7.0302 9.34255 7.06343 9.26832C7.09665 9.1941 7.14457 9.12738 7.20428 9.07218L8.06798 8.2344L8.8828 7.58329L7.40132 7.64773L3.89539 7.64773C3.81108 7.6498 3.72725 7.6344 3.64918 7.60249C3.57112 7.57058 3.5005 7.52286 3.44177 7.46233C3.38305 7.40179 3.33749 7.32976 3.30796 7.25076C3.27844 7.17176 3.26558 7.0875 3.27021 7.00329C3.26614 6.91922 3.27937 6.8352 3.3091 6.75645C3.33883 6.67769 3.38441 6.60588 3.44302 6.54547C3.50163 6.48505 3.57202 6.43731 3.64984 6.40521C3.72765 6.37311 3.81123 6.35733 3.89539 6.35885L7.39687 6.35885L8.87835 6.43292L8.07317 5.77588L7.20354 4.94477C7.142 4.88962 7.09293 4.82198 7.0596 4.74636C7.02626 4.67074 7.00942 4.58889 7.01021 4.50625C7.00838 4.42793 7.02246 4.35006 7.0516 4.27734C7.08073 4.20462 7.12432 4.13856 7.17971 4.08317C7.23511 4.02777 7.30116 3.98418 7.37388 3.95505C7.4466 3.92592 7.52448 3.91183 7.6028 3.91366C7.76566 3.91446 7.92224 3.97662 8.04132 4.08773L10.4858 6.49144C10.5592 6.55507 10.618 6.63382 10.6581 6.72229C10.6983 6.81077 10.7188 6.90688 10.7184 7.00403L10.7184 7.00033Z"
@@ -183,7 +183,7 @@ const Subtitution = () => {
                           </div>
                       </div>
                   </li>
-                  <div class="block md:hidden ">
+                  <div className="block md:hidden ">
                   <div
                 className={` flex  justify-center items-center `}
               >
@@ -350,32 +350,32 @@ const Subtitution = () => {
               </div>
               ))}
           </ul>
-          <ul class="w-1/2 px-4 md:divide-y">
+          <ul className="w-1/2 px-4 md:divide-y">
           {AwaySubsData.map((data, index) => (
-              <div class=" last:last-of-type:border-b" key={index}>
-                  <li class="hidden md:flex justify-between h-[60px] ">
-                      <div class="flex items-center ">
+              <div className=" last:last-of-type:border-b" key={index}>
+                  <li className="hidden md:flex justify-between h-[60px] ">
+                      <div className="flex items-center ">
                           <a href="/id/matches/athletic-club-vs-real-madrid/2dil23?player=172321#4205639">
-                              <div class="flex items-center space-x-2 ">
-                                  <div class="playerIcon rounded-full border border-slate-300">
+                              <div className="flex items-center space-x-2 ">
+                                  <div className="playerIcon rounded-full border border-slate-300">
                                       <Image src={data.img} alt="" className="rounded-full w-full object-cover" />
                                   </div>
-                                  <div class="playerRating"><span className="text-[11px] ">5,8</span></div>
-                                  <div class="flex flex-col ">
+                                  <div className="playerRating"><span className="text-[11px] ">5,8</span></div>
+                                  <div className="flex flex-col ">
                                       <span className="flex items-center space-x-2">
-                                        <span class="text-sm text-gray-500 font-semibold ">{data.number}</span>
-                                        <span class="text-sm text-[#002f6c] font-bold capitalize">{data.name}</span>
+                                        <span className="text-sm text-gray-500 font-semibold ">{data.number}</span>
+                                        <span className="text-sm text-[#002f6c] font-bold capitalize">{data.name}</span>
                                       </span>
-                                      <span class="css-1gu2818-NotAvailableInfoContainer e4z8hgt4"></span>
+                                      <span className="css-1gu2818-NotAvailableInfoContainer e4z8hgt4"></span>
                                   </div>
                               </div>
                           </a>
                       </div>
-                      <div class="flex items-center justify-end ">
-                          <div class="flex mr-[6px] "></div>
-                          <div class="flex justify-center items-center ">
-                              <span class="font-semibold text-sm text-green-800 ">72&lsquo;</span>
-                              <div class="badgeContainer ">
+                      <div className="flex items-center justify-end ">
+                          <div className="flex mr-[6px] "></div>
+                          <div className="flex justify-center items-center ">
+                              <span className="font-semibold text-sm text-green-800 ">72&lsquo;</span>
+                              <div className="badgeContainer ">
                                   <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                       <path
                                           d="M6.99984 0.333659C5.23496 0.344154 3.54536 1.0499 2.29739 2.29788C1.04941 3.54585 0.343664 5.23545 0.333169 7.00033C0.345611 8.76626 1.0533 10.4562 2.30294 11.704C3.55257 12.9518 5.24352 13.6571 7.00947 13.667C8.77308 13.6553 10.461 12.9489 11.7072 11.7009C12.9534 10.4529 13.6574 8.76396 13.6665 7.00033C13.6562 5.23539 12.9505 3.54568 11.7025 2.29767C10.4545 1.04965 8.76477 0.343961 6.99984 0.333659ZM10.7184 7.00033C10.72 7.09845 10.7 7.19574 10.66 7.28533C10.6199 7.37491 10.5607 7.45463 10.4865 7.51885L8.04206 9.92255C7.92463 10.0362 7.76697 10.0988 7.60354 10.0966C7.52522 10.0984 7.44734 10.0844 7.37462 10.0552C7.3019 10.0261 7.23585 9.98251 7.18045 9.92712C7.12506 9.87172 7.08147 9.80567 7.05234 9.73295C7.0232 9.66023 7.00912 9.58235 7.01095 9.50403C7.01235 9.42273 7.0302 9.34255 7.06343 9.26832C7.09665 9.1941 7.14457 9.12738 7.20428 9.07218L8.06798 8.2344L8.8828 7.58329L7.40132 7.64773L3.89539 7.64773C3.81108 7.6498 3.72725 7.6344 3.64918 7.60249C3.57112 7.57058 3.5005 7.52286 3.44177 7.46233C3.38305 7.40179 3.33749 7.32976 3.30796 7.25076C3.27844 7.17176 3.26558 7.0875 3.27021 7.00329C3.26614 6.91922 3.27937 6.8352 3.3091 6.75645C3.33883 6.67769 3.38441 6.60588 3.44302 6.54547C3.50163 6.48505 3.57202 6.43731 3.64984 6.40521C3.72765 6.37311 3.81123 6.35733 3.89539 6.35885L7.39687 6.35885L8.87835 6.43292L8.07317 5.77588L7.20354 4.94477C7.142 4.88962 7.09293 4.82198 7.0596 4.74636C7.02626 4.67074 7.00942 4.58889 7.01021 4.50625C7.00838 4.42793 7.02246 4.35006 7.0516 4.27734C7.08073 4.20462 7.12432 4.13856 7.17971 4.08317C7.23511 4.02777 7.30116 3.98418 7.37388 3.95505C7.4466 3.92592 7.52448 3.91183 7.6028 3.91366C7.76566 3.91446 7.92224 3.97662 8.04132 4.08773L10.4858 6.49144C10.5592 6.55507 10.618 6.63382 10.6581 6.72229C10.6983 6.81077 10.7188 6.90688 10.7184 7.00403L10.7184 7.00033Z"
@@ -386,7 +386,7 @@ const Subtitution = () => {
                           </div>
                       </div>
                   </li>
-                  <div class="block md:hidden ">
+                  <div className="block md:hidden ">
                   <div
                 className={` flex  justify-center items-center `}
               >

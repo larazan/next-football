@@ -369,7 +369,7 @@ export default function Lineup() {
 
       <MatchResult />
 
-      <div className="h-max flex flex-col py-0 md:py-6 px-2 md:px-6 bg-[#f5f7f9]">
+      <div className="h-max flex flex-col py-4 md:py-6 px-2 md:px-6 bg-[#f5f7f9]">
         <div className="mx-auto w-full lg:w-1/2">
           <div className="flex flex-row justify-between mx-auto w-full ">
             <span className="text-lg md:text-2xl font-bold text-[#002f6c] uppercase">
@@ -703,94 +703,7 @@ export default function Lineup() {
         </section>
 
         <Subtitution />
-
-        <div className="mx-auto w-full lg:w-1/2">
-          <div className="flex flex-row justify-between mx-auto w-full ">
-            <span className="text-lg md:text-2xl font-bold text-[#002f6c] uppercase">
-              Reserves / Coaches
-            </span>
-          </div>
-          <div className="w-full py-5 flex space-x-5">
-            <div className="w-1/2 flex flex-col space-y-3 px-4 py-2 bg-gray-200">
-              <div className="flex flex-col space-y-1">
-                <span className="text-xs font-semibold">Reserves</span>
-                <div className="flex flex-wrap ">
-                  {bayernReserveData.map((data, index) => {
-                    return (
-                      <div
-                        className="flex space-x-1 mr-1 mt-.5 text-xs"
-                        key={index}
-                      >
-                        <span>{data.number}</span>
-                        <div>
-                          <span className="capitalize">{data.name},</span>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-              <div className="flex flex-col ">
-                <span className="text-xs font-semibold">Coach</span>
-                <div>
-                  <span className="text-xs capitalize">Thomas tuchel</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-1/2 flex flex-col space-y-3 px-4 py-2 bg-gray-200">
-              <div className="flex flex-col space-y-1">
-                <span className="text-xs font-semibold">Reserves</span>
-                <div className="flex flex-wrap ">
-                  {cityReserveData.map((data, index) => {
-                    return (
-                      <div
-                        className="flex space-x-1 mr-1 mt-.5 text-xs"
-                        key={index}
-                      >
-                        <span>{data.number}</span>
-                        <div>
-                          <span className="capitalize">{data.name},</span>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-              <div className="flex flex-col ">
-                <span className="text-xs font-semibold">Coach</span>
-                <div>
-                  <span className="text-xs capitalize">pep guardiola</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="mx-auto w-full lg:w-1/2">
-          <div className="flex flex-row justify-between mx-auto w-full ">
-            <span className="text-lg md:text-2xl font-bold text-[#002f6c] uppercase">
-              Match official
-            </span>
-          </div>
-          <div className="w-full py-5 grid grid-cols-3 gap-4">
-            {officialData.map((data, index) => {
-              return (
-                <div
-                  className="flex flex-col py-2 px-4 bg-gray-200"
-                  key={index}
-                >
-                  <span className="text-xs font-semibold capitalize">
-                    {data.pos}
-                  </span>
-                  <div className="leading-tight">
-                    <span className="text-xs  capitalize">{data.name}</span>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        
       </div>
 
       <Footer />

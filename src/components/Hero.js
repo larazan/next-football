@@ -23,10 +23,10 @@ const Hero = () => {
               during extended stretches of running.
           </div>
       </div>
-      {/* <section class="padding-x py-10 bg-gray-100">
-        <section class="mx-auto w-10/12 flex justify-center flex-wrap gap-9">
-          <div class="bg-white flex-1 sm:w-[350px] sm:min-w-[350px] w-full border rounded-[20px] shadow-3xl px-10 py-16">
-            <div class="w-11 h-11 flex justify-center items-center bg-orange-500 rounded-full">
+      {/* <section className="padding-x py-10 bg-gray-100">
+        <section className="mx-auto w-10/12 flex justify-center flex-wrap gap-9">
+          <div className="bg-white flex-1 sm:w-[350px] sm:min-w-[350px] w-full border rounded-[20px] shadow-3xl px-10 py-16">
+            <div className="w-11 h-11 flex justify-center items-center bg-orange-500 rounded-full">
               <Image
                 src={truck}
                 alt="Free shipping"
@@ -34,15 +34,15 @@ const Hero = () => {
                 height="24"
               />
             </div>
-            <h3 class="mt-5 font-palanquin text-3xl leading-normal font-bold">
+            <h3 className="mt-5 font-palanquin text-3xl leading-normal font-bold">
               Free shipping
             </h3>
-            <p class="mt-3 break-words font-montserrat text-lg leading-normal text-slate-gray">
+            <p className="mt-3 break-words font-montserrat text-lg leading-normal text-slate-gray">
               Enjoy seamless shopping with our complimentary shipping service.
             </p>
           </div>
-          <div class="bg-white flex-1 sm:w-[350px] sm:min-w-[350px] w-full border rounded-[20px] shadow-3xl px-10 py-16">
-            <div class="w-11 h-11 flex justify-center items-center bg-orange-500 rounded-full">
+          <div className="bg-white flex-1 sm:w-[350px] sm:min-w-[350px] w-full border rounded-[20px] shadow-3xl px-10 py-16">
+            <div className="w-11 h-11 flex justify-center items-center bg-orange-500 rounded-full">
               <Image
                 src={shield}
                 alt="Secure Payment"
@@ -50,16 +50,16 @@ const Hero = () => {
                 height="24"
               />
             </div>
-            <h3 class="mt-5 font-palanquin text-3xl leading-normal font-bold">
+            <h3 className="mt-5 font-palanquin text-3xl leading-normal font-bold">
               Secure Payment
             </h3>
-            <p class="mt-3 break-words font-montserrat text-lg leading-normal text-slate-gray">
+            <p className="mt-3 break-words font-montserrat text-lg leading-normal text-slate-gray">
               Experience worry-free transactions with our secure payment
               options.
             </p>
           </div>
-          <div class="bg-white flex-1 sm:w-[350px] sm:min-w-[350px] w-full border rounded-[20px] shadow-3xl px-10 py-16">
-            <div class="w-11 h-11 flex justify-center items-center bg-orange-500 rounded-full">
+          <div className="bg-white flex-1 sm:w-[350px] sm:min-w-[350px] w-full border rounded-[20px] shadow-3xl px-10 py-16">
+            <div className="w-11 h-11 flex justify-center items-center bg-orange-500 rounded-full">
               <Image
                 src={support}
                 alt="Love to help you"
@@ -67,10 +67,10 @@ const Hero = () => {
                 height="24"
               />
             </div>
-            <h3 class="mt-5 font-palanquin text-3xl leading-normal font-bold">
+            <h3 className="mt-5 font-palanquin text-3xl leading-normal font-bold">
               Love to help you
             </h3>
-            <p class="mt-3 break-words font-montserrat text-lg leading-normal text-slate-gray">
+            <p className="mt-3 break-words font-montserrat text-lg leading-normal text-slate-gray">
               Our dedicated team is here to assist you every step of the way.
             </p>
           </div>

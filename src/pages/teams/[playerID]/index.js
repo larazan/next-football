@@ -137,7 +137,7 @@ export default function Detail() {
             </button>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row space-y-3 md:space-x-3 mx-auto w-full lg:w-1/2">
+        <div className="flex flex-col md:flex-row md:divide-x gap-3 space-y-3 md:space-x-3 mx-auto w-full lg:w-1/2">
           <div className="w-full md:w-1/2 flex flex-col space-y-4">
             {/* <div className="flex justify-center border-y border-gray-300 ">
             <div className="flex flex-col w-full text-gray-800">
@@ -196,7 +196,7 @@ export default function Detail() {
             </div>
           </div> */}
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-5">
               <div className="flex flex-col py-2 px-2 border-b">
                 <div>
                   <span className="font-bold text-lg text-slate-800">
@@ -255,10 +255,10 @@ export default function Detail() {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 flex justify-between px-3">
+          <div className="w-full md:w-1/2 flex justify-between px-2 md:px-4">
             <div className="space-y-2">
               <div>
-                <span className="text-lg font-semibold text-slate-800">
+                <span className="text-lg font-bold text-slate-800">
                   Posisi
                 </span>
               </div>
@@ -307,7 +307,7 @@ export default function Detail() {
                             aria-hidden="true"
                             focusable="false"
                             xmlns="http://www.w3.org/2000/svg"
-                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                            className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                           >
                             <title>icon</title>
                             <path
@@ -341,7 +341,7 @@ export default function Detail() {
                             aria-hidden="true"
                             focusable="false"
                             xmlns="http://www.w3.org/2000/svg"
-                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                            className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                           >
                             <title>icon</title>
                             <path
@@ -376,7 +376,7 @@ export default function Detail() {
                             aria-hidden="true"
                             focusable="false"
                             xmlns="http://www.w3.org/2000/svg"
-                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                            className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                           >
                             <title>icon</title>
                             <path
@@ -412,7 +412,7 @@ export default function Detail() {
                             aria-hidden="true"
                             focusable="false"
                             xmlns="http://www.w3.org/2000/svg"
-                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                            className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                           >
                             <title>icon</title>
                             <path
@@ -446,7 +446,7 @@ export default function Detail() {
                             aria-hidden="true"
                             focusable="false"
                             xmlns="http://www.w3.org/2000/svg"
-                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                            className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                           >
                             <title>icon</title>
                             <path d="M6.53034 3.53033L5.46968 2.46967L1.93935 6L5.46968 9.53033L6.53034 8.46967L4.81067 6.75H17C18.7949 6.75 20.25 8.20507 20.25 10V12H21.75V10C21.75 7.37665 19.6234 5.25 17 5.25H4.81066L6.53034 3.53033ZM2.25 14V12H3.75V14C3.75 15.7949 5.20507 17.25 7 17.25H19.1893L17.4697 15.5303L18.5303 14.4697L22.0607 18L18.5303 21.5303L17.4697 20.4697L19.1893 18.75H7C4.37665 18.75 2.25 16.6234 2.25 14Z"></path>
@@ -476,7 +476,7 @@ export default function Detail() {
                             aria-hidden="true"
                             focusable="false"
                             xmlns="http://www.w3.org/2000/svg"
-                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                            className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                           >
                             <title>icon</title>
                             <path d="M6.53034 3.53033L5.46968 2.46967L1.93935 6L5.46968 9.53033L6.53034 8.46967L4.81067 6.75H17C18.7949 6.75 20.25 8.20507 20.25 10V12H21.75V10C21.75 7.37665 19.6234 5.25 17 5.25H4.81066L6.53034 3.53033ZM2.25 14V12H3.75V14C3.75 15.7949 5.20507 17.25 7 17.25H19.1893L17.4697 15.5303L18.5303 14.4697L22.0607 18L18.5303 21.5303L17.4697 20.4697L19.1893 18.75H7C4.37665 18.75 2.25 16.6234 2.25 14Z"></path>
@@ -538,7 +538,7 @@ export default function Detail() {
                             aria-hidden="true"
                             focusable="false"
                             xmlns="http://www.w3.org/2000/svg"
-                            class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                            className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                           >
                             <title>icon</title>
                             <path

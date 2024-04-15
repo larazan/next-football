@@ -149,7 +149,7 @@ export default function MatchReport() {
                       preserveAspectRatio="xMidYMid meet"
                       role="img"
                       xmlns="http://www.w3.org/2000/svg"
-                      class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                      className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                     >
                       <title>icon</title>
                       <path
@@ -169,7 +169,7 @@ export default function MatchReport() {
                       preserveAspectRatio="xMidYMid meet"
                       role="img"
                       xmlns="http://www.w3.org/2000/svg"
-                      class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                      className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                     >
                       <title>icon</title>
                       <path
@@ -209,7 +209,7 @@ export default function MatchReport() {
                       preserveAspectRatio="xMidYMid meet"
                       role="img"
                       xmlns="http://www.w3.org/2000/svg"
-                      class="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
+                      className="base-icon__StyledIconSvg-sc-fzrbhv-0 eCHnXp"
                     >
                       <title>icon</title>
                       <path

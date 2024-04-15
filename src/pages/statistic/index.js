@@ -81,7 +81,7 @@ export default function Statistic() {
       <div className="h-max flex flex-col py-0 bg-white">
         <div className="flex flex-col py-4 px-3 md:px-6 space-y-1 mx-auto w-full lg:w-1/2">
           <h1 className="text-lg md:text-2xl font-bold text-[#002f6c] uppercase">
-            Team Comparison
+            Statistic Comparison
           </h1>
           <div className="flex w-full justify-between items-center h-14 py-1.5 border-y">
             <div className="flex w-1/6">
@@ -92,12 +92,12 @@ export default function Statistic() {
             <div className=" w-4/6">
               <div className="flex w-full mx-auto justify-center space-x-6">
                 <div className="flex ">
-                  <span className="text-sm font-bold leading-tight text-[#002f6c]">
+                  <span className="text-xs md:text-sm font-bold leading-tight text-[#002f6c]">
                     FC Bayern Munich
                   </span>
                 </div>
                 <div className="flex text-end">
-                  <span className="text-sm font-bold leading-tight text-[#002f6c]">
+                  <span className="text-xs md:text-sm font-bold leading-tight text-[#002f6c]">
                     Manchester City
                   </span>
                 </div>

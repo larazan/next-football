@@ -232,102 +232,102 @@ export default function News() {
                 </div>
               </div>
             </div>
-            <div class="w-full bottom-0 pb-[1px] px-3 py-1.5 md:px-3 overflow-x-auto overflow-hidden">
-              <ul class="flex items-center justify-center space-x-2 md:space-x-4  md:tracking-widest font-semibold text-xs  ">
-                <li class=" border-b-2 border-[#0066b2] md:-mt-px  ">
+            <div className="w-full bottom-0 pb-[1px] px-3 py-1.5 md:px-3 overflow-x-auto overflow-hidden">
+              <ul className="flex items-center justify-center space-x-2 md:space-x-4  md:tracking-widest font-semibold text-xs  ">
+                <li className=" border-b-2 border-[#0066b2] md:-mt-px  ">
                   <a
-                    class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
+                    className=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Jul</span>
+                    <span className="hidden2 md:inline tracking-tight md:tracking-normal">Jul</span>
                   </a>
                 </li>
-                <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
+                <li className=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
                   <a
-                    class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
+                    className=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Aug</span>
+                    <span className="hidden2 md:inline tracking-tight md:tracking-normal">Aug</span>
                   </a>
                 </li>
-                <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
+                <li className=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
                   <a
-                    class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
+                    className=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Sep</span>
+                    <span className="hidden2 md:inline tracking-tight md:tracking-normal">Sep</span>
                   </a>
                 </li>
-                <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
+                <li className=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
                   <a
-                    class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
+                    className=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Oct</span>
+                    <span className="hidden2 md:inline tracking-tight md:tracking-normal">Oct</span>
                   </a>
                 </li>
-                <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
+                <li className=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
                   <a
-                    class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
+                    className=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Nov</span>
+                    <span className="hidden2 md:inline tracking-tight md:tracking-normal">Nov</span>
                   </a>
                 </li>
-                <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
+                <li className=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
                   <a
-                    class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
+                    className=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Dec</span>
+                    <span className="hidden2 md:inline tracking-tight md:tracking-normal">Dec</span>
                   </a>
                 </li>
-                <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
+                <li className=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
                   <a
-                    class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
+                    className=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Jan</span>
+                    <span className="hidden2 md:inline tracking-tight md:tracking-normal">Jan</span>
                   </a>
                 </li>
-                <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
+                <li className=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
                   <a
-                    class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
+                    className=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Feb</span>
+                    <span className="hidden2 md:inline tracking-tight md:tracking-normal">Feb</span>
                   </a>
                 </li>
-                <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
+                <li className=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
                   <a
-                    class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
+                    className=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Mar</span>
+                    <span className="hidden2 md:inline tracking-tight md:tracking-normal">Mar</span>
                   </a>
                 </li>
-                <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
+                <li className=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
                   <a
-                    class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
+                    className=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Apr</span>
+                    <span className="hidden2 md:inline tracking-tight md:tracking-normal">Apr</span>
                   </a>
                 </li>
-                <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
+                <li className=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
                   <a
-                    class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
+                    className=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">May</span>
+                    <span className="hidden2 md:inline tracking-tight md:tracking-normal">May</span>
                   </a>
                 </li>
-                <li class=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
+                <li className=" border-b-2 border-white hover:border-[#0066b2] md:-mt-px  ">
                   <a
-                    class=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
+                    className=" inline-block py-2 font-bold text-[14px] text-[#0066b2]"
                     href="/movie"
                   >
-                    <span class="hidden2 md:inline tracking-tight md:tracking-normal">Jun</span>
+                    <span className="hidden2 md:inline tracking-tight md:tracking-normal">Jun</span>
                   </a>
                 </li>
               </ul>
