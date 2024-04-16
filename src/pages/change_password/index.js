@@ -41,7 +41,7 @@ export default function ChangePassword() {
               </div>
             </div>
             <div className="flex flex-col space-y-1 mx-auto w-11/12 md:w-10/12 pt-2">
-              <label className="text-sm md:text-base block text-gray-800">
+              <label className="text-sm md:text-base block text-gray-800 font-semibold">
                 Email Address
               </label>
               <input

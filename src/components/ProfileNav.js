@@ -13,7 +13,7 @@ const ProfileNav = () => {
           </span>
         </div>
         <div className="shadow-lg md:px-8">
-          <ul className="flex overflow-x-auto2 overflow-hidden items-center md:justify-center2 space-x-1 md:space-x-3  tracking-tight font-semibold text-sm text-[#b6cce2] shadow2">
+          <ul className="flex overflow-x-auto overflow-hidden items-center md:justify-center2 space-x-1 md:space-x-3  tracking-tight font-semibold text-sm text-[#b6cce2] shadow2">
             <li className={` border-b-4 ${pathname == "/account/show" ? 'border-[#001838]' : 'border-white'} border-[#001838] md:-mt-px`}>
               <Link className="inline-block p-3" href="/account/show">
                 <span className="md:inline text-gray-800 font-bold">

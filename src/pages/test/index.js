@@ -440,7 +440,7 @@ export default function Test() {
   return (
     <>
       <div className="flex flex-col w-full ">
-        <section className="flex -mt-12 md:mt-0 relative rotate-90 md:rotate-0 w-screen md:w-full h-[600px] md:h-[500px] bg-[#01935c] ">
+        <section className="flex -mt-12 md:mt-0 relative rotate-90 md:rotate-0 w-screen py-16 md:w-full h-[700px] md:h-[500px] bg-[#01935c] ">
           <div className="absolute top-[36%] left-0 -translate-x-16 -rotate-90">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -472,7 +472,7 @@ export default function Test() {
               ></path>
             </svg>
           </div>
-          <div className="gtengah absolute left-[50%] h-full w-[6px]  bg-[#0d9f68] opacity-100 css-1xbh153-MiddleOfField eoc95b2"></div>
+          <div className="gtengah absolute top-[0%] left-[50%] h-full w-[6px]  bg-[#0d9f68] opacity-100 css-1xbh153-MiddleOfField eoc95b2"></div>
           <div className="absolute top-[36%] right-0 translate-x-16 rotate-90 css-1y1f56-GoalContainer eoc95b1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -664,7 +664,7 @@ export default function Test() {
                         </div>
                       </div>
                     </div>
-                    <span className="relative text-[14px] text-center capitalize text-white break-words font-semibold leading-[16px] max-w-full mt-[12px] py-[2px] h-[32px] ">
+                    <span className="relative text-[14px] text-center capitalize text-white break-words font-semibold leading-[16px] max-w-full mt-[10px] py-[2px] h-[32px] ">
                       <span className="mr-[4px] inline-block text-white ">
                         {data.number}
                       </span>
@@ -835,7 +835,7 @@ export default function Test() {
                         </div>
                       </div>
                     </div>
-                    <span className="relative text-[14px] text-center capitalize text-white break-words font-semibold leading-[16px] max-w-full mt-[12px] py-[2px] h-[32px] ">
+                    <span className="relative text-[14px] text-center capitalize text-white break-words font-semibold leading-[16px] max-w-full mt-[10px] py-[2px] h-[32px] ">
                       <span className="mr-[4px] inline-block text-white ">
                         {data.number}
                       </span>
@@ -848,7 +848,7 @@ export default function Test() {
           </div>
         </section>
 
-        <section class="flex justify-between w-full px-10 md:h-14 border-b  items-center">
+        <section class="hidden flex justify-between w-full px-10 md:h-14 border-b  items-center">
           <a
             href="/id/players/78619/carlo-ancelotti"
             class="flex flex-row items-center"

@@ -48,7 +48,7 @@ export default function Login() {
               </div>
             </div>
             <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 pt-2">
-              <label className="text-sm md:text-base block text-gray-800">
+              <label className="text-sm md:text-base block text-gray-800 font-semibold">
                 Email Address
               </label>
               <input
@@ -58,7 +58,7 @@ export default function Login() {
               />
             </div>
             <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12">
-              <label className="text-sm md:text-base block text-gray-800">
+              <label className="text-sm md:text-base block text-gray-800 font-semibold">
                 Password
               </label>
               <div className="relative items-center">
@@ -91,12 +91,12 @@ export default function Login() {
               </div>
             </div>
             <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12 text-left mt-2 underline">
-              <a
-                href="#"
+              <Link
+                href="/change_password"
                 className="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700"
               >
                 Forgot Password?
-              </a>
+              </Link>
             </div>
             <div className="flex flex-col space-y-1.5 mx-auto w-11/12 md:w-10/12">
               <button className="w-full py-2 bg-blue-800 hover:bg-blue-700 border border-gray-800 rounded text-lg uppercase font-bold text-gray-50 transition duration-200 ">
